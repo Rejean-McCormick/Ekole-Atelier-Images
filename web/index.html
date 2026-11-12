@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="atelier-session" content="SESSION_TOKEN">
+  <title>Atelier Images</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<main>
+  <header><p class="eyebrow">OUTIL LOCAL</p><h1>Atelier Images</h1>
+    <p>Prépare des séries d’illustrations et génère un lot à la fois.</p></header>
+  <section aria-labelledby="catalogue-title">
+    <h2 id="catalogue-title">1. Choisir un catalogue</h2>
+    <label>Profil <select id="profile"></select></label>
+    <label id="root-label" hidden>Chemin de la copie locale Québec
+      <input id="root" placeholder="C:\mycode\Ekole\ekole-quebec">
+    </label>
+    <button id="load">Charger le catalogue</button>
+    <p id="catalogue-status"></p>
+  </section>
+  <section id="reference" hidden>
+    <h2>2. Choisir le thème et le style</h2>
+    <div class="row">
+      <label>Thème <select id="theme"></select></label>
+      <label>Branche <select id="branch"></select></label>
+    </div>
+    <label>Palette <select id="palette-choice"></select></label>
+    <div id="palette-custom" class="row" hidden>
+      <label>Première couleur <input id="palette-color-1" type="text" maxlength="7" placeholder="#005F61" autocomplete="off"></label>
+      <label>Deuxième couleur, facultative <input id="palette-color-2" type="text" maxlength="7" placeholder="#E9D8B4" autocomplete="off"></label>
+      <label>Troisième couleur, facultative <input id="palette-color-3" type="text" maxlength="7" placeholder="#F4E9D6" autocomplete="off"></label>
+    </div>
+    <p id="palette-preview" aria-live="polite"></p>
+    <label><span id="prompt-label">Prompt à copier dans ChatGPT</span> <textarea id="prompt" readonly rows="5"></textarea></label>
+    <div id="reference-controls">
+    <button id="copy">Copier le prompt</button>
+    <label>Image de référence <input id="upload" type="file" accept="image/png,image/jpeg,image/webp"></label>
+    <p id="reference-status"></p>
+    </div>
+  </section>
+  <section id="lot" hidden>
+    <h2>3. Générer le lot</h2>
+    <button id="plan">Préparer le plan et la galerie</button>
+    <button id="view-images">Voir les images</button>
+    <p id="links" hidden>
+      <a id="plan-link" download>Plan CSV</a>
+      <a id="gallery-link" target="_blank" rel="noopener">Galerie du lot</a>
+      <span id="comparison-links"></span>
+    </p>
+    <form id="generation">
+      <label>Moteur
+        <select id="engine"></select>
+        <small id="engine-description"></small>
+      </label>
+      <label id="workflow-field" hidden>Workflow de style ComfyUI (JSON au format API)
+        <input id="workflow" type="file" accept=".json,application/json">
+        <small>Place {{PROMPT}} dans le texte positif et utilise une sortie SaveImage.</small>
+      </label>
+      <label id="all-themes-field" class="check" hidden>
+        <input id="all-themes" type="checkbox"> Générer tous les thèmes
+        <small>Chaque thème utilise sa propre palette. Les images manquantes s’enchaînent.</small>
+      </label>
+      <label class="check"><input id="comparison" type="checkbox"> Mode comparaison
+        <small>Génère les mêmes premières scènes avec chaque moteur dans des galeries d’essai distinctes.</small></label>
+      <div class="row">
+        <label>Nombre maximal d’images <input id="limit" type="number" min="0" max="4800" value="12" required>
+          <small>0 traite toutes les images manquantes de la sélection.</small></label>
+        <label id="account-field">Identifiant du compte Cloudflare <input id="account" autocomplete="off" required></label>
+        <label id="token-field">Jeton Cloudflare <input id="token" type="password" autocomplete="off" required></label>
+      </div>
+      <label id="reference-mode" class="check"><input id="without-reference" type="checkbox"> Utiliser uniquement le prompt de style</label>
+      <button id="generate" type="submit">Générer</button>
+    </form>
+  </section>
+  <button id="stop" type="button" hidden>Arrêter le lot</button>
+  <p id="progress" aria-live="polite"></p>
+  <section id="review" hidden>
+    <h2>4. Réviser et intégrer</h2>
+    <label>Afficher <select id="image-filter">
+      <option value="">Toutes les images</option>
+      <option value="nouvelle">Nouvelles</option>
+      <option value="validee">Validées, à intégrer</option>
+      <option value="integree">Intégrées</option>
+    </select></label>
+    <div class="review-actions">
+      <button id="select-images">Tout sélectionner dans cette vue</button>
+      <button id="reject-images">Écarter la sélection pour la refaire</button>
+      <button id="delete-images" disabled>Supprimer la sélection</button>
+      <button id="approve-images">Valider la sélection</button>
+      <button id="publish-images">Intégrer dans Ekole</button>
+    </div>
+    <p id="review-status" role="status"></p>
+    <div id="image-grid"></div>
+  </section>
+  <p id="error" role="alert" hidden></p>
+</main>
+</body>
+</html>

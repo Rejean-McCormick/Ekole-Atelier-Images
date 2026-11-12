@@ -1,0 +1,12 @@
+{
+  "jardinage": {"palette": "vert sauge #8DA68C, pêche #E6AE93, crème #F6EBD8, vert pin #345E52", "scene": "Un jardin communautaire au printemps, bacs surélevés, jeunes pousses, arrosoir et petite remise en bois."},
+  "jazz": {"palette": "prune #604B67, cuivre #C99065, bleu encre #354961, crème #F2E6D5", "scene": "Une petite scène de jazz de quartier, avec contrebasse, saxophone, batterie et quelques guirlandes."},
+  "camping": {"palette": "vert sapin #436A57, bleu lac #7299A9, ocre #D6A15E, sable #EFE0C7", "scene": "Un campement près d'un lac, une tente montée sur un terrain plat, quelques épinettes et une lampe éteinte."},
+  "velo": {"palette": "bleu pétrole #426C79, corail doux #D18176, gris bleuté #A2AFB8, ivoire #F5EAD5", "scene": "Un atelier de réparation de vélos de quartier, un vélo entier sur pied, une pompe et quelques outils bien rangés."},
+  "cuisine": {"palette": "abricot #DDA181, miel #C4A253, bleu doux #7C9AA2, farine #F6EDDC", "scene": "Une cuisine communautaire lumineuse, avec bol, cuillère en bois, torchon et fruits sur une table de préparation."},
+  "grenier": {"palette": "terracotta #B78168, mauve grisé #96899B, bois blond #CBB18A, crème #F3E7D2", "scene": "Un grenier accueillant, avec quelques boîtes ouvertes, un album fermé, une malle et la lumière douce d'une lucarne."},
+  "riviere": {"palette": "bleu rivière #6199AA, vert mousse #829566, gris galet #A2A9A3, lin #F1E9D6", "scene": "Une rive paisible du Québec, avec galets, roseaux, eau peu profonde et carnet d'observation fermé."},
+  "espace": {"palette": "bleu nuit #364967, lavande #A39EC5, menthe #A1C4B2, pêche #F1B392", "scene": "L'intérieur d'une station spatiale fictive, avec grand hublot, planète lointaine et consoles aux formes simples."},
+  "marche": {"palette": "vert pin #416B5C, framboise douce #C77F87, or pâle #DAB876, crème #F6E9D0", "scene": "Un petit marché de village, avec étals en bois, auvents rayés et objets artisanaux aux silhouettes claires."},
+  "neige": {"palette": "bleu glacier #8DB4C9, pervenche #929DBC, rouge canneberge #B46B77, blanc chaud #F7F3EA", "scene": "Une place de village enneigée avec mitaines, traîneau, banc de neige et maisons de bois dans le fond."}
+}

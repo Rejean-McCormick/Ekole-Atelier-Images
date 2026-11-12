@@ -1,0 +1,5 @@
+{
+  "nom": "FLUX.1 Dev · Flat Cartoon Illustration",
+  "workflow": "flat-cartoon.workflow.json",
+  "description": "Cartoon 2D en aplats, généré localement par ComfyUI. Installe les cinq fichiers indiqués dans le guide."
+}

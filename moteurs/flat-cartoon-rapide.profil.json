@@ -1,0 +1,5 @@
+{
+  "nom": "FLUX.1 Dev · Flat Cartoon rapide (12 étapes)",
+  "workflow": "flat-cartoon-rapide.workflow.json",
+  "description": "Mêmes modèles, LoRA et format que Flat Cartoon, avec 12 étapes de calcul."
+}

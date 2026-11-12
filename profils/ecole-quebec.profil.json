@@ -1,0 +1,6 @@
+{
+  "nom": "École Québec",
+  "adapter": "kristals-quebec",
+  "source": "ekole-quebec",
+  "styles": "styles-quebec.json"
+}

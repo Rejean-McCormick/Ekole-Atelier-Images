@@ -1,0 +1,22 @@
+{
+  "nom": "École pastorale · exemple",
+  "adapter": "csv",
+  "source": "ecole-pastorale.csv",
+  "style": "Illustration éditoriale pour des ateliers d’adultes. Papier mat, lumière naturelle, formes sobres et chaleureuses.",
+  "themes": [
+    {
+      "id": "accueil",
+      "name": "L’accueil et l’écoute",
+      "intro": "Des équipes préparent des rencontres dans un lieu communautaire.",
+      "palette": "terre cuite #B8705A, crème #F4E8D7, bleu ardoise #536878",
+      "scene": "Une salle communautaire, des chaises en cercle, un carnet posé sur une table et une lumière de fin d’après-midi."
+    },
+    {
+      "id": "entraide",
+      "name": "L’entraide de proximité",
+      "intro": "Des bénévoles préparent une activité collective.",
+      "palette": "vert mousse #72815D, miel #C59A52, lin #F1E7D5",
+      "scene": "Un local de quartier, une grande table en bois, quelques paniers et des manteaux accrochés."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "qc-pri-ad-001/concept": {
+    "scene": "Sur un petit plateau de théâtre d’école primaire, trois enfants de 8 à 10 ans répètent. L’un attend en coulisse, un autre traverse la scène et la troisième se tourne vers lui.",
+    "priorite": "On doit lire dans l’espace les trois actions : entrer, traverser et se rencontrer."
+  },
+  "qc-pri-ad-001/situation": {
+    "scene": "Deux enfants de 8 à 10 ans viennent de se croiser pendant une répétition de théâtre à l’école. Ils s’arrêtent et se tournent l’un vers l’autre.",
+    "priorite": "Leurs regards et la distance entre eux suggèrent une rencontre dont on ignore l’issue."
+  },
+  "qc-pri-ad-002/concept": {
+    "scene": "Deux enfants de 8 à 10 ans jouent des personnages sur un petit plateau d’école. L’un avance le buste droit, l’autre reste en retrait, le poids sur un pied.",
+    "priorite": "Le contraste entre leurs postures suffit à évoquer deux personnages."
+  },
+  "qc-pri-ad-002/situation": {
+    "scene": "Deux enfants de 8 à 10 ans jouent une scène où leurs personnages arrivent en même temps près d’une chaise libre et viennent de se remarquer.",
+    "priorite": "Leurs regards et leurs gestes suspendus laissent ouverte la suite de la rencontre."
+  },
+  "qc-pri-ad-003/concept": {
+    "scene": "Pendant un jeu d’improvisation à l’école, un enfant de 8 à 10 ans mime un objet qu’il tient entre ses mains. Une camarade du même âge lui tend les mains pour poursuivre le jeu.",
+    "priorite": "Le lien entre les deux gestes est clair et l’objet reste imaginaire."
+  },
+  "qc-pri-ad-003/situation": {
+    "scene": "Pendant une improvisation à l’école, un enfant de 8 à 10 ans s’arrête net et se tourne vers sa partenaire du même âge. Elle interrompt son pas, attentive.",
+    "priorite": "L’image saisit le moment où chacun peut encore changer la suite de la scène."
+  }
+}
