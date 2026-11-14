@@ -8,6 +8,12 @@ from generation import KEY, STYLE, Job, make_prompt, read_json, read_overrides
 BASE = Path(__file__).resolve().parent
 PROFILES = BASE / 'profils'
 LESSON = re.compile(r'qc-pri-([a-z]+)-[0-9]+')
+SCENE_GROUPS = {
+    'ad': 'arts', 'ap': 'arts', 'da': 'arts', 'mu': 'arts',
+    'ale': 'langues', 'als': 'langues', 'fls': 'langues', 'fr': 'langues',
+    'ilss': 'langues', 'ccq': 'societe', 'us': 'societe',
+    'ma': 'ma', 'st': 'st', 'eps': 'eps',
+}
 QUEBEC_STYLE = (
     'Illustration jeunesse en papier découpé, avec des aplats mats et des formes souples. '
     'Ambiance chaleureuse et lumière douce.'
@@ -84,26 +90,44 @@ def compact_kristal_scene(text):
     return ' '.join(text.split())
 
 
-def compose_quebec_prompt(colors, scene, priority=''):
+def quebec_direction(theme, style, universes):
+    description = universes.get(theme['id'], {}).get('univers') or theme.get('intro') or style['scene']
+    return f'Univers « {without_color_instructions(theme["name"])} ». {without_color_instructions(description).rstrip(".")}.'
+
+
+def quebec_location(universe, discipline, course, slot, style):
+    locations = universe.get('lieux', {})
+    places = locations.get(discipline) or locations.get(SCENE_GROUPS.get(discipline))
+    if not places:
+        return without_color_instructions(style['scene'])
+    course_number = int(course.rsplit('-', 1)[1])
+    return places[(course_number - 1 + (slot == 'situation')) % len(places)]
+
+
+def compose_quebec_prompt(direction, colors, scene, priority=''):
     if priority:
         scene += ' ' + priority
     scene = without_color_instructions(scene)
     age = (
-        'Les élèves représentés sont des enfants de 6 à 12 ans, avec des visages enfantins, '
-        'une petite taille et des proportions de corps d’enfants du primaire. '
-        'Les rôles adultes explicitement décrits gardent leur âge.'
+        'Élèves du primaire de 6 à 12 ans, avec des proportions enfantines. '
+        'Les adultes mentionnés restent adultes.'
     )
     return (
-        f'Scène : {scene}\n\nPersonnages : {age}\n\n'
-        f'{QUEBEC_STYLE} Palette : {", ".join(colors)}.\n\n'
-        'Illustration sans texte visible. Aucune lettre, aucun chiffre, titre, sous-titre, logo '
-        'ni filigrane. Les pancartes, étiquettes et pages restent vierges. '
-        'Les dialogues sont suggérés par les gestes et les regards, sans bulles.'
+        f'Scène à illustrer : {scene}\n\n{direction}\n\n'
+        f'Personnages : {age}\n\n'
+        f'Palette dominante : {", ".join(colors)}. '
+        'Grands aplats et accents principaux dans cette palette. Teintes secondaires discrètes. '
+        f'{QUEBEC_STYLE}\n\n'
+        'Une seule illustration horizontale, sans texte visible, chiffres, logos, filigranes, '
+        'bulles ni nuancier. Tourner les documents écrits hors du regard. '
+        'Les pages et cartes peuvent montrer des dessins ou des pictogrammes.'
     )
 
 
 def build_jobs(root, themes, styles, overrides, palette=None):
     authored = read_json(Path(__file__).with_name('mise-en-scene-quebec.json'))
+    universes = read_json(Path(__file__).with_name('univers-visuels-quebec.json'))
+    contextual = read_json(Path(__file__).with_name('scenes-par-univers-quebec.json'))
     pack = {c['id']: c for c in read_json(root / 'pack.json')['cours']}
     lessons = []
     for path in sorted(root.glob('kristals/*/experience/RESSOURCES_VISUELLES.json')):
@@ -124,19 +148,28 @@ def build_jobs(root, themes, styles, overrides, palette=None):
         tid = theme['id']
         if not KEY.fullmatch(tid) or tid not in styles:
             raise ValueError(f'Thème sans style de génération : {tid}')
+        direction = quebec_direction(theme, styles[tid], universes)
+        universe = universes.get(tid, {})
         colors = palette or theme_palette(styles[tid])
         for course, discipline, entry, existing in lessons:
             slot = entry['slot']
             key = tid, course, slot
+            scene_key = f'{course}/{slot}'
+            specific = contextual.get(tid, {}).get(scene_key)
+            priority = ''
             if key in overrides:
                 used_overrides.add(key)
-            treatment = authored.get(f'{course}/{slot}', {})
-            if key in overrides:
-                prompt = compose_quebec_prompt(colors, overrides[key])
-            elif treatment:
-                prompt = compose_quebec_prompt(colors, treatment['scene'], treatment.get('priorite', ''))
+                scene = overrides[key]
+            elif specific:
+                scene = specific['scene']
+                priority = specific.get('priorite', '')
             else:
-                prompt = compose_quebec_prompt(colors, compact_kristal_scene(entry['prompt_conceptuel']))
+                treatment = authored.get(scene_key, {})
+                action = treatment.get('scene') or compact_kristal_scene(entry['prompt_conceptuel'])
+                location = quebec_location(universe, discipline, course, slot, styles[tid])
+                scene = f'{location.rstrip(".")}. {action}'
+                priority = treatment.get('priorite', '')
+            prompt = compose_quebec_prompt(direction, colors, scene, priority)
             jobs.append(Job(tid, discipline, course, pack[course]['titre'], slot,
                             entry.get('texte_alternatif', ''), prompt, existing))
     unknown = overrides.keys() - used_overrides

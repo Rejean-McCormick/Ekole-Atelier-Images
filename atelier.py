@@ -90,11 +90,12 @@ def info(body):
     state, themes, styles, art, jobs = catalogues.load(body['profile'], body.get('root', ''))
     counts = Counter((j.theme, j.discipline) for j in jobs)
     text_only = catalogues.profiles()[body['profile']]['adapter'] == 'kristals-quebec'
+    universes = gen.read_json(BASE / 'univers-visuels-quebec.json') if text_only else {}
     references = {}
     for tid, theme in themes.items():
         colors = catalogues.theme_palette(styles[tid])
         if text_only:
-            prompt = art
+            prompt = catalogues.quebec_direction(theme, styles[tid], universes) + '\n\n' + art
         else:
             reference_style = {**styles[tid], 'palette': ', '.join(colors)}
             reference_style['scene'] = catalogues.without_color_instructions(reference_style['scene'])
@@ -133,20 +134,47 @@ def save_reference(body):
     return {'saved': True}
 
 
-def write_review(state, theme, discipline, jobs):
+def generation_candidates(state, jobs, comparison=False, refresh=False):
+    pending = []
+    missing = set()
+    for job in jobs:
+        path = gen.output_path(state, job)
+        if not path.is_file():
+            missing.add(job.key)
+        elif comparison or (refresh and not revision.approval_path(state, job).is_file()):
+            try:
+                signature = path.with_suffix('.prompt-sha256').read_text(encoding='ascii')
+            except (FileNotFoundError, UnicodeError):
+                signature = ''
+            if signature != hashlib.sha256(job.prompt.encode()).hexdigest():
+                pending.append(job)
+            continue
+        else:
+            continue
+        pending.append(job)
+    return pending, missing
+
+
+def write_review(state, theme, discipline, jobs, refresh=False):
     comparisons = {}
     if theme != ALL_THEMES:
         for engine in ENGINES:
             sandbox = state / 'comparaisons' / engine
             if any(gen.output_path(sandbox, j).is_file() for j in jobs):
                 comparisons[engine] = link(gen.write_gallery(sandbox, theme, discipline, jobs))
+    pending, missing = generation_candidates(state, jobs, refresh=refresh)
     return {
         'comparisons': comparisons,
         'plan': link(gen.write_plan(state, theme, discipline, jobs)),
         'gallery': link(gen.write_gallery(state, theme, discipline, jobs)),
         'total': len(jobs),
-        'pending': sum(not gen.output_path(state, j).is_file() for j in jobs)
+        'pending': len(missing),
+        'refreshable': len(pending) - len(missing)
     }
+
+
+def plan(body):
+    return write_review(*branch(body), refresh=body.get('refresh') is True)
 
 
 def review_images(body):
@@ -174,12 +202,15 @@ def review_images(body):
 
 
 def generation_worker(state, theme, discipline, jobs, limit, account, token, reference,
-                      image_module, local_generator, comparison, engine, catalogue_jobs, catalogue_themes):
+                      image_module, local_generator, comparison, engine, catalogue_jobs, catalogue_themes,
+                      refresh=False):
     output = state / 'comparaisons' / engine if comparison else state
     candidates = jobs[:limit] if comparison else jobs
     message = 'Lot terminé.'
 
     def count_saved(job):
+        if job.key not in missing:
+            return
         with RUN_LOCK:
             stats = RUN['stats']
             theme_counts = stats['themes'][job.theme]
@@ -193,16 +224,7 @@ def generation_worker(state, theme, discipline, jobs, limit, account, token, ref
             ledger = nullcontext(None) if local_generator else closing(gen.open_ledger(BUDGET / 'budget.sqlite3'))
             with ledger as db:
                 left = len(jobs) if db is None else max(0, gen.LIMIT - db.execute('SELECT count(*) FROM attempts').fetchone()[0])
-                pending = []
-                for job in candidates:
-                    path = gen.output_path(output, job)
-                    signature_file = path.with_suffix('.prompt-sha256')
-                    prompt_changed = comparison and (
-                        not signature_file.is_file()
-                        or signature_file.read_text(encoding='ascii') != hashlib.sha256(job.prompt.encode()).hexdigest()
-                    )
-                    if not path.is_file() or prompt_changed:
-                        pending.append(job)
+                pending, missing = generation_candidates(output, candidates, comparison, refresh)
                 selected = pending[:min(limit or len(pending), left)]
                 if selected and ENGINES[engine]['mode'] == 'preset':
                     local_generator.check_assets()
@@ -224,7 +246,7 @@ def generation_worker(state, theme, discipline, jobs, limit, account, token, ref
         message = 'La génération a été interrompue (' + type(error).__name__ + ').'
     finally:
         try:
-            RUN.update(write_review(state, theme, discipline, jobs))
+            RUN.update(write_review(state, theme, discipline, jobs, refresh))
         finally:
             stats = image_stats(state, catalogue_themes, catalogue_jobs)
             with RUN_LOCK:
@@ -236,6 +258,7 @@ def start(body):
     theme, discipline, jobs = select_jobs(body, catalogue_jobs)
     limit = body['limit']
     comparison = body.get('comparison', False)
+    refresh = body.get('refresh') is True and not comparison
     engine = body.get('engine', 'cloudflare')
     if engine not in ENGINES:
         raise ValueError('Moteur de génération inconnu.')
@@ -272,7 +295,7 @@ def start(body):
                    stats=image_stats(state, catalogue_themes, catalogue_jobs))
         Thread(target=generation_worker,
                args=(state, theme, discipline, jobs, limit, account, token, reference, Image,
-                     local_generator, comparison, engine, catalogue_jobs, catalogue_themes),
+                     local_generator, comparison, engine, catalogue_jobs, catalogue_themes, refresh),
                daemon=True).start()
     return {'started': True}
 
@@ -355,7 +378,7 @@ class Handler(BaseHTTPRequestHandler):
                 raise ValueError('Taille de requête invalide.')
             body = json.loads(self.rfile.read(size))
             operations = {'/api/charger': info, '/api/reference': save_reference,
-                          '/api/plan': lambda data: write_review(*branch(data)), '/api/generer': start,
+                          '/api/plan': plan, '/api/generer': start,
                           '/api/revision': review_images, '/api/arreter': stop_generation,
                           '/api/statistiques': catalogue_stats}
             operation = operations.get(self.path)

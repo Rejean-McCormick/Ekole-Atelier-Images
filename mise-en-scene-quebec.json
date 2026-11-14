@@ -1,26 +1,1202 @@
 {
   "qc-pri-ad-001/concept": {
-    "scene": "Sur un petit plateau de théâtre d’école primaire, trois enfants de 8 à 10 ans répètent. L’un attend en coulisse, un autre traverse la scène et la troisième se tourne vers lui.",
-    "priorite": "On doit lire dans l’espace les trois actions : entrer, traverser et se rencontrer."
+    "scene": "Trois enfants occupent des positions différentes sur une petite aire de jeu : l’un attend au bord, l’autre traverse, la troisième se retourne."
   },
   "qc-pri-ad-001/situation": {
-    "scene": "Deux enfants de 8 à 10 ans viennent de se croiser pendant une répétition de théâtre à l’école. Ils s’arrêtent et se tournent l’un vers l’autre.",
-    "priorite": "Leurs regards et la distance entre eux suggèrent une rencontre dont on ignore l’issue."
+    "scene": "Deux enfants se croisent pendant une improvisation, s’arrêtent au milieu de leur trajet et se font face."
   },
   "qc-pri-ad-002/concept": {
-    "scene": "Deux enfants de 8 à 10 ans jouent des personnages sur un petit plateau d’école. L’un avance le buste droit, l’autre reste en retrait, le poids sur un pied.",
-    "priorite": "Le contraste entre leurs postures suffit à évoquer deux personnages."
+    "scene": "Deux enfants jouent des personnages : l’un avance le buste droit, l’autre se tient en retrait, le poids sur un pied."
   },
   "qc-pri-ad-002/situation": {
-    "scene": "Deux enfants de 8 à 10 ans jouent une scène où leurs personnages arrivent en même temps près d’une chaise libre et viennent de se remarquer.",
-    "priorite": "Leurs regards et leurs gestes suspendus laissent ouverte la suite de la rencontre."
+    "scene": "Deux jeunes improvisateurs arrivent en même temps devant un tabouret libre et tendent la main vers lui."
   },
   "qc-pri-ad-003/concept": {
-    "scene": "Pendant un jeu d’improvisation à l’école, un enfant de 8 à 10 ans mime un objet qu’il tient entre ses mains. Une camarade du même âge lui tend les mains pour poursuivre le jeu.",
-    "priorite": "Le lien entre les deux gestes est clair et l’objet reste imaginaire."
+    "scene": "Un enfant mime un objet lourd entre ses mains pendant que sa partenaire tend les mains pour le recevoir."
   },
   "qc-pri-ad-003/situation": {
-    "scene": "Pendant une improvisation à l’école, un enfant de 8 à 10 ans s’arrête net et se tourne vers sa partenaire du même âge. Elle interrompt son pas, attentive.",
-    "priorite": "L’image saisit le moment où chacun peut encore changer la suite de la scène."
+    "scene": "Un enfant interrompt son improvisation et se tourne vers sa partenaire, qui suspend son pas pour lui répondre par un geste."
+  },
+  "qc-pri-ad-004/concept": {
+    "scene": "Trois jeunes comédiens forment un tableau : un enfant s’approche d’un panier fermé, une autre lève la main, le dernier se retourne."
+  },
+  "qc-pri-ad-004/situation": {
+    "scene": "Un jeune comédien entrouvre un panier pendant que sa partenaire, qui vient d’arriver, se penche pour voir ce qu’il fait."
+  },
+  "qc-pri-ad-005/concept": {
+    "scene": "Deux élèves placent un tabouret et un panier aux bords d’une aire de jeu pour laisser le passage central libre."
+  },
+  "qc-pri-ad-005/situation": {
+    "scene": "Avant de jouer, un élève essaie de traverser l’espace pendant que deux camarades déplacent un accessoire qui gêne son passage."
+  },
+  "qc-pri-ad-006/concept": {
+    "scene": "Un jeune comédien serre contre lui un objet prêté et regarde par-dessus son épaule, tandis que sa partenaire l’observe."
+  },
+  "qc-pri-ad-006/situation": {
+    "scene": "Deux enfants improvisent autour d’un sac fermé : l’un veut le récupérer par un geste discret, l’autre retient la poignée."
+  },
+  "qc-pri-ad-007/concept": {
+    "scene": "Deux enfants jouent avec une boîte en papier : l’un se penche vers la boîte, l’autre recule, les bras levés. Deux camarades les observent."
+  },
+  "qc-pri-ad-007/situation": {
+    "scene": "Un enfant tend une boîte en papier fermée à son partenaire, qui hésite à la prendre. Une camarade observe l’échange."
+  },
+  "qc-pri-ad-008/concept": {
+    "scene": "Deux spectateurs observent la même scène : l’un suit la posture du comédien, l’autre pointe l’accessoire que tient sa partenaire."
+  },
+  "qc-pri-ad-008/situation": {
+    "scene": "Après une courte représentation, deux élèves montrent chacun un geste différent dont ils se souviennent pendant que la troupe écoute."
+  },
+  "qc-pri-ad-009/concept": {
+    "scene": "Une jeune troupe compare deux croquis muets de placement en rejouant la disposition des personnages devant des camarades."
+  },
+  "qc-pri-ad-009/situation": {
+    "scene": "Une élève explique une modification de mise en scène en déplaçant un accessoire et en demandant à son partenaire d’essayer le nouveau trajet."
+  },
+  "qc-pri-ale-001/concept": {
+    "scene": "Un enfant prononce le nom anglais d’un objet et marque les syllabes avec ses doigts pendant que son partenaire écoute."
+  },
+  "qc-pri-ale-001/situation": {
+    "scene": "Une élève nomme à voix haute deux objets illustrés sur des cartes pendant que son camarade attend, les mains prêtes à frapper le rythme."
+  },
+  "qc-pri-ale-002/concept": {
+    "scene": "Deux enfants rapprochent une carte illustrée d’un objet et un livre ouvert incliné vers eux ; un doigt suit la ligne que la caméra ne voit pas."
+  },
+  "qc-pri-ale-002/situation": {
+    "scene": "Un enfant hésite devant son livre tourné vers lui, puis regarde deux objets qu’une camarade lui montre pour l’aider à décoder."
+  },
+  "qc-pri-ale-003/concept": {
+    "scene": "Deux élèves suivent le même passage sur un livre incliné à l’opposé du regard, l’un avec le doigt, l’autre à voix haute."
+  },
+  "qc-pri-ale-003/situation": {
+    "scene": "Un enfant fait une pause au milieu d’une lecture à voix haute puis reprend en suivant le doigt de son partenaire."
+  },
+  "qc-pri-ale-004/concept": {
+    "scene": "Des élèves feuillettent un album muet représentant un personnage, un objet perdu et un lieu de rencontre."
+  },
+  "qc-pri-ale-004/situation": {
+    "scene": "Deux enfants comparent deux images d’un récit, l’une d’un sac découvert, l’autre d’un personnage qui arrive ; ils hésitent sur le lien entre les scènes."
+  },
+  "qc-pri-ale-005/concept": {
+    "scene": "Une élève ouvre un documentaire illustré vers elle et compare le dessin d’un objet avec l’objet réel posé à côté."
+  },
+  "qc-pri-ale-005/situation": {
+    "scene": "Deux enfants consultent une page illustrée et comparent ses dessins à deux objets semblables pour déterminer lequel observer."
+  },
+  "qc-pri-ale-006/concept": {
+    "scene": "Deux enfants examinent ensemble le petit mot posé face cachée pour le spectateur ; près d’eux, une lampe de poche et un sac entrouvert offrent des indices."
+  },
+  "qc-pri-ale-006/situation": {
+    "scene": "Un enfant tient un mot dont on voit le verso. Sa camarade désigne une lampe de poche posée au sol. Ils échangent un regard interrogateur."
+  },
+  "qc-pri-ale-007/concept": {
+    "scene": "Deux élèves regardent un album ouvert sur une illustration pleine page ; l’un réagit vivement, l’autre s’approche pour mieux voir."
+  },
+  "qc-pri-ale-007/situation": {
+    "scene": "Après avoir découvert une illustration de récit, deux élèves choisissent chacun un détail à montrer à leurs camarades."
+  },
+  "qc-pri-ale-008/concept": {
+    "scene": "Des enfants manipulent des cartes illustrées montrant une même action et plusieurs objets associés ; ils rapprochent les cartes à comparer."
+  },
+  "qc-pri-ale-008/situation": {
+    "scene": "Une élève montre la carte d’une action ; son partenaire hésite entre deux cartes illustrées liées à cette action."
+  },
+  "qc-pri-ale-009/concept": {
+    "scene": "Un enfant relit une feuille inclinée vers lui et pose des jetons pour marquer des endroits à vérifier."
+  },
+  "qc-pri-ale-009/situation": {
+    "scene": "Deux enfants comparent un brouillon tourné vers eux et une carte illustrée ; l’un s’arrête et montre la partie qu’il veut relire."
+  },
+  "qc-pri-ale-010/concept": {
+    "scene": "Trois cartes illustrées représentent un personnage, son geste et un objet ; deux enfants les disposent devant eux."
+  },
+  "qc-pri-ale-010/situation": {
+    "scene": "Une élève déplace une carte d’action entre deux cartes illustrées pendant que son partenaire essaie de dire la phrase à voix haute."
+  },
+  "qc-pri-ale-011/concept": {
+    "scene": "Une élève organise trois croquis sur son carnet avant de commencer un texte, crayon tenu juste au-dessus de la page."
+  },
+  "qc-pri-ale-011/situation": {
+    "scene": "Deux enfants choisissent un ordre pour des croquis d’événements avant que l’un commence la rédaction dans un carnet incliné vers lui."
+  },
+  "qc-pri-ale-012/concept": {
+    "scene": "Un élève relit son brouillon tourné vers lui pendant que sa partenaire indique un endroit à reprendre, gomme en main."
+  },
+  "qc-pri-ale-012/situation": {
+    "scene": "Deux enfants relisent une feuille ; l’un mime une action qui manque à l’autre pour comprendre le message et lui montre où il a hésité."
+  },
+  "qc-pri-ale-013/concept": {
+    "scene": "Un enfant présente un objet à un petit groupe pendant que deux camarades se tournent vers lui pour l’écouter."
+  },
+  "qc-pri-ale-013/situation": {
+    "scene": "Une enfant écoute une demande orale pendant qu’elle tient deux objets possibles, puis lève les yeux vers son interlocuteur."
+  },
+  "qc-pri-ale-014/concept": {
+    "scene": "Un enfant présente un objet à ses camarades en montrant un détail du doigt. Une élève lève la main pour poser une question."
+  },
+  "qc-pri-ale-014/situation": {
+    "scene": "Deux élèves se passent un objet pendant une courte présentation et attendent le prochain geste ou la prochaine question du groupe."
+  },
+  "qc-pri-als-001/concept": {
+    "scene": "Un enfant donne une consigne orale en montrant un panier. Deux camarades se tournent vers les objets à déplacer."
+  },
+  "qc-pri-als-001/situation": {
+    "scene": "Une élève écoute sa partenaire devant deux paniers et suspend sa main avant de choisir où déposer l’objet."
+  },
+  "qc-pri-als-002/concept": {
+    "scene": "Trois objets familiers sont posés près d’une enfant qui les pointe l’un après l’autre pour en pratiquer les noms à voix haute."
+  },
+  "qc-pri-als-002/situation": {
+    "scene": "Un enfant cherche l’objet décrit par une camarade parmi trois objets posés à portée de main."
+  },
+  "qc-pri-als-003/concept": {
+    "scene": "Quelques élèves écoutent une comptine et en miment ensemble un geste simple sous la conduite d’un adulte."
+  },
+  "qc-pri-als-003/situation": {
+    "scene": "Après une histoire racontée à voix haute, deux enfants utilisent trois figurines pour remettre en jeu un épisode."
+  },
+  "qc-pri-als-004/concept": {
+    "scene": "Deux enfants exagèrent doucement les mouvements des lèvres et frappent une pulsation avec leurs mains."
+  },
+  "qc-pri-als-004/situation": {
+    "scene": "Une élève ralentit un battement de mains pendant que son partenaire reprend un son à voix haute avec la même cadence."
+  },
+  "qc-pri-als-005/concept": {
+    "scene": "Deux élèves se saluent puis se regardent. L’un désigne un objet posé entre eux et ouvre sa main en signe de demande."
+  },
+  "qc-pri-als-005/situation": {
+    "scene": "Un enfant s’approche avec un objet en main et attend que sa camarade lui indique si elle veut l’emprunter."
+  },
+  "qc-pri-als-006/concept": {
+    "scene": "Un enfant montre à son groupe un petit dessin d’une activité familière pendant que les autres l’écoutent."
+  },
+  "qc-pri-als-006/situation": {
+    "scene": "Deux enfants comparent chacun un souvenir illustré sur une carte et se passent la parole par un signe de la main."
+  },
+  "qc-pri-als-007/concept": {
+    "scene": "Deux élèves lisent un petit support incliné vers eux et rapprochent une image correspondant au sujet de leur lecture."
+  },
+  "qc-pri-als-007/situation": {
+    "scene": "Une élève s’arrête sur une page tournée vers elle et hésite entre deux illustrations à associer à sa lecture."
+  },
+  "qc-pri-als-008/concept": {
+    "scene": "Un enfant observe une image avant d’écouter, puis montre à un camarade le détail qui attire son regard."
+  },
+  "qc-pri-als-008/situation": {
+    "scene": "Une enfant revient à l’illustration d’un support pendant qu’une camarade répète une partie de la consigne en la mimant."
+  },
+  "qc-pri-als-009/concept": {
+    "scene": "Des enfants reprennent un épisode entendu en déplaçant deux figurines parmi quelques accessoires."
+  },
+  "qc-pri-als-009/situation": {
+    "scene": "Un élève montre avec deux objets comment il adapterait un geste vu dans l’histoire, pendant que sa partenaire propose un autre geste."
+  },
+  "qc-pri-als-010/concept": {
+    "scene": "Une enfant dessine une petite vignette puis retourne son carnet vers elle pour commencer un court message."
+  },
+  "qc-pri-als-010/situation": {
+    "scene": "Deux enfants préparent un petit message destiné à un camarade absent en choisissant parmi deux croquis muets."
+  },
+  "qc-pri-als-011/concept": {
+    "scene": "Un élève relit sa page face à lui. Une camarade lui montre du doigt le détail du dessin qu’elle voudrait retrouver dans le message."
+  },
+  "qc-pri-als-011/situation": {
+    "scene": "Une enfant place une gomme près d’un brouillon incliné vers elle et se tourne vers son partenaire pour lui demander de réexpliquer un passage."
+  },
+  "qc-pri-als-012/concept": {
+    "scene": "Une élève présente un objet aux enfants assis devant elle. Un camarade fait un signe pour demander la parole."
+  },
+  "qc-pri-als-012/situation": {
+    "scene": "Deux enfants présentent un petit assemblage ; l’un en montre une partie tandis que l’autre se prépare à répondre à une question."
+  },
+  "qc-pri-ap-001/concept": {
+    "scene": "Des enfants observent des morceaux de tissu et de papier de formes et textures variées, les mains près des surfaces."
+  },
+  "qc-pri-ap-001/situation": {
+    "scene": "Une élève rapproche deux échantillons de même silhouette mais de textures différentes ; son camarade les touche tour à tour."
+  },
+  "qc-pri-ap-002/concept": {
+    "scene": "Un enfant applique une empreinte sur un support vierge pendant qu’un autre découpe et plie une feuille."
+  },
+  "qc-pri-ap-002/situation": {
+    "scene": "Deux élèves essaient deux outils sur des chutes de papier, puis rapprochent les traces produites pour les comparer."
+  },
+  "qc-pri-ap-003/concept": {
+    "scene": "Une élève dispose trois formes découpées à différentes distances du bord d’un grand support posé à plat."
+  },
+  "qc-pri-ap-003/situation": {
+    "scene": "Deux jeunes artistes se préparent à inverser deux formes sur leur composition et observent l’espace qui se libère."
+  },
+  "qc-pri-ap-004/concept": {
+    "scene": "Deux enfants plient du papier et joignent un morceau de carton à l’aide d’une attache."
+  },
+  "qc-pri-ap-004/situation": {
+    "scene": "Une élève compare une forme tenue par une attache et une autre tenue par un pli pour décider comment garder son assemblage debout."
+  },
+  "qc-pri-ap-005/concept": {
+    "scene": "Un enfant assemble des formes taillées à la main autour d’un croquis personnel."
+  },
+  "qc-pri-ap-005/situation": {
+    "scene": "Deux élèves présentent des compositions différentes faites à partir d’un même ensemble de matériaux à découper."
+  },
+  "qc-pri-ap-006/concept": {
+    "scene": "Une élève agence de grands pictogrammes sans lettres sur un panneau pour faire comprendre un geste."
+  },
+  "qc-pri-ap-006/situation": {
+    "scene": "Un camarade regarde de loin deux panneaux illustrés et désigne le geste qu’il croit reconnaître dans l’un d’eux."
+  },
+  "qc-pri-ap-007/concept": {
+    "scene": "Deux enfants observent une composition faite de formes superposées et pointent deux zones différentes."
+  },
+  "qc-pri-ap-007/situation": {
+    "scene": "Une élève montre la grande forme au premier plan, tandis que son partenaire recule pour mieux voir la disposition des autres formes."
+  },
+  "qc-pri-ap-008/concept": {
+    "scene": "Trois élèves contemplent une œuvre visuelle faite de papier découpé ; leurs expressions et leurs regards diffèrent."
+  },
+  "qc-pri-ap-008/situation": {
+    "scene": "Deux élèves observent le même collage et montrent chacun le détail qui les a le plus marqués."
+  },
+  "qc-pri-ap-009/concept": {
+    "scene": "Un jeune artiste dispose côte à côte ses essais, ses chutes et la composition finale pour les présenter."
+  },
+  "qc-pri-ap-009/situation": {
+    "scene": "Une élève prend en main un ancien essai pour montrer à ses camarades ce qu’elle a changé dans son assemblage."
+  },
+  "qc-pri-ccq-001/concept": {
+    "scene": "Deux enfants choisissent des objets ou des croquis liés à leurs activités préférées et les placent autour d’un autoportrait."
+  },
+  "qc-pri-ccq-001/situation": {
+    "scene": "Une élève hésite entre deux objets personnels à présenter au groupe pendant qu’un camarade écoute sans intervenir."
+  },
+  "qc-pri-ccq-002/concept": {
+    "scene": "Des enfants assemblent ensemble un objet, pendant que l’un laisse une place à une camarade qui vient d’arriver."
+  },
+  "qc-pri-ccq-002/situation": {
+    "scene": "Deux jeunes tiennent le même matériel et se regardent avant de décider comment se le partager."
+  },
+  "qc-pri-ccq-003/concept": {
+    "scene": "Deux enfants examinent un objet-souvenir et une image qui évoquent des expériences importantes pour eux."
+  },
+  "qc-pri-ccq-003/situation": {
+    "scene": "Un enfant hésite à ranger ou à présenter un souvenir. Sa camarade se tourne vers lui pour écouter ce qu’il choisira de dire."
+  },
+  "qc-pri-ccq-004/concept": {
+    "scene": "Des enfants observent des traces d’usage humain au bord de leur espace et repèrent ce qu’il faut préserver."
+  },
+  "qc-pri-ccq-004/situation": {
+    "scene": "Deux élèves s’arrêtent devant du matériel abandonné et regardent les objets réutilisables et le contenant de collecte."
+  },
+  "qc-pri-ccq-005/concept": {
+    "scene": "Une élève montre une photo sur un appareil incliné vers le groupe. Une personne photographiée est présente."
+  },
+  "qc-pri-ccq-005/situation": {
+    "scene": "Deux enfants tiennent un appareil et consultent du regard leur camarade avant de photographier son travail."
+  },
+  "qc-pri-ccq-006/concept": {
+    "scene": "Des enfants observent un geste réalisé par un adulte et comparent les objets utilisés, sans interrompre la démonstration."
+  },
+  "qc-pri-ccq-006/situation": {
+    "scene": "Deux élèves remarquent des façons différentes de disposer des objets pour une activité commune et en choisissent une à décrire."
+  },
+  "qc-pri-ccq-007/concept": {
+    "scene": "Deux enfants montrent chacun une manière de préparer la même activité à partir de leurs photos ou croquis muets."
+  },
+  "qc-pri-ccq-007/situation": {
+    "scene": "Des élèves observent deux aménagements d’un même espace et indiquent chacun l’élément qu’ils trouvent le plus important."
+  },
+  "qc-pri-ccq-008/concept": {
+    "scene": "Un petit groupe assis en cercle se passe un objet qui marque le tour de parole."
+  },
+  "qc-pri-ccq-008/situation": {
+    "scene": "Deux enfants veulent parler en même temps ; l’un s’arrête et invite l’autre d’un geste à finir son idée."
+  },
+  "qc-pri-ccq-009/concept": {
+    "scene": "Des élèves comparent deux façons de partager des ressources dont certains ont davantage besoin que d’autres."
+  },
+  "qc-pri-ccq-009/situation": {
+    "scene": "Un groupe hésite entre diviser du matériel à parts égales ou en réserver à l’enfant qui n’en a pas ; les objets restent au milieu."
+  },
+  "qc-pri-ccq-010/concept": {
+    "scene": "Des enfants réalisent un jeu ordinaire avec un adulte présent. Un enfant lève la paume pour indiquer qu’il souhaite plus d’espace."
+  },
+  "qc-pri-ccq-010/situation": {
+    "scene": "Un enfant propose une poignée de main, sa camarade préfère saluer de loin. Les deux restent à distance et se sourient."
+  },
+  "qc-pri-ccq-011/concept": {
+    "scene": "Un adulte présente à des élèves des photos et cartes muettes de territoires et de milieux liés aux Premiers Peuples du Québec."
+  },
+  "qc-pri-ccq-011/situation": {
+    "scene": "Deux élèves comparent des documents illustrés présentés par leur enseignant et indiquent chacun un détail du territoire qu’ils voudraient comprendre."
+  },
+  "qc-pri-da-001/concept": {
+    "scene": "Trois jeunes danseurs explorent différentes formes du corps : l’un s’étire, une autre se replie, le dernier tourne les épaules."
+  },
+  "qc-pri-da-001/situation": {
+    "scene": "Un enfant essaie un mouvement de bras et sa partenaire le transforme en changeant le niveau de son corps."
+  },
+  "qc-pri-da-002/concept": {
+    "scene": "Deux danseurs se déplacent sur des trajectoires différentes, l’un par grands pas rapides, l’autre par petits pas souples."
+  },
+  "qc-pri-da-002/situation": {
+    "scene": "Deux élèves essaient le même mouvement avec des vitesses différentes et ajustent leur distance pour éviter de se croiser."
+  },
+  "qc-pri-da-003/concept": {
+    "scene": "Trois enfants montrent chacun une position distincte d’une courte séquence : tendre, tourner et s’abaisser."
+  },
+  "qc-pri-da-003/situation": {
+    "scene": "Deux jeunes danseurs se préparent à enchaîner une rotation et une pose basse en suivant les gestes de leur partenaire."
+  },
+  "qc-pri-da-004/concept": {
+    "scene": "Un groupe forme un arc sur une aire dégagée pendant qu’un enfant avance au centre pour rejoindre la formation."
+  },
+  "qc-pri-da-004/situation": {
+    "scene": "Des élèves essaient de passer d’une ligne à deux groupes et ajustent leur placement au moment où ils se rapprochent."
+  },
+  "qc-pri-da-005/concept": {
+    "scene": "Un jeune danseur propose un geste improvisé ; ses camarades le reprennent en variant la direction de leurs bras."
+  },
+  "qc-pri-da-005/situation": {
+    "scene": "Deux enfants improvisent en miroir puis l’un change de niveau ; l’autre s’apprête à lui répondre par un geste différent."
+  },
+  "qc-pri-da-006/concept": {
+    "scene": "Un enfant tient une pose précise et regarde dans la même direction que sa partenaire avant un mouvement d’ensemble."
+  },
+  "qc-pri-da-006/situation": {
+    "scene": "Deux danseurs reprennent ensemble une séquence connue et essaient d’accorder le moment où ils tendent les bras."
+  },
+  "qc-pri-da-007/concept": {
+    "scene": "Deux enfants assis observent un petit groupe qui exécute une composition, les corps tournés vers des directions distinctes."
+  },
+  "qc-pri-da-007/situation": {
+    "scene": "Une élève suit des yeux un changement de formation pendant que son camarade lui montre le déplacement d’un autre danseur."
+  },
+  "qc-pri-da-008/concept": {
+    "scene": "Deux élèves observent deux courtes démonstrations : l’une proche du sol, l’autre caractérisée par des gestes amples."
+  },
+  "qc-pri-da-008/situation": {
+    "scene": "Après avoir regardé deux mouvements, des enfants reproduisent côte à côte les gestes dont ils se souviennent."
+  },
+  "qc-pri-da-009/concept": {
+    "scene": "Une élève montre un croquis muet de trajectoire à ses camarades, puis en amorce le déplacement avec les pieds."
+  },
+  "qc-pri-da-009/situation": {
+    "scene": "Un jeune danseur signale un endroit où la formation a changé et propose à ses partenaires de rejouer le passage."
+  },
+  "qc-pri-eps-001/concept": {
+    "scene": "Deux enfants essaient une position d’équilibre et observent comment la place de leurs bras et de leurs pieds change leur stabilité."
+  },
+  "qc-pri-eps-001/situation": {
+    "scene": "Un enfant ouvre les bras pour se stabiliser tandis que son partenaire, à distance, essaie une position différente."
+  },
+  "qc-pri-eps-002/concept": {
+    "scene": "Des enfants marchent, sautent et contournent des repères bas espacés sur une aire dégagée."
+  },
+  "qc-pri-eps-002/situation": {
+    "scene": "Un enfant arrive à une bifurcation entre des plots et choisit comment poursuivre son déplacement avant de repartir."
+  },
+  "qc-pri-eps-003/concept": {
+    "scene": "Deux élèves pratiquent l’équilibre au sol sur des lignes tracées, l’un sur un pied, l’autre en avançant lentement."
+  },
+  "qc-pri-eps-003/situation": {
+    "scene": "Une élève essaie de passer d’un appui à un autre en gardant un petit objet stable dans la main."
+  },
+  "qc-pri-eps-004/concept": {
+    "scene": "Des enfants font rouler une balle souple vers une cible au sol pendant qu’un partenaire se prépare à la recevoir."
+  },
+  "qc-pri-eps-004/situation": {
+    "scene": "Un enfant ajuste l’orientation de ses bras avant de lancer un objet souple à un camarade placé à courte distance."
+  },
+  "qc-pri-eps-005/concept": {
+    "scene": "Une élève franchit des repères espacés avant de ramasser un objet souple pour le rapporter au point de départ."
+  },
+  "qc-pri-eps-005/situation": {
+    "scene": "Deux enfants comparent deux ordres possibles pour enchaîner une marche, un saut au sol et une passe."
+  },
+  "qc-pri-eps-006/concept": {
+    "scene": "Deux enfants transportent ensemble un objet souple en gardant leurs pas au même rythme."
+  },
+  "qc-pri-eps-006/situation": {
+    "scene": "Dans un jeu à deux équipes, des élèves se font des signes pour trouver un passage libre sans toucher les autres."
+  },
+  "qc-pri-eps-007/concept": {
+    "scene": "Un petit groupe répartit ses joueurs autour de plots ; deux enfants montrent des passages libres différents."
+  },
+  "qc-pri-eps-007/situation": {
+    "scene": "Une élève porte une balle tandis que ses coéquipiers se rendent disponibles dans deux directions en levant la main."
+  },
+  "qc-pri-eps-008/concept": {
+    "scene": "Un adulte et des enfants écartent le matériel laissé sur une aire de jeu et vérifient que le passage est dégagé."
+  },
+  "qc-pri-eps-008/situation": {
+    "scene": "Une enfant s’arrête avant un obstacle et avertit un camarade d’un geste plutôt que de franchir le passage encombré."
+  },
+  "qc-pri-eps-009/concept": {
+    "scene": "Après un court parcours, un enfant récupère tranquillement tandis qu’une camarade ajuste l’allure de son déplacement."
+  },
+  "qc-pri-eps-009/situation": {
+    "scene": "Une élève compare deux allures sur un trajet balisé et montre à son partenaire le point où elle souhaite ralentir."
+  },
+  "qc-pri-eps-010/concept": {
+    "scene": "Deux enfants choisissent ensemble une activité de déplacement à partir de quelques accessoires prêts à être utilisés."
+  },
+  "qc-pri-eps-010/situation": {
+    "scene": "Une enfant hésite entre deux parcours courts et montre à son camarade celui qu’ils pourraient essayer à deux."
+  },
+  "qc-pri-eps-011/concept": {
+    "scene": "Après une activité, des enfants alternent des gestes simples : boire, se laver les mains et se reposer à distance."
+  },
+  "qc-pri-eps-011/situation": {
+    "scene": "Une élève encore essoufflée s’assoit et reçoit une gourde de son camarade pendant que le groupe reprend son souffle."
+  },
+  "qc-pri-eps-012/concept": {
+    "scene": "Un enfant compare deux croquis muets de sa posture pendant qu’un partenaire reproduit le geste observé."
+  },
+  "qc-pri-eps-012/situation": {
+    "scene": "Une élève essaie de nouveau un mouvement en modifiant ses appuis après avoir regardé son partenaire le reproduire."
+  },
+  "qc-pri-fls-001/concept": {
+    "scene": "Une enfant donne une consigne en français et indique un panier pendant que ses camarades se tournent vers le matériel."
+  },
+  "qc-pri-fls-001/situation": {
+    "scene": "Deux élèves se regardent après une consigne orale ; celle qui tient un objet attend de comprendre où le déposer."
+  },
+  "qc-pri-fls-002/concept": {
+    "scene": "Un élève montre des objets familiers pendant qu’une partenaire s’exerce à les nommer à voix haute."
+  },
+  "qc-pri-fls-002/situation": {
+    "scene": "Une élève désigne deux objets voisins et attend que son partenaire précise celui qu’il vient de demander."
+  },
+  "qc-pri-fls-003/concept": {
+    "scene": "Deux élèves prononcent un mot familier puis marquent ses syllabes en levant un doigt à chaque battement."
+  },
+  "qc-pri-fls-003/situation": {
+    "scene": "Un enfant recommence lentement un son en observant les lèvres de sa partenaire."
+  },
+  "qc-pri-fls-004/concept": {
+    "scene": "Deux enfants se saluent, puis l’un montre du doigt un objet dont il a besoin pour poursuivre l’activité."
+  },
+  "qc-pri-fls-004/situation": {
+    "scene": "Un élève tend la main vers un panier et attend que sa camarade comprenne ce qu’il souhaite emprunter."
+  },
+  "qc-pri-fls-005/concept": {
+    "scene": "Trois élèves assis en groupe s’écoutent ; l’un lève la main et une camarade l’invite à prendre la parole."
+  },
+  "qc-pri-fls-005/situation": {
+    "scene": "Un enfant reprend l’idée de sa partenaire en montrant le même objet avant de proposer un geste différent."
+  },
+  "qc-pri-fls-006/concept": {
+    "scene": "Deux enfants tiennent un livre incliné vers eux et rapprochent une vignette illustrée d’un passage."
+  },
+  "qc-pri-fls-006/situation": {
+    "scene": "Une élève regarde un livre tourné vers elle puis hésite entre deux objets que son camarade lui présente."
+  },
+  "qc-pri-fls-007/concept": {
+    "scene": "Un enfant écoute une explication puis prend le matériel représenté dans une vignette muette."
+  },
+  "qc-pri-fls-007/situation": {
+    "scene": "Deux élèves utilisent des figurines pour rejouer une étape qu’ils viennent de découvrir, chacun proposant un placement."
+  },
+  "qc-pri-fls-008/concept": {
+    "scene": "Deux élèves disposent trois cartes illustrées représentant un personnage, une action et un objet."
+  },
+  "qc-pri-fls-008/situation": {
+    "scene": "Une enfant échange la position de deux cartes avant de dire sa phrase à voix haute ; son camarade écoute."
+  },
+  "qc-pri-fls-009/concept": {
+    "scene": "Un enfant prépare un message avec un dessin et un carnet incliné vers lui, crayon prêt."
+  },
+  "qc-pri-fls-009/situation": {
+    "scene": "Deux élèves choisissent ce qu’ils veulent représenter dans un message destiné à un autre groupe."
+  },
+  "qc-pri-fls-010/concept": {
+    "scene": "Une élève relit son brouillon, puis indique à sa partenaire un détail illustré à préciser."
+  },
+  "qc-pri-fls-010/situation": {
+    "scene": "Deux enfants comparent leur première intention avec un brouillon tourné vers eux ; l’un montre le croquis qui manque de clarté."
+  },
+  "qc-pri-fls-011/concept": {
+    "scene": "Un adulte partage un album illustré évoquant une pratique francophone locale ; deux élèves observent les objets représentés."
+  },
+  "qc-pri-fls-011/situation": {
+    "scene": "Deux enfants comparent des images d’une activité familière et d’une tradition présentée dans un album."
+  },
+  "qc-pri-fls-012/concept": {
+    "scene": "Un petit groupe prépare une présentation : chacun choisit un objet ou une image muette à montrer."
+  },
+  "qc-pri-fls-012/situation": {
+    "scene": "Deux élèves présentent une création à leurs camarades ; l’un montre le matériel, l’autre répond à un signe de la main."
+  },
+  "qc-pri-fr-001/concept": {
+    "scene": "Une élève nomme un objet familier et marque les syllabes avec ses doigts pendant que son camarade l’écoute."
+  },
+  "qc-pri-fr-001/situation": {
+    "scene": "Deux enfants rapprochent des cartes illustrées et marquent oralement le rythme des noms des objets."
+  },
+  "qc-pri-fr-002/concept": {
+    "scene": "Un enfant suit une ligne sur un support incliné vers lui pendant que son partenaire prononce le son étudié."
+  },
+  "qc-pri-fr-002/situation": {
+    "scene": "Deux élèves rapprochent un objet d’un livre tourné vers eux ; l’un pointe le début du mot caché au spectateur."
+  },
+  "qc-pri-fr-003/concept": {
+    "scene": "Un enfant suit du doigt un passage sur une page inclinée vers lui. Trois cartes illustrées attendent à côté."
+  },
+  "qc-pri-fr-003/situation": {
+    "scene": "Une élève hésite entre deux cartes illustrées en relisant une ligne qui reste hors du regard."
+  },
+  "qc-pri-fr-005/concept": {
+    "scene": "Deux enfants regardent une illustration montrant un personnage derrière un objet et désignent cet emplacement du doigt."
+  },
+  "qc-pri-fr-005/situation": {
+    "scene": "Une élève consulte un album tourné vers elle et cherche parmi trois figurines le personnage décrit."
+  },
+  "qc-pri-fr-006/concept": {
+    "scene": "Deux enfants regardent un sac entrouvert et une petite note dont on ne voit que le verso. L’un repère un objet resté au sol."
+  },
+  "qc-pri-fr-006/situation": {
+    "scene": "Un enfant tient une note face à lui pendant que sa camarade lui montre deux traces au sol dont le lien reste ouvert."
+  },
+  "qc-pri-fr-007/concept": {
+    "scene": "Un enfant s’arrête de lire et revient d’un doigt vers une illustration de la page précédente."
+  },
+  "qc-pri-fr-007/situation": {
+    "scene": "Une élève relit un passage caché à la caméra puis se tourne vers son partenaire pour lui montrer où elle a perdu le fil."
+  },
+  "qc-pri-fr-008/concept": {
+    "scene": "Des enfants comparent trois cartes muettes montrant un personnage, un événement et un changement de lieu."
+  },
+  "qc-pri-fr-008/situation": {
+    "scene": "Deux élèves déplacent une image dans une petite suite de vignettes pour discuter de ce qui arrive ensuite."
+  },
+  "qc-pri-fr-009/concept": {
+    "scene": "Deux enfants comparent la photographie d’un objet dans un documentaire ouvert et l’objet réel."
+  },
+  "qc-pri-fr-009/situation": {
+    "scene": "Une élève regarde un dessin d’observation tandis que son partenaire tient deux objets à rapprocher de ce qu’elle lit."
+  },
+  "qc-pri-fr-010/concept": {
+    "scene": "Deux lecteurs regardent une page illustrée et réagissent chacun à un détail différent."
+  },
+  "qc-pri-fr-010/situation": {
+    "scene": "Après la lecture, deux élèves pointent des parties différentes de la même image pendant qu’ils expliquent leur préférence."
+  },
+  "qc-pri-fr-011/concept": {
+    "scene": "Des enfants rapprochent des cartes illustrant des actions ou des objets qui se ressemblent, puis isolent un contre-exemple."
+  },
+  "qc-pri-fr-011/situation": {
+    "scene": "Un élève hésite entre deux dessins proches et mime une action pour préciser le sens du mot qu’il emploie."
+  },
+  "qc-pri-fr-012/concept": {
+    "scene": "Un élève relit une page tournée vers lui et prépare une gomme à côté d’une carte illustrée."
+  },
+  "qc-pri-fr-012/situation": {
+    "scene": "Deux enfants consultent un petit livre incliné vers eux pendant que l’un indique où il souhaite vérifier l’écriture d’un mot."
+  },
+  "qc-pri-fr-013/concept": {
+    "scene": "Des élèves répartissent des cartes muettes montrant des personnes, des objets et des gestes en plusieurs groupes."
+  },
+  "qc-pri-fr-013/situation": {
+    "scene": "Une enfant déplace la carte d’un geste et montre à son camarade en quoi elle diffère de la carte d’un objet."
+  },
+  "qc-pri-fr-014/concept": {
+    "scene": "Deux élèves rapprochent des cartes de personnes, de groupes et d’actions, avec un espace entre les groupes."
+  },
+  "qc-pri-fr-014/situation": {
+    "scene": "Une élève remplace un regroupement de cartes illustrées pendant que son partenaire rejoue la phrase avec des figurines."
+  },
+  "qc-pri-fr-015/concept": {
+    "scene": "Des enfants mettent en ligne des cartes muettes montrant un personnage, une action et un lieu."
+  },
+  "qc-pri-fr-015/situation": {
+    "scene": "Deux élèves déplacent une carte d’action puis vérifient à voix haute l’ordre de la phrase qu’ils construisent."
+  },
+  "qc-pri-fr-016/concept": {
+    "scene": "Un enfant rapproche les images d’un objet et d’un groupe d’objets ; son partenaire compare les cartes encore séparées."
+  },
+  "qc-pri-fr-016/situation": {
+    "scene": "Deux élèves déplacent une carte montrant une collection vers une carte qui en décrit une propriété visible."
+  },
+  "qc-pri-fr-017/concept": {
+    "scene": "Des élèves confrontent l’image d’un enfant qui agit et celle de plusieurs enfants qui font le même geste."
+  },
+  "qc-pri-fr-017/situation": {
+    "scene": "Une enfant remplace une figurine par un groupe pendant que son partenaire reprend oralement la description de leur action."
+  },
+  "qc-pri-fr-018/concept": {
+    "scene": "Trois croquis muets montrent un même geste avant, pendant et après son exécution ; deux enfants les comparent."
+  },
+  "qc-pri-fr-018/situation": {
+    "scene": "Deux élèves placent une nouvelle carte entre un geste déjà fait et un geste encore à venir."
+  },
+  "qc-pri-fr-019/concept": {
+    "scene": "Deux enfants comparent des croquis muets d’une demande et d’une exclamation, avec des expressions et postures distinctes."
+  },
+  "qc-pri-fr-019/situation": {
+    "scene": "Une élève relit une page tournée vers elle à voix haute, s’interrompt pour marquer une pause et observe son partenaire."
+  },
+  "qc-pri-fr-020/concept": {
+    "scene": "Une enfant ordonne quelques croquis d’idées à côté de son carnet ouvert."
+  },
+  "qc-pri-fr-020/situation": {
+    "scene": "Deux élèves déplacent des croquis avant qu’un enfant commence à écrire dans un carnet incliné vers lui."
+  },
+  "qc-pri-fr-021/concept": {
+    "scene": "Un élève tient un crayon au-dessus d’une feuille en regardant la suite de dessins qu’il veut raconter."
+  },
+  "qc-pri-fr-021/situation": {
+    "scene": "Une élève ajoute un croquis à sa préparation puis articule la prochaine phrase à son partenaire."
+  },
+  "qc-pri-fr-022/concept": {
+    "scene": "Deux enfants organisent des vignettes illustrées en trois groupes reliés par la répétition d’un même objet."
+  },
+  "qc-pri-fr-022/situation": {
+    "scene": "Un élève déplace une vignette qui interrompt la suite pendant que sa partenaire suit l’enchaînement du doigt."
+  },
+  "qc-pri-fr-023/concept": {
+    "scene": "Une enfant relit son carnet tourné vers elle avec une gomme prête et un croquis de sa scène à côté."
+  },
+  "qc-pri-fr-023/situation": {
+    "scene": "Deux élèves examinent un brouillon incliné vers eux ; l’un désigne un détail du croquis à préciser avant la réécriture."
+  },
+  "qc-pri-fr-024/concept": {
+    "scene": "Un enfant explique à ses camarades comment utiliser un objet et accompagne sa parole d’un geste."
+  },
+  "qc-pri-fr-024/situation": {
+    "scene": "Une élève écoute une demande, regarde le matériel disponible et suspend sa main en attendant un détail."
+  },
+  "qc-pri-fr-025/concept": {
+    "scene": "Trois élèves se parlent en cercle ; un enfant écoute la camarade qui tient l’objet servant de tour de parole."
+  },
+  "qc-pri-fr-025/situation": {
+    "scene": "Un enfant reformule une idée en montrant le même objet puis fait signe à la personne qui vient de parler pour vérifier."
+  },
+  "qc-pri-fr-026/concept": {
+    "scene": "Un enfant présente son idée en montrant un objet ou une image muette à un groupe attentif."
+  },
+  "qc-pri-fr-026/situation": {
+    "scene": "Deux élèves expliquent des choix différents en pointant chacun le détail qu’ils ont observé."
+  },
+  "qc-pri-ilss-001/concept": {
+    "scene": "Un adulte montre l’ordre des gestes à accomplir pour ranger du matériel, et deux enfants regardent la démonstration."
+  },
+  "qc-pri-ilss-001/situation": {
+    "scene": "Un enfant suit une consigne en tenant deux objets et attend qu’on lui indique dans quel panier les mettre."
+  },
+  "qc-pri-ilss-002/concept": {
+    "scene": "Deux élèves se font face et se passent un objet après une demande accompagnée d’un geste."
+  },
+  "qc-pri-ilss-002/situation": {
+    "scene": "Un élève lève une main pour demander un objet puis laisse le temps à son partenaire de réagir."
+  },
+  "qc-pri-ilss-003/concept": {
+    "scene": "Un enfant montre les objets de travail disposés à portée de main pendant que sa partenaire s’exerce à les nommer."
+  },
+  "qc-pri-ilss-003/situation": {
+    "scene": "Une élève cherche l’objet décrit à voix haute entre plusieurs outils de travail."
+  },
+  "qc-pri-ilss-004/concept": {
+    "scene": "Des enfants examinent un plan muet ou des pictogrammes pour comprendre où se rendre avec leurs affaires."
+  },
+  "qc-pri-ilss-004/situation": {
+    "scene": "Un élève écoute une indication et regarde deux directions possibles pendant que sa camarade désigne un repère."
+  },
+  "qc-pri-ilss-005/concept": {
+    "scene": "Un enfant suit du doigt un album incliné vers lui pendant qu’une camarade présente deux cartes illustrées."
+  },
+  "qc-pri-ilss-005/situation": {
+    "scene": "Deux lecteurs comparent un dessin du livre avec un objet réel pour préciser ce qu’ils viennent de lire."
+  },
+  "qc-pri-ilss-006/concept": {
+    "scene": "Des enfants observent la disposition de dessins dans une fiche pédagogique tournée vers eux."
+  },
+  "qc-pri-ilss-006/situation": {
+    "scene": "Une élève rapproche un dessin d’une étape d’un objet réel et demande où il devrait être placé."
+  },
+  "qc-pri-ilss-007/concept": {
+    "scene": "Une enfant prépare un petit message pour prévenir un camarade en choisissant un dessin avant d’écrire."
+  },
+  "qc-pri-ilss-007/situation": {
+    "scene": "Deux élèves préparent une note pliée à remettre à un membre du groupe qui n’est pas présent."
+  },
+  "qc-pri-ilss-008/concept": {
+    "scene": "Deux élèves groupent les dessins qui formeront le plan d’un texte, carnet tourné vers eux."
+  },
+  "qc-pri-ilss-008/situation": {
+    "scene": "Une élève ajoute une vignette entre deux étapes pendant que son partenaire prépare sa rédaction."
+  },
+  "qc-pri-ilss-009/concept": {
+    "scene": "Un adulte montre comment partager un espace et attendre son tour pendant une activité en groupe."
+  },
+  "qc-pri-ilss-009/situation": {
+    "scene": "Deux enfants arrivent ensemble à un espace occupé et cherchent du regard où attendre sans gêner les autres."
+  },
+  "qc-pri-ilss-010/concept": {
+    "scene": "Un groupe prépare une activité commune de quartier, chacun apportant un petit élément de matériel."
+  },
+  "qc-pri-ilss-010/situation": {
+    "scene": "Deux élèves accueillent un nouveau camarade et lui montrent une place libre et le matériel partagé."
+  },
+  "qc-pri-ma-001/concept": {
+    "scene": "Un enfant compte des objets en les déplaçant un à un vers des emplacements d’un plateau."
+  },
+  "qc-pri-ma-001/situation": {
+    "scene": "Deux élèves cherchent comment compter une collection d’objets qui a été séparée en deux zones."
+  },
+  "qc-pri-ma-002/concept": {
+    "scene": "Des enfants comparent deux collections en mettant les objets en vis-à-vis, avec quelques objets encore libres."
+  },
+  "qc-pri-ma-002/situation": {
+    "scene": "Deux élèves essaient de comparer des quantités disposées différemment sans que le résultat soit donné."
+  },
+  "qc-pri-ma-003/concept": {
+    "scene": "Des élèves assemblent des paquets de bâtonnets et disposent des bâtonnets seuls à côté."
+  },
+  "qc-pri-ma-003/situation": {
+    "scene": "Une élève rassemble des bâtonnets libres pour former un nouveau paquet pendant que son camarade observe ce qui reste."
+  },
+  "qc-pri-ma-004/concept": {
+    "scene": "Une suite d’objets alterne deux formes et se termine par une place libre ; un enfant tient deux choix possibles."
+  },
+  "qc-pri-ma-004/situation": {
+    "scene": "Deux enfants observent une suite de petits assemblages qui grandissent et préparent la prochaine construction."
+  },
+  "qc-pri-ma-006/concept": {
+    "scene": "Des enfants rapprochent deux petites collections sur un même plateau sans afficher de résultat."
+  },
+  "qc-pri-ma-006/situation": {
+    "scene": "Une élève apporte un panier d’objets vers une collection déjà posée et son camarade prépare de la place."
+  },
+  "qc-pri-ma-007/concept": {
+    "scene": "Un enfant retire une poignée d’objets d’un plateau, laissant la collection restante visible."
+  },
+  "qc-pri-ma-007/situation": {
+    "scene": "Deux élèves mettent de côté les objets utilisés et observent ceux qui restent disponibles."
+  },
+  "qc-pri-ma-008/concept": {
+    "scene": "Un enfant dispose des objets en rangées régulières pendant qu’un camarade prépare une rangée supplémentaire."
+  },
+  "qc-pri-ma-008/situation": {
+    "scene": "Deux élèves préparent des sachets contenant chacun la même quantité et un sachet reste à remplir."
+  },
+  "qc-pri-ma-009/concept": {
+    "scene": "Des élèves distribuent une collection dans des contenants identiques, avec une partie des objets encore au milieu."
+  },
+  "qc-pri-ma-009/situation": {
+    "scene": "Deux enfants se préparent à répartir des objets entre plusieurs places, et il en reste quelques-uns à distribuer."
+  },
+  "qc-pri-ma-010/concept": {
+    "scene": "Deux enfants réorganisent des jetons en paquets plus faciles à compter et comparent leurs dispositions."
+  },
+  "qc-pri-ma-010/situation": {
+    "scene": "Une élève rapproche deux groupes de jetons pendant que son partenaire montre une autre façon de les regrouper."
+  },
+  "qc-pri-ma-011/concept": {
+    "scene": "Deux enfants comparent un assemblage de bâtonnets et une feuille de calcul tournée vers eux."
+  },
+  "qc-pri-ma-011/situation": {
+    "scene": "Une élève reprend les groupes d’objets un à un pour vérifier une démarche que son camarade lui montre."
+  },
+  "qc-pri-ma-012/concept": {
+    "scene": "Deux élèves observent un disque de carton découpé en parts égales et une partie mise de côté."
+  },
+  "qc-pri-ma-012/situation": {
+    "scene": "Un enfant choisit une pièce pour compléter la portion commencée de sa partenaire."
+  },
+  "qc-pri-ma-013/concept": {
+    "scene": "Des élèves rapprochent deux disques de même taille découpés en parts différentes, leurs pièces posées devant eux."
+  },
+  "qc-pri-ma-013/situation": {
+    "scene": "Deux enfants essaient de faire coïncider des portions à l’aide de pièces de carton de tailles différentes."
+  },
+  "qc-pri-ma-014/concept": {
+    "scene": "Un enfant rassemble deux portions matérialisées par des pièces de carton de même unité."
+  },
+  "qc-pri-ma-014/situation": {
+    "scene": "Deux élèves déplacent des portions d’une même bande pour voir ce qui est couvert et ce qui reste libre."
+  },
+  "qc-pri-ma-015/concept": {
+    "scene": "Des élèves disposent une bande entière et des segments plus petits alignés à côté."
+  },
+  "qc-pri-ma-015/situation": {
+    "scene": "Une enfant remplace une portion de bande par plusieurs petits segments et observe les espaces qui restent."
+  },
+  "qc-pri-ma-016/concept": {
+    "scene": "Des enfants comparent deux bandes composées de segments de même unité, alignées au point de départ."
+  },
+  "qc-pri-ma-016/situation": {
+    "scene": "Deux élèves essaient d’aligner des segments de tailles différentes pour comparer deux longueurs proches."
+  },
+  "qc-pri-ma-017/concept": {
+    "scene": "Un enfant dispose deux collections suivant le même motif, l’une plus grande que l’autre."
+  },
+  "qc-pri-ma-017/situation": {
+    "scene": "Deux élèves ajustent les places réservées à deux types d’objets quand ils préparent un rangement de taille différente."
+  },
+  "qc-pri-ma-018/concept": {
+    "scene": "Des enfants examinent une balance à plateaux portant des groupes d’objets différents qui se font face."
+  },
+  "qc-pri-ma-018/situation": {
+    "scene": "Une élève tient un petit poids au-dessus d’un plateau et attend que son partenaire indique où le poser."
+  },
+  "qc-pri-ma-019/concept": {
+    "scene": "Deux enfants réunissent des objets apportés dans deux paniers et en mettent quelques-uns de côté pour une autre équipe."
+  },
+  "qc-pri-ma-019/situation": {
+    "scene": "Une élève compare une collection de départ et une seconde collection que son partenaire vient d’apporter."
+  },
+  "qc-pri-ma-020/concept": {
+    "scene": "Des élèves préparent des trousses qui reçoivent chacune des groupes égaux d’objets, avec quelques trousses encore vides."
+  },
+  "qc-pri-ma-020/situation": {
+    "scene": "Un enfant essaie de répartir des objets en groupes identiques pendant que sa camarade prépare des places supplémentaires."
+  },
+  "qc-pri-ma-021/concept": {
+    "scene": "Des enfants déplacent un pion entre des repères disposés au sol en suivant deux directions possibles."
+  },
+  "qc-pri-ma-021/situation": {
+    "scene": "Une élève pointe une bifurcation sur un plan muet tandis que son partenaire regarde les repères dans le décor."
+  },
+  "qc-pri-ma-022/concept": {
+    "scene": "Des enfants tournent et rapprochent des solides de carton pour observer leurs faces sous différents angles."
+  },
+  "qc-pri-ma-022/situation": {
+    "scene": "Une élève compare un solide et deux formes découpées ; plusieurs faces restent à essayer."
+  },
+  "qc-pri-ma-023/concept": {
+    "scene": "Une enfant dispose différentes figures planes et rapproche celles qui partagent une propriété visible."
+  },
+  "qc-pri-ma-023/situation": {
+    "scene": "Deux élèves comparent des pièces de forme proche et montrent les côtés qu’ils veulent observer."
+  },
+  "qc-pri-ma-024/concept": {
+    "scene": "Des élèves observent un pli au milieu d’une feuille découpée et rapprochent deux segments qui forment un angle."
+  },
+  "qc-pri-ma-024/situation": {
+    "scene": "Une élève aligne une pièce de part et d’autre d’un pli tandis que son partenaire compare des angles avec une équerre."
+  },
+  "qc-pri-ma-025/concept": {
+    "scene": "Deux enfants comparent un objet à une bande de mesure sans chiffres, pendant qu’un autre soupèse deux objets."
+  },
+  "qc-pri-ma-025/situation": {
+    "scene": "Une élève tient deux récipients de formes différentes et son partenaire prépare un petit contenant pour comparer leurs capacités."
+  },
+  "qc-pri-ma-026/concept": {
+    "scene": "Des élèves observent deux sabliers à des étapes différentes pendant qu’un enfant termine une activité simple."
+  },
+  "qc-pri-ma-026/situation": {
+    "scene": "Deux enfants comparent le temps de deux gestes avec leurs sabliers encore en cours."
+  },
+  "qc-pri-ma-027/concept": {
+    "scene": "Deux élèves posent une corde le long du bord d’un cadre en laissant un coin encore découvert."
+  },
+  "qc-pri-ma-027/situation": {
+    "scene": "Une élève hésite entre deux façons d’entourer des formes différentes avec la même longueur de corde."
+  },
+  "qc-pri-ma-028/concept": {
+    "scene": "Un enfant couvre une surface avec des carrés identiques, laissant un espace encore vide."
+  },
+  "qc-pri-ma-028/situation": {
+    "scene": "Deux élèves comparent deux surfaces et placent des carreaux de même taille sur leurs bords."
+  },
+  "qc-pri-ma-029/concept": {
+    "scene": "Des élèves empilent des cubes identiques dans une boîte et gardent une couche partiellement remplie."
+  },
+  "qc-pri-ma-029/situation": {
+    "scene": "Deux enfants comparent des assemblages de cubes de formes différentes et examinent ceux qu’ils pourraient ajouter."
+  },
+  "qc-pri-ma-030/concept": {
+    "scene": "Des enfants trient des objets observés en groupes et placent un jeton pour chaque relevé."
+  },
+  "qc-pri-ma-030/situation": {
+    "scene": "Deux élèves rapportent chacun un lot d’observations et cherchent dans quel groupe déposer les jetons correspondants."
+  },
+  "qc-pri-ma-031/concept": {
+    "scene": "Des enfants placent des pictogrammes muets en colonnes sur une surface quadrillée."
+  },
+  "qc-pri-ma-031/situation": {
+    "scene": "Une élève compare deux colonnes de jetons en laissant de côté une observation encore à ajouter."
+  },
+  "qc-pri-ma-032/concept": {
+    "scene": "Un enfant s’apprête à tirer un objet d’un sac opaque ; son partenaire observe la réserve de pièces préparée à côté."
+  },
+  "qc-pri-ma-032/situation": {
+    "scene": "Deux élèves comparent le contenu de deux sacs avant de choisir lequel utiliser pour un tirage."
+  },
+  "qc-pri-ma-033/concept": {
+    "scene": "Deux élèves présentent côte à côte leurs dispositions d’une même collection et indiquent les regroupements utilisés."
+  },
+  "qc-pri-ma-033/situation": {
+    "scene": "Une élève reprend une étape de son assemblage devant un camarade qui a choisi une démarche différente."
+  },
+  "qc-pri-mu-001/concept": {
+    "scene": "Des enfants s’immobilisent pour écouter, tandis qu’un seul élève tient un objet sonore prêt à jouer."
+  },
+  "qc-pri-mu-001/situation": {
+    "scene": "Deux élèves se regardent après un son bref ; l’un attend le silence avant que son partenaire joue à son tour."
+  },
+  "qc-pri-mu-002/concept": {
+    "scene": "Des enfants marquent une pulsation régulière avec les mains pendant qu’une élève produit une suite de sons."
+  },
+  "qc-pri-mu-002/situation": {
+    "scene": "Deux élèves essaient des gestes de durée différente pendant que leurs camarades gardent la pulsation."
+  },
+  "qc-pri-mu-003/concept": {
+    "scene": "Un enfant joue deux lames de longueurs différentes sur un instrument pendant qu’une camarade écoute."
+  },
+  "qc-pri-mu-003/situation": {
+    "scene": "Deux élèves comparent une note jouée seule et un moment où deux instruments résonnent ensemble."
+  },
+  "qc-pri-mu-004/concept": {
+    "scene": "Des enfants observent un petit tambour, des lames frappées et un objet à secouer, chacun avec une manière de jouer distincte."
+  },
+  "qc-pri-mu-004/situation": {
+    "scene": "Un élève joue derrière un écran bas pendant que sa partenaire hésite entre deux instruments visibles."
+  },
+  "qc-pri-mu-005/concept": {
+    "scene": "Deux enfants chantent doucement, le corps détendu et les pieds stables, tandis qu’un adulte montre comment prendre une respiration."
+  },
+  "qc-pri-mu-005/situation": {
+    "scene": "Une jeune chanteuse fait une pause pour respirer avant de reprendre avec le groupe."
+  },
+  "qc-pri-mu-006/concept": {
+    "scene": "Des élèves disposant de quelques instruments essaient ensemble le début d’une courte pièce."
+  },
+  "qc-pri-mu-006/situation": {
+    "scene": "Une élève propose un son, son partenaire se prépare à répondre avec un autre instrument et le reste du groupe attend."
+  },
+  "qc-pri-mu-007/concept": {
+    "scene": "Un petit ensemble d’enfants observe la personne qui donne le départ, instruments prêts."
+  },
+  "qc-pri-mu-007/situation": {
+    "scene": "Deux jeunes musiciens se regardent pour reprendre ensemble après un passage joué par l’un d’eux."
+  },
+  "qc-pri-mu-008/concept": {
+    "scene": "Des enfants écoutent une courte pièce jouée devant eux, attentifs à l’alternance entre deux instruments."
+  },
+  "qc-pri-mu-008/situation": {
+    "scene": "Un élève repère le moment où un instrument prend la relève et le montre d’un geste discret à sa partenaire."
+  },
+  "qc-pri-mu-009/concept": {
+    "scene": "Deux élèves écoutent le même passage musical et se tournent vers des instruments différents."
+  },
+  "qc-pri-mu-009/situation": {
+    "scene": "Après avoir écouté, une élève montre l’instrument qui l’a marquée et son camarade montre un autre élément du groupe."
+  },
+  "qc-pri-st-001/concept": {
+    "scene": "Des enfants observent de près des gouttes sur deux surfaces et montrent les différences qu’ils remarquent."
+  },
+  "qc-pri-st-001/situation": {
+    "scene": "Deux élèves découvrent un détail inattendu sur un objet et se penchent pour l’observer sous un autre angle."
+  },
+  "qc-pri-st-002/concept": {
+    "scene": "Deux enfants préparent deux dispositifs semblables et changent un seul élément entre eux."
+  },
+  "qc-pri-st-002/situation": {
+    "scene": "Une élève s’apprête à placer deux échantillons à des endroits différents pendant que son partenaire montre ce qui doit rester identique."
+  },
+  "qc-pri-st-003/concept": {
+    "scene": "Des élèves mesurent deux objets à l’aide de repères muets et placent des jetons pour conserver leurs observations."
+  },
+  "qc-pri-st-003/situation": {
+    "scene": "Un élève recommence une mesure en alignant l’objet sur le point de départ que lui montre sa camarade."
+  },
+  "qc-pri-st-004/concept": {
+    "scene": "Deux enfants disposent les objets et croquis d’un essai dans l’ordre observé, face à des camarades attentifs."
+  },
+  "qc-pri-st-004/situation": {
+    "scene": "Une jeune chercheuse montre un détail du montage et un camarade indique une observation que le groupe doit encore expliquer."
+  },
+  "qc-pri-st-005/concept": {
+    "scene": "Des élèves observent de la glace et de l’eau dans des récipients stables, avec un emplacement libre pour les comparer."
+  },
+  "qc-pri-st-005/situation": {
+    "scene": "Deux enfants suivent du regard la fonte d’un petit morceau de glace dans un bol et comparent deux récipients."
+  },
+  "qc-pri-st-006/concept": {
+    "scene": "Un enfant mélange des matières dans un récipient pendant que son partenaire garde un échantillon de départ à côté."
+  },
+  "qc-pri-st-006/situation": {
+    "scene": "Deux élèves comparent une pâte avant et après avoir ajouté un ingrédient et observent sa texture."
+  },
+  "qc-pri-st-007/concept": {
+    "scene": "Des enfants relâchent un petit objet sur deux pistes inclinées et observent leurs positions différentes."
+  },
+  "qc-pri-st-007/situation": {
+    "scene": "Un élève ajuste la pente d’une rampe et sa partenaire retient l’objet au même point de départ."
+  },
+  "qc-pri-st-008/concept": {
+    "scene": "Deux enfants inspectent un petit moulin qui tourne près d’une source de mouvement et observent l’élément qu’il entraîne."
+  },
+  "qc-pri-st-008/situation": {
+    "scene": "Une élève change l’orientation d’un petit moulin à air pendant que son camarade observe si le mouvement change."
+  },
+  "qc-pri-st-009/concept": {
+    "scene": "Un enfant interpose une pièce opaque devant une lampe de poche pendant qu’une camarade observe l’ombre sur un support."
+  },
+  "qc-pri-st-009/situation": {
+    "scene": "Deux élèves déplacent un objet éclairé et cherchent pourquoi l’ombre change de taille."
+  },
+  "qc-pri-st-010/concept": {
+    "scene": "Des enfants observent sous supervision un circuit d’exercice à pile avec une lampe et une connexion encore ouverte."
+  },
+  "qc-pri-st-010/situation": {
+    "scene": "Un élève montre deux pièces à examiner près d’un circuit basse tension, tandis que son partenaire observe la lampe."
+  },
+  "qc-pri-st-011/concept": {
+    "scene": "Des enfants tournent lentement une manivelle et observent la roue qu’elle entraîne."
+  },
+  "qc-pri-st-011/situation": {
+    "scene": "Une élève montre le point où deux pièces mobiles se rejoignent pendant que son partenaire essaie le mouvement."
+  },
+  "qc-pri-st-012/concept": {
+    "scene": "Deux élèves assemblent un petit prototype de carton à côté d’un autre essai déjà monté."
+  },
+  "qc-pri-st-012/situation": {
+    "scene": "Un enfant soutient un prototype pendant qu’une camarade hésite entre deux pièces à ajouter pour le stabiliser."
+  },
+  "qc-pri-st-013/concept": {
+    "scene": "Des élèves observent des échantillons de sol et de roche dans des coupelles, avec une loupe et un relief miniature."
+  },
+  "qc-pri-st-013/situation": {
+    "scene": "Un enfant rapproche deux échantillons au grain différent pendant qu’un camarade étudie leur position dans la maquette."
+  },
+  "qc-pri-st-014/concept": {
+    "scene": "Des élèves comparent un récipient d’eau, des gouttes sur un couvercle et une coupelle placée en dessous."
+  },
+  "qc-pri-st-014/situation": {
+    "scene": "Une élève remarque des gouttes sous un couvercle transparent pendant que son partenaire observe l’eau qui se trouve plus bas."
+  },
+  "qc-pri-st-015/concept": {
+    "scene": "Des élèves examinent une manche à air miniature et des images muettes de nuages autour d’un dispositif d’observation."
+  },
+  "qc-pri-st-015/situation": {
+    "scene": "Deux enfants comparent la direction de deux rubans légers placés à des endroits différents."
+  },
+  "qc-pri-st-016/concept": {
+    "scene": "Des élèves orientent des sphères représentant la Terre et la Lune près d’une lampe qui éclaire une seule face."
+  },
+  "qc-pri-st-016/situation": {
+    "scene": "Un enfant déplace une petite sphère pendant qu’une camarade compare la partie éclairée et la partie à l’ombre."
+  },
+  "qc-pri-st-017/concept": {
+    "scene": "Deux enfants rapprochent des croquis muets d’êtres vivants qui partagent une caractéristique visible."
+  },
+  "qc-pri-st-017/situation": {
+    "scene": "Une élève examine des images de feuilles ou d’animaux et montre le détail qui lui fait hésiter entre deux groupes."
+  },
+  "qc-pri-st-018/concept": {
+    "scene": "Des enfants comparent des objets évoquant la respiration, l’eau et l’alimentation autour d’un schéma muet du corps."
+  },
+  "qc-pri-st-018/situation": {
+    "scene": "Après une activité modérée, deux élèves prennent une pause et observent les gestes de boire et de reprendre leur souffle."
+  },
+  "qc-pri-st-019/concept": {
+    "scene": "Deux enfants comparent des croquis muets de plusieurs étapes du développement d’une plante ou d’un animal."
+  },
+  "qc-pri-st-019/situation": {
+    "scene": "Une élève hésite à placer une nouvelle vignette dans une suite d’images du développement, tandis qu’un partenaire montre un détail visible."
+  },
+  "qc-pri-st-020/concept": {
+    "scene": "Des enfants examinent une maquette d’habitat avec des plantes et des figurines animales, certains liens restent à établir."
+  },
+  "qc-pri-st-020/situation": {
+    "scene": "Un élève déplace une figurine près de deux plantes et sa camarade observe quels abris et ressources sont à proximité."
+  },
+  "qc-pri-us-001/concept": {
+    "scene": "Des élèves ordonnent plusieurs images d’une même communauté à des époques différentes sur une bande sans inscription."
+  },
+  "qc-pri-us-001/situation": {
+    "scene": "Deux élèves hésitent sur la place d’une image ancienne et examinent un détail des objets représentés."
+  },
+  "qc-pri-us-002/concept": {
+    "scene": "Deux enfants comparent une carte muette et une maquette, en reliant du doigt un cours d’eau et un chemin."
+  },
+  "qc-pri-us-002/situation": {
+    "scene": "Une élève suit une route sur une carte muette, son partenaire désigne le passage correspondant dans une petite maquette."
+  },
+  "qc-pri-us-003/concept": {
+    "scene": "Des enfants examinent une maquette avec une rive, une forêt et un espace cultivé, puis approchent des objets qui évoquent leurs ressources."
+  },
+  "qc-pri-us-003/situation": {
+    "scene": "Une élève montre deux emplacements possibles sur une maquette et son camarade examine la proximité de l’eau et du relief."
+  },
+  "qc-pri-us-004/concept": {
+    "scene": "Des enfants observent la répartition de maisons, de chemins et de lieux de travail sur une maquette muette."
+  },
+  "qc-pri-us-004/situation": {
+    "scene": "Une élève pointe une voie de circulation tandis que son camarade rapproche les figurines des lieux où elles pourraient se déplacer."
+  },
+  "qc-pri-us-005/concept": {
+    "scene": "Deux élèves comparent un objet, une photographie et le verso d’un document sur une surface de travail."
+  },
+  "qc-pri-us-005/situation": {
+    "scene": "Une élève remarque un détail différent entre deux images présentées comme sources pendant que son partenaire rapproche les documents."
+  },
+  "qc-pri-us-006/concept": {
+    "scene": "Un adulte accompagne des élèves qui examinent des reproductions de sources sur les sociétés autochtones du territoire vers 1500, avec des cartes muettes et des dessins de milieux."
+  },
+  "qc-pri-us-006/situation": {
+    "scene": "Deux élèves comparent des reproductions documentaires et des maquettes de paysages pour discuter des différents usages du territoire vers 1500."
+  },
+  "qc-pri-us-007/concept": {
+    "scene": "Des enfants comparent des photographies documentaires de paysages nordiques et de modes de déplacement présentées par un adulte."
+  },
+  "qc-pri-us-007/situation": {
+    "scene": "Une élève montre sur une carte muette la relation entre un lieu côtier et un trajet tandis que son partenaire observe les documents."
+  },
+  "qc-pri-us-008/concept": {
+    "scene": "Des élèves examinent une maquette d’un établissement de Nouvelle-France avec des bâtiments et des terres disposées près du cours d’eau."
+  },
+  "qc-pri-us-008/situation": {
+    "scene": "Deux enfants suivent du doigt le cours d’eau sur une maquette et comparent la disposition des habitations et des parcelles."
+  },
+  "qc-pri-us-009/concept": {
+    "scene": "Des élèves examinent des reproductions documentaires montrant de petits objets d’échange et des routes sur une carte muette."
+  },
+  "qc-pri-us-009/situation": {
+    "scene": "Deux élèves rapprochent les photographies de deux objets et observent l’itinéraire possible sur une carte, sans mettre en scène la rencontre elle-même."
+  },
+  "qc-pri-us-010/concept": {
+    "scene": "Deux enfants comparent les images de bâtiments et d’infrastructures d’un même territoire à deux périodes, avec les documents devant eux."
+  },
+  "qc-pri-us-010/situation": {
+    "scene": "Une élève rapproche deux maquettes de villes, et son partenaire indique un élément qui a changé entre les périodes."
+  },
+  "qc-pri-us-011/concept": {
+    "scene": "Des élèves observent sur une table une maquette où les bâtiments se resserrent autour d’une usine et d’une voie de transport."
+  },
+  "qc-pri-us-011/situation": {
+    "scene": "Deux enfants comparent une image de rue avant et après l’arrivée de nouveaux bâtiments industriels."
+  },
+  "qc-pri-us-012/concept": {
+    "scene": "Deux élèves comparent des photographies documentaires de moyens de transport et d’espaces collectifs du Québec à différentes périodes du vingtième siècle."
+  },
+  "qc-pri-us-012/situation": {
+    "scene": "Une élève montre un détail d’une photographie d’époque et son partenaire cherche le même lieu dans une autre image."
+  },
+  "qc-pri-us-013/concept": {
+    "scene": "Des enfants comparent des photographies muettes montrant plusieurs usages actuels d’un espace collectif québécois."
+  },
+  "qc-pri-us-013/situation": {
+    "scene": "Deux élèves comparent un lieu dans deux photographies récentes et repèrent des usages qui coexistent."
+  },
+  "qc-pri-us-014/concept": {
+    "scene": "Deux enfants examinent en parallèle deux maquettes de territoires où les habitats et les trajets sont disposés différemment."
+  },
+  "qc-pri-us-014/situation": {
+    "scene": "Une élève montre un lien entre une rivière et des bâtiments ; son partenaire cherche si le même lien apparaît dans l’autre maquette."
+  },
+  "qc-pri-us-015/concept": {
+    "scene": "Deux élèves comparent des illustrations du même lieu à deux dates en rapprochant les éléments qui subsistent."
+  },
+  "qc-pri-us-015/situation": {
+    "scene": "Un élève montre un bâtiment resté au même endroit pendant que sa partenaire désigne un chemin qui a changé."
+  },
+  "qc-pri-us-016/concept": {
+    "scene": "Des élèves observent des images documentaires de pratiques et d’objets variés présentés par un adulte."
+  },
+  "qc-pri-us-016/situation": {
+    "scene": "Deux enfants présentent chacun une reproduction liée à un héritage culturel et comparent ce qui mérite d’être expliqué au groupe."
   }
 }

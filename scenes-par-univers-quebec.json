@@ -1,0 +1,1174 @@
+{
+  "camping": {
+    "qc-pri-ad-001/concept": {
+      "scene": "Trois enfants de 8 à 10 ans répètent un jeu théâtral sur une aire dégagée devant la tente. Un enfant sort de derrière la tente, un autre traverse l’aire de jeu et la troisième se tourne vers lui."
+    },
+    "qc-pri-ad-001/situation": {
+      "scene": "Sur l’aire de jeu du campement, deux enfants de 8 à 10 ans viennent de se croiser entre la tente et un banc de bois. Ils s’arrêtent brusquement et se tournent l’un vers l’autre."
+    },
+    "qc-pri-ad-002/concept": {
+      "scene": "Devant la tente, deux enfants de 8 à 10 ans jouent des personnages pendant une improvisation. L’un avance le buste droit, l’autre garde le poids sur un pied, en retrait près d’un sac de couchage roulé."
+    },
+    "qc-pri-ad-002/situation": {
+      "scene": "Deux enfants de 8 à 10 ans improvisent près de la tente. Leurs personnages arrivent en même temps près d’un seul tabouret pliant et s’aperçoivent au moment de tendre la main."
+    },
+    "qc-pri-ad-003/concept": {
+      "scene": "Deux enfants de 8 à 10 ans improvisent sur le sol devant la tente. L’un mime le poids d’un objet imaginaire entre ses mains. Sa camarade tend les mains pour le recevoir."
+    },
+    "qc-pri-ad-003/situation": {
+      "scene": "Devant la tente, un enfant de 8 à 10 ans s’arrête en pleine improvisation et se tourne vers sa partenaire du même âge. Elle suspend son pas et l’observe. Deux sacs à dos délimitent l’aire de jeu."
+    },
+    "qc-pri-ad-007/concept": {
+      "scene": "Sur une aire dégagée entre la tente et le lac, deux enfants jouent une courte scène avec une boîte en papier. L’un se penche vers la boîte, l’autre recule, les bras levés. Deux camarades assis sur des bûches observent leurs gestes."
+    },
+    "qc-pri-ad-007/situation": {
+      "scene": "Deux enfants improvisent devant la tente. L’un tend une boîte en papier fermée à l’autre, qui hésite à la prendre. Une camarade assise sur un banc de camp regarde cet échange."
+    },
+    "qc-pri-ale-006/concept": {
+      "scene": "Deux enfants devant leur tente examinent le petit mot posé sur un tabouret. La feuille est tournée vers eux. À côté du tabouret, une lampe de poche et un sac à dos entrouvert offrent des indices sur la situation."
+    },
+    "qc-pri-ale-006/situation": {
+      "scene": "Près de l’entrée de leur tente, un enfant tient un mot dont on voit le verso. Sa camarade désigne une lampe de poche posée au sol. Ils échangent un regard interrogateur."
+    },
+    "qc-pri-st-002/situation": {
+      "scene": "À la table du campement, deux enfants suspendent deux serviettes semblables, l’une sous la toile et l’autre à découvert. Ils vérifient qu’elles sont mouillées de la même façon."
+    },
+    "qc-pri-eps-002/situation": {
+      "scene": "Au départ d’un sentier large près des tentes, un enfant arrive à une bifurcation balisée avec des plots bas. Sa camarade observe le chemin qu’il s’apprête à prendre."
+    },
+    "qc-pri-ma-020/situation": {
+      "scene": "À une table du camp, deux enfants préparent des trousses de jeu pour les tentes. Des jetons attendent au milieu, à côté de plusieurs trousses ouvertes."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "À une table de préparation du camp, près des caisses de matériel. Un enfant compte des jetons de jeu de camp en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "Sous l’abri collectif du campement, une tente visible au-delà de l’ouverture. Deux élèves trouvent des jetons de jeu de camp séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "Près du rangement du camp, avec des sacs de couchage roulés en fond. Un enfant dispose des jetons de jeu de camp en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "À une table de préparation du camp, près des caisses de matériel. Deux élèves préparent des trousses de camping. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "Sous l’abri collectif du campement, une tente visible au-delà de l’ouverture. Des élèves distribuent des jetons de jeu de camp dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "Près du rangement du camp, avec des sacs de couchage roulés en fond. Deux enfants ouvrent des trousses de camping pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "Sous l’abri collectif du campement, une tente visible au-delà de l’ouverture. Des enfants répartissent des jetons de jeu de camp entre plusieurs contenants. Ils rapprochent les groupes déjà préparés pour les comparer."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "Sur un banc près de l’entrée d’une tente au campement. Un enfant nomme à voix haute une lampe de poche en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "Sous l’abri du camp, avec une toile de tente en arrière-plan. Une élève tient des cartes illustrant les accessoires du camp. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "Sous l’abri du camp, avec une toile de tente en arrière-plan. Deux élèves regardent des cartes illustrant les accessoires du camp. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "À une table de pique-nique du campement, au bord du sentier vers le lac. Une élève désigne une lampe de poche parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "À une table de pique-nique du campement, au bord du sentier vers le lac. Trois objets familiers sont réunis, dont une lampe de poche. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "Sur un banc près de l’entrée d’une tente au campement. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre une lampe de poche et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "Sur un banc près de l’entrée d’une tente au campement. Un enfant présente des cartes illustrant les accessoires du camp à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "Sous l’abri du camp, avec une toile de tente en arrière-plan. Une élève écoute les indications de son partenaire et désigne une lampe de poche avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Sur une petite clairière attenante au campement, devant les tentes. Un jeune comédien attrape une lampe de poche et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "Sur l’aire de rencontre au camp, avec des bûches pour s’asseoir. Deux jeunes comédiens improvisent autour de leur matériel. L’un retient un sac à dos pendant que l’autre cherche à l’ouvrir sans attirer son attention."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "À une table de camp à l’abri de l’auvent d’une tente. Une élève agence des cartes illustrant les accessoires du camp sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "À une table de camp à l’abri de l’auvent d’une tente. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient une lampe de poche et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "Sur l’aire commune du camping, une tente derrière le groupe. Trois élèves comparent deux façons de répartir des jetons de jeu de camp. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "À une table d’accueil du camp, près du plan muet des sentiers. Deux élèves hésitent sur la répartition de des trousses de camping. Ils regardent l’enfant arrivé sans matériel et gardent les contenants au milieu."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Dans la clairière du campement, hors des cordes et des piquets. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger une lampe de poche."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Sur une aire sèche et dégagée entre le sentier et le campement. Une élève s’arrête avant de rencontrer une lampe de poche laissé près du parcours. Elle fait signe au camarade qui arrive derrière."
+    },
+    "qc-pri-st-015/situation": {
+      "scene": "Sur la zone plate du camping, deux enfants comparent le mouvement d’un ruban attaché devant la tente et d’un autre à l’abri derrière la toile. Leurs regards suivent les rubans."
+    },
+    "qc-pri-st-020/situation": {
+      "scene": "À la table du campement, deux enfants déplacent de petites figurines d’animaux entre une maquette de rive et une maquette de lisière. Une élève montre deux abris possibles."
+    },
+    "qc-pri-ma-027/situation": {
+      "scene": "Deux enfants déroulent une corde le long du bord d’un tapis de sol au campement. À côté, un deuxième tapis de forme différente attend pour qu’ils comparent les tours."
+    },
+    "qc-pri-fr-008/situation": {
+      "scene": "À une table de pique-nique, deux élèves réorganisent des vignettes d’un récit de camping. Une carte montrant la découverte d’un sac est encore dans la main de l’un des lecteurs."
+    },
+    "qc-pri-ccq-004/concept": {
+      "scene": "Au départ du sentier du campement, deux enfants observent le contraste entre les traces de passage et une parcelle de jeunes pousses. Un adulte indique du bras le chemin balisé."
+    },
+    "qc-pri-ap-001/situation": {
+      "scene": "Sous l’auvent de la tente, une élève compare les reliefs d’une feuille et d’un morceau d’écorce rapportés pour l’observation. Son camarade prépare des feuilles vierges pour prendre les empreintes."
+    },
+    "qc-pri-mu-001/concept": {
+      "scene": "Assis sur des bûches devant les tentes, des enfants attendent en silence. Une élève garde sa main levée au-dessus d’une petite percussion, attentive à un bruit venu de la lisière."
+    },
+    "qc-pri-eps-006/situation": {
+      "scene": "Dans la clairière du campement, deux enfants transportent ensemble un tapis de jeu roulé. Ils se regardent pour accorder leurs pas avant de contourner un repère."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "Sous l’auvent de la tente, deux enfants essaient la manivelle d’une lampe de camp. L’un la tourne et sa camarade observe la roue dentée visible sur une maquette ouverte à côté."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "Sur une table près des tentes, deux élèves rapprochent une vieille photo du campement et une vue récente du même lieu. L’une montre la passerelle visible sur une seule image."
+    },
+    "qc-pri-fr-006/situation": {
+      "scene": "Près d’un banc du campement, une enfant tient une note tournée vers elle. Son camarade désigne deux séries de traces près d’un sac de couchage retrouvé devant la tente."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "Sous l’auvent, deux enfants déplacent des silhouettes de tentes en papier et une forme de lac sur leur composition. Ils s’arrêtent pour regarder l’espace laissé le long du bord."
+    }
+  },
+  "velo": {
+    "qc-pri-st-007/concept": {
+      "scene": "Dans la cour de l’atelier, deux élèves comparent deux petites roues sur des rampes inclinées différemment. Les roues sont au même repère de départ et un vélo est appuyé à la clôture."
+    },
+    "qc-pri-st-007/situation": {
+      "scene": "Dans la cour du local vélo, Mathilde soulève une extrémité d’une rampe pendant que son partenaire retient une roue de maquette au repère de départ. Une seconde rampe attend à côté."
+    },
+    "qc-pri-st-011/concept": {
+      "scene": "À l’établi, une enfant actionne à la main la pédale d’un vélo immobilisé sur un pied. Son partenaire observe la chaîne et la roue arrière, les mains à distance."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "Devant un vélo immobilisé dans l’atelier, Mathilde actionne un levier de frein pendant que sa camarade observe les deux patins se rapprocher de la jante."
+    },
+    "qc-pri-ma-021/concept": {
+      "scene": "À une bifurcation de la piste cyclable, deux enfants casqués comparent le chemin devant eux à un plan sans légende. Leurs vélos sont à l’arrêt sur le côté."
+    },
+    "qc-pri-ma-021/situation": {
+      "scene": "À l’écart d’une bifurcation de la piste, une élève indique deux chemins possibles sur un plan sans texte. Mathilde tient son vélo et regarde le repère devant elle."
+    },
+    "qc-pri-eps-002/concept": {
+      "scene": "Sur une aire d’entraînement du parc, des élèves se déplacent entre des plots espacés en marchant ou en sautant. Des vélos stationnés marquent le point de rendez-vous."
+    },
+    "qc-pri-eps-002/situation": {
+      "scene": "Sur une piste d’entraînement fermée à la circulation, Mathilde porte un casque et roule lentement vers deux passages délimités par des plots. Une camarade attend son tour sur le côté."
+    },
+    "qc-pri-fr-006/concept": {
+      "scene": "Sur un banc du parc, une enfant examine le verso visible d’une note trouvée près d’un vélo. Son partenaire rapproche une sonnette détachée et une petite pochette entrouverte."
+    },
+    "qc-pri-fr-006/situation": {
+      "scene": "Au point de rendez-vous cycliste, Mathilde tient une note tournée vers elle. Sa camarade montre la pompe laissée près d’un vélo à la roue affaissée. Les deux échangent un regard interrogateur."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "Au local de prêt des vélos, deux enfants préparent des trousses de réparation avec des groupes de rustines. Des compartiments sont encore vides."
+    },
+    "qc-pri-ma-020/situation": {
+      "scene": "Avant la sortie du quartier, Mathilde et un camarade répartissent des rustines entre plusieurs petites trousses. Un tas reste au milieu de la table."
+    },
+    "qc-pri-ad-007/concept": {
+      "scene": "Sur la place de la fête du vélo, deux enfants improvisent autour d’un carton de réparation. L’un le soulève, l’autre mime la surprise. Deux camarades observent depuis un banc près des vélos."
+    },
+    "qc-pri-ad-007/situation": {
+      "scene": "Devant le parc à vélos, deux jeunes comédiens improvisent une remise de colis : l’un avance le carton fermé, l’autre recule d’un pas. Une élève observe leurs postures."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "À une table de préparation de la sortie cycliste, avec les casques empilés à côté. Un enfant compte des rustines en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "Dans le local de prêt du quartier, à un poste de travail près des vélos rangés. Deux élèves trouvent des rustines séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "Sur une table du parc, juste à côté du support où stationnent les vélos. Un enfant dispose des rustines en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "À une table de préparation de la sortie cycliste, avec les casques empilés à côté. Deux élèves préparent des trousses de réparation. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "Dans le local de prêt du quartier, à un poste de travail près des vélos rangés. Des élèves distribuent des rustines dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "Sur une table du parc, juste à côté du support où stationnent les vélos. Deux enfants ouvrent des trousses de réparation pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "Sur un banc du parc, un vélo contre le support à proximité. Un enfant nomme à voix haute une pompe à vélo en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "À une table du local communautaire, des casques rangés en arrière-plan. Une élève tient des cartes illustrant les accessoires des cyclistes. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "À une table du local communautaire, des casques rangés en arrière-plan. Deux élèves regardent des cartes illustrant les accessoires des cyclistes. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "Près du départ de la piste du quartier, sur le côté du passage avec les vélos à l’arrêt. Une élève désigne une pompe à vélo parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "Près du départ de la piste du quartier, sur le côté du passage avec les vélos à l’arrêt. Trois objets familiers sont réunis, dont une pompe à vélo. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "Sur un banc du parc, un vélo contre le support à proximité. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre une pompe à vélo et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "Sur un banc du parc, un vélo contre le support à proximité. Un enfant présente des cartes illustrant les accessoires des cyclistes à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "À une table du local communautaire, des casques rangés en arrière-plan. Une élève écoute les indications de son partenaire et désigne une pompe à vélo avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Dans la cour de la fête du vélo, avec les vélos stationnés derrière l’espace d’activité. Un jeune comédien attrape une pompe à vélo et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "Sur une petite aire dégagée du parc, près du point de rendez-vous des cyclistes. Deux jeunes comédiens improvisent autour de leur matériel. L’un retient une sacoche de vélo pendant que l’autre cherche à l’ouvrir sans attirer son attention."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "À une table de création du local vélo, près d’un support à casques. Une élève agence des cartes illustrant les accessoires des cyclistes sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "À une table de création du local vélo, près d’un support à casques. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient une pompe à vélo et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "Autour d’une table du local des bénévoles, des vélos rangés derrière le groupe. Trois élèves comparent deux façons de répartir des rustines. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "À un point de rencontre près du parc à vélos du quartier. Deux élèves hésitent sur la répartition de des trousses de réparation. Ils regardent l’enfant arrivé sans matériel et gardent les contenants au milieu."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Dans la cour du local vélo, sur un parcours d’exercice délimité loin des vélos stationnés. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger une pompe à vélo."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Sur une piste d’entraînement séparée de la circulation, un vélo stationné au bord de l’aire. Une élève s’arrête avant de rencontrer une pompe à vélo laissé près du parcours. Elle fait signe au camarade qui arrive derrière."
+    },
+    "qc-pri-st-003/situation": {
+      "scene": "Sur une table dans la cour du local vélo, une élève aligne une petite roue au départ d’une bande de mesure sans chiffres. Mathilde montre le point où la roue s’était arrêtée au premier essai."
+    },
+    "qc-pri-st-009/situation": {
+      "scene": "À l’établi, Mathilde déplace une lampe de vélo devant la forme d’une roue en carton. Une camarade compare l’ombre obtenue sur un écran posé à côté du pied de réparation."
+    },
+    "qc-pri-st-012/situation": {
+      "scene": "Au local vélo, Mathilde tient un support de maquette en carton. Son partenaire essaie à blanc deux pièces de formes différentes pour voir laquelle maintiendrait la roue debout."
+    },
+    "qc-pri-ma-025/concept": {
+      "scene": "Sur la table du local de prêt, deux enfants comparent la longueur de deux segments de chaîne démontés à une bande sans inscriptions. Deux pompes restent rangées à l’arrière."
+    },
+    "qc-pri-ma-026/situation": {
+      "scene": "Sur la piste d’entraînement, deux élèves casqués attendent à côté de leurs vélos. Deux camarades utilisent des sabliers pour comparer la durée de deux trajets courts."
+    },
+    "qc-pri-ccq-004/situation": {
+      "scene": "À une halte du parcours cyclable, Mathilde pose son vélo sur le côté. Deux élèves observent une trace de pneu qui quitte le chemin près d’un espace planté et discutent du passage à préserver."
+    },
+    "qc-pri-ccq-005/situation": {
+      "scene": "À la fête du vélo, deux élèves cadrent le vélo remis en état avec un appareil tenu bas. Mathilde, qui se tient près du guidon, fait un signe avant qu’ils prennent la photo."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "Au local vélo, deux élèves comparent une photo ancienne d’un carrefour à une image récente où passe une piste. L’une repère la même maison d’angle sur les deux photos."
+    },
+    "qc-pri-fls-007/situation": {
+      "scene": "Près du départ de la piste, deux élèves rejouent un geste de circulation montré dans une vignette muette. Leurs vélos restent stationnés pendant qu’ils comparent leurs signes de la main."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "Au local vélo, deux élèves déplacent des silhouettes de cyclistes découpées sur un panneau vierge. Ils s’arrêtent pour comparer l’espace entre le groupe et le cadre."
+    },
+    "qc-pri-mu-001/situation": {
+      "scene": "À la halte cycliste, les vélos sont arrêtés contre un support. Un enfant attend que le bruit de la cour diminue avant d’essayer doucement la sonnette ; son partenaire tourne la tête vers le son."
+    },
+    "qc-pri-da-004/situation": {
+      "scene": "Dans la cour de la fête du vélo, un groupe d’élèves essaie de passer d’une ligne à deux arcs, à pied. Les vélos stationnés restent au-delà de l’aire de danse."
+    }
+  },
+  "jardinage": {
+    "qc-pri-fr-006/situation": {
+      "scene": "Près d’un bac du jardin partagé, deux élèves découvrent une note face cachée. L’un montre un arrosoir oublié au bout de l’allée, l’autre remarque les traces humides sur le sol."
+    },
+    "qc-pri-st-002/situation": {
+      "scene": "Dans la serre du jardin collectif, deux enfants placent deux pots semblables, l’un près de la vitre et l’autre derrière un écran. Une même petite mesure d’eau attend devant chaque pot."
+    },
+    "qc-pri-ma-020/situation": {
+      "scene": "Sous l’abri du jardin, deux élèves mettent des graines dans des sachets destinés aux bacs. Plusieurs sachets attendent encore, ouverts, et un petit tas de graines reste à répartir."
+    },
+    "qc-pri-eps-002/situation": {
+      "scene": "Devant le portail du jardin collectif, deux allées dégagées partent de la même ligne. Un enfant s’arrête entre des plots et indique à sa partenaire le trajet qu’il s’apprête à essayer."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "À une table de préparation en bordure du potager. Un enfant compte des sachets de graines en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "Sous l’abri du jardin collectif, à côté des tiroirs à graines. Deux élèves trouvent des sachets de graines séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "Près des bacs de culture, à un poste de travail dégagé. Un enfant dispose des sachets de graines en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "À une table de préparation en bordure du potager. Deux élèves préparent des pots de semis. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "Sous l’abri du jardin collectif, à côté des tiroirs à graines. Des élèves distribuent des sachets de graines dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "Près des bacs de culture, à un poste de travail dégagé. Deux enfants ouvrent des pots de semis pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "Sous l’abri du jardin collectif, à côté des tiroirs à graines. Des enfants répartissent des sachets de graines entre plusieurs contenants. Ils rapprochent les groupes déjà préparés pour les comparer."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "Au bout d’une allée entre les bacs du jardin collectif. Un enfant nomme à voix haute un arrosoir en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "À une table de lecture près de la serre du jardin. Une élève tient des cartes illustrant les outils du potager. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "À une table de lecture près de la serre du jardin. Deux élèves regardent des cartes illustrant les outils du potager. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "Sous l’auvent du local des jardiniers, les bacs visibles au loin. Une élève désigne un arrosoir parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "Sous l’auvent du local des jardiniers, les bacs visibles au loin. Trois objets familiers sont réunis, dont un arrosoir. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "Au bout d’une allée entre les bacs du jardin collectif. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre un arrosoir et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "Au bout d’une allée entre les bacs du jardin collectif. Un enfant présente des cartes illustrant les outils du potager à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "À une table de lecture près de la serre du jardin. Une élève écoute les indications de son partenaire et désigne un arrosoir avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Sur l’aire de rencontre du jardin, entre les treillis. Un jeune comédien attrape un arrosoir et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "Dans la cour des jardiniers, face à la petite serre. Deux jeunes comédiens improvisent autour de leur matériel. L’un retient un panier de récolte pendant que l’autre cherche à l’ouvrir sans attirer son attention."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "À une table commune du jardin, près des pots de semis. Une élève agence des cartes illustrant les outils du potager sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "À une table commune du jardin, près des pots de semis. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient un arrosoir et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "Dans l’espace de rencontre du jardin, les parcelles derrière. Trois élèves comparent deux façons de répartir des sachets de graines. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "À une table de réunion sous l’auvent du jardin. Deux élèves hésitent sur la répartition de des pots de semis. Ils regardent l’enfant arrivé sans matériel et gardent les contenants au milieu."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Dans la cour attenante au jardin, loin des bacs et des outils. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger un arrosoir."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Sur une aire dégagée à l’extérieur des parcelles du jardin. Une élève s’arrête avant de rencontrer un arrosoir laissé près du parcours. Elle fait signe au camarade qui arrive derrière."
+    },
+    "qc-pri-st-001/concept": {
+      "scene": "À hauteur d’un bac du potager, une enfant compare une goutte retenue sur une feuille et l’eau absorbée par la terre. Son camarade se penche avec une loupe."
+    },
+    "qc-pri-st-019/situation": {
+      "scene": "À une table de la serre, une élève compare trois pots : une graine tout juste arrosée, une pousse et une plantule. Son partenaire tient un quatrième pot sans savoir où le placer."
+    },
+    "qc-pri-st-020/concept": {
+      "scene": "Dans le jardin collectif, deux enfants observent un insecte posé sur une fleur, des feuilles grignotées et un petit abri de branches. Ils restent à distance et montrent chacun un détail."
+    },
+    "qc-pri-ma-027/situation": {
+      "scene": "Deux enfants essaient de faire le tour de deux bacs de formes différentes avec la même corde. L’une tient une extrémité au coin du premier bac pendant que son partenaire déroule le reste."
+    },
+    "qc-pri-ap-001/concept": {
+      "scene": "Sur une table près de la serre, une enfant superpose le contour d’une feuille à un bout de carton qu’elle a découpé. À côté, son partenaire compare au toucher une gousse lisse et un morceau d’écorce."
+    },
+    "qc-pri-ccq-004/situation": {
+      "scene": "À l’entrée du jardin partagé, une élève s’arrête devant du matériel abandonné entre un bac de compost et la zone de culture. Son partenaire ramasse un pot réutilisable et lui demande du regard où le déposer."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "Sous l’auvent du jardin, deux élèves confrontent une photo de la parcelle avant sa transformation et les bacs visibles au loin. L’un montre le portail conservé, l’autre une ancienne bordure en pierre."
+    },
+    "qc-pri-ad-004/situation": {
+      "scene": "Dans une allée libre du jardin collectif, deux élèves jouent une rencontre autour d’un panier de récolte fermé. L’un l’entrouvre au moment où sa partenaire s’approche en levant la main."
+    },
+    "qc-pri-da-003/concept": {
+      "scene": "Dans la cour près du jardin, trois élèves montrent trois moments d’une danse inspirée du semis : se pencher, tourner et s’élever. Un banc à côté laisse bien voir la différence de hauteur."
+    },
+    "qc-pri-mu-001/situation": {
+      "scene": "Près du treillis du jardin partagé, deux enfants s’immobilisent après un son bref. L’un tient un petit instrument à graines fermé, l’autre lève la main pour attendre que le bruit du jardin retombe."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "Près du récupérateur du jardin, deux enfants examinent une petite pompe manuelle de démonstration. L’un abaisse le levier tandis que l’autre regarde la tige monter dans le corps transparent."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "À la table près de la serre, deux jeunes artistes déplacent des silhouettes de feuilles autour d’une fleur en papier. L’une montre la marge qui se libère entre le montage et le bord de la feuille."
+    }
+  },
+  "jazz": {
+    "qc-pri-st-009/concept": {
+      "scene": "À un poste d’essai du festival, une enfant place un morceau de feutre près d’un petit tambour. Son camarade tient la baguette au-dessus de la peau, prêt à comparer le son."
+    },
+    "qc-pri-mu-004/situation": {
+      "scene": "Près de l’estrade du festival, un enfant joue derrière un panneau bas. Sa partenaire écoute et hésite entre deux petits instruments de percussion posés devant elle."
+    },
+    "qc-pri-fr-006/situation": {
+      "scene": "Dans la loge du festival, une élève tient un mot replié, face cachée. Son camarade montre un étui entrouvert puis la place vide à côté des musiciens."
+    },
+    "qc-pri-eps-002/situation": {
+      "scene": "Dans la cour voisine de l’estrade, un enfant arrive à une bifurcation entre des plots pendant qu’une camarade l’attend sur le côté. Les instruments restent sur la scène au loin."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "À une table de préparation du festival, près des caisses rigides d’instruments. Un enfant compte des anneaux pour ranger le matériel en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "Au point de prêt de matériel du festival, avec la scène en arrière-plan. Deux élèves trouvent des anneaux pour ranger le matériel séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "À une table de montage près des chaises empilées de la place du festival. Un enfant dispose des anneaux pour ranger le matériel en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "À une table de préparation du festival, près des caisses rigides d’instruments. Deux élèves préparent des étuis d’instruments. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "Au point de prêt de matériel du festival, avec la scène en arrière-plan. Des élèves distribuent des anneaux pour ranger le matériel dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "À une table de montage près des chaises empilées de la place du festival. Deux enfants ouvrent des étuis d’instruments pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "Au point de prêt de matériel du festival, avec la scène en arrière-plan. Des enfants répartissent des anneaux pour ranger le matériel entre plusieurs contenants. Ils rapprochent les groupes déjà préparés pour les comparer."
+    },
+    "qc-pri-ma-020/situation": {
+      "scene": "À une table de montage près des chaises empilées de la place du festival. Deux élèves préparent des étuis d’instruments et prennent tour à tour des pièces dans le même tas. Plusieurs places vides restent visibles."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "À un banc de la place du festival, à distance de la scène de jazz. Un enfant nomme à voix haute un petit tambour en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "Dans la loge des jeunes musiciens, près des étuis fermés. Une élève tient des cartes illustrant les instruments du festival. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "Dans la loge des jeunes musiciens, près des étuis fermés. Deux élèves regardent des cartes illustrant les instruments du festival. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "À une table du pavillon d’accueil, la scène du festival à l’arrière-plan. Une élève désigne un petit tambour parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "À une table du pavillon d’accueil, la scène du festival à l’arrière-plan. Trois objets familiers sont réunis, dont un petit tambour. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "À un banc de la place du festival, à distance de la scène de jazz. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre un petit tambour et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "À un banc de la place du festival, à distance de la scène de jazz. Un enfant présente des cartes illustrant les instruments du festival à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "Dans la loge des jeunes musiciens, près des étuis fermés. Une élève écoute les indications de son partenaire et désigne un petit tambour avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Sur une aire de répétition à côté des instruments du festival. Un jeune comédien attrape un petit tambour et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "Sur une petite estrade du festival de jazz, devant un espace réservé aux spectateurs. Deux jeunes comédiens improvisent autour de leur matériel. L’un retient une caisse de matériel de scène pendant que l’autre cherche à l’ouvrir sans attirer son attention."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "Dans le local des musiciens, avec des étuis et des pupitres vides en arrière-plan. Une élève agence des cartes illustrant les instruments du festival sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "Dans le local des musiciens, avec des étuis et des pupitres vides en arrière-plan. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient un petit tambour et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "À une table de bénévoles sur la place où se prépare le festival de jazz. Trois élèves comparent deux façons de répartir des anneaux pour ranger le matériel. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "Dans l’espace d’accueil du festival, près de la file des chaises. Deux élèves hésitent sur la répartition de des étuis d’instruments. Ils regardent l’enfant arrivé sans matériel et gardent les contenants au milieu."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Sur un espace libre derrière la scène de jazz, hors des câbles et du matériel. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger un petit tambour."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Sur la partie dégagée du parvis à l’écart de l’estrade de jazz. Une élève s’arrête avant de rencontrer un petit tambour laissé près du parcours. Elle fait signe au camarade qui arrive derrière."
+    },
+    "qc-pri-mu-002/concept": {
+      "scene": "Dans le local de répétition du festival, une batteuse donne une pulsation régulière. Trois enfants assis frappent dans leurs mains pendant qu’une camarade marque un rythme différent sur un instrument."
+    },
+    "qc-pri-mu-003/situation": {
+      "scene": "Sur le côté de l’estrade, un enfant joue une note au métallophone, puis regarde sa partenaire qui tient une autre mailloche au-dessus d’une lame de longueur différente."
+    },
+    "qc-pri-mu-008/situation": {
+      "scene": "Deux élèves écoutent un duo sur la place du festival. L’un suit des yeux la contrebassiste qui vient de s’arrêter et montre du doigt le saxophoniste qui prend la relève."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "Dans la loge, deux enfants observent de près la pédale d’une grosse caisse. L’un appuie lentement du pied tandis que sa partenaire suit du regard la batte qui se rapproche de la peau."
+    },
+    "qc-pri-ma-027/situation": {
+      "scene": "Dans la cour du festival, deux bénévoles juniors déroulent une corde autour du bord d’un tapis de scène. Ils rapprochent une seconde forme pour vérifier si la même corde pourrait en faire le tour."
+    },
+    "qc-pri-ap-003/concept": {
+      "scene": "Sur une table de préparation du festival, une élève répartit trois silhouettes d’instruments découpées sur un panneau vierge. Son partenaire tient le cadre et laisse chacun des bords visible."
+    },
+    "qc-pri-ccq-008/situation": {
+      "scene": "Autour d’une table près des loges, deux enfants proposent en même temps un endroit pour poser les étuis. L’un s’arrête et invite sa camarade à compléter son idée d’un geste de la main."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "Près de la scène de quartier, des élèves comparent une ancienne photo de la place avec une photo récente. Une élève pointe un kiosque à musique visible sur une seule des deux images."
+    },
+    "qc-pri-da-005/situation": {
+      "scene": "Après la répétition du festival, deux enfants improvisent en miroir sur le bord libre de l’estrade. L’un se penche, l’autre suspend son geste, prêt à lui répondre."
+    },
+    "qc-pri-ad-005/situation": {
+      "scene": "Sur une aire de répétition à côté de la scène de jazz, un jeune comédien traverse l’espace. Deux camarades déplacent un étui et un tabouret pour lui laisser le passage."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "Sur une table devant l’estrade du festival, deux enfants déplacent une silhouette de saxophone et une silhouette de contrebasse sur une affiche vierge. Ils se reculent pour comparer leur disposition."
+    }
+  },
+  "cuisine": {
+    "qc-pri-ma-012/concept": {
+      "scene": "Au comptoir froid du goûter, deux enfants rapprochent des parts égales d’une galette sur un plateau. Une part est posée à côté, avec un espace visible sur le plateau."
+    },
+    "qc-pri-st-006/situation": {
+      "scene": "Sur une table de préparation du goûter, une enfant mélange une pâte dans un bol pendant que son partenaire soulève une cuillère au-dessus d’un échantillon préparé avant le mélange."
+    },
+    "qc-pri-fr-006/situation": {
+      "scene": "Près de la table d’accueil du goûter, une élève tient un petit mot retourné. Son camarade remarque un plateau vide près d’une place encore libre."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "Sur une table de répartition des portions, des bols vides près du bord. Un enfant compte des pièces de carton en forme de fruits en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "Au comptoir froid de préparation, avec des paniers de provisions. Deux élèves trouvent des pièces de carton en forme de fruits séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "À un poste de rangement du goûter, près des plateaux encore vides. Un enfant dispose des pièces de carton en forme de fruits en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "Sur une table de répartition des portions, des bols vides près du bord. Deux élèves préparent des boîtes de goûter. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "Au comptoir froid de préparation, avec des paniers de provisions. Des élèves distribuent des pièces de carton en forme de fruits dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "À un poste de rangement du goûter, près des plateaux encore vides. Deux enfants ouvrent des boîtes de goûter pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "Au comptoir froid de préparation, avec des paniers de provisions. Des enfants répartissent des pièces de carton en forme de fruits entre plusieurs contenants. Ils rapprochent les groupes déjà préparés pour les comparer."
+    },
+    "qc-pri-ma-020/situation": {
+      "scene": "À un poste de rangement du goûter, près des plateaux encore vides. Deux élèves préparent des boîtes de goûter et prennent tour à tour des pièces dans le même tas. Plusieurs places vides restent visibles."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "Sur une table du coin accueil du goûter collectif, près du panier de fruits. Un enfant nomme à voix haute une cuillère en bois en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "Sur un banc du jardin derrière la salle du goûter. Une élève tient des cartes illustrant les ustensiles du goûter. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "Sur un banc du jardin derrière la salle du goûter. Deux élèves regardent des cartes illustrant les ustensiles du goûter. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "À une table de préparation à distance de la zone de cuisson, avec des bols empilés en fond. Une élève désigne une cuillère en bois parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "À une table de préparation à distance de la zone de cuisson, avec des bols empilés en fond. Trois objets familiers sont réunis, dont une cuillère en bois. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "Sur une table du coin accueil du goûter collectif, près du panier de fruits. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre une cuillère en bois et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "Sur une table du coin accueil du goûter collectif, près du panier de fruits. Un enfant présente des cartes illustrant les ustensiles du goûter à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "Sur un banc du jardin derrière la salle du goûter. Une élève écoute les indications de son partenaire et désigne une cuillère en bois avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Dans la salle du goûter collectif, face au comptoir de service. Un jeune comédien attrape une cuillère en bois et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "Sur la terrasse de la cuisine communautaire, à une table d’activité. Deux jeunes comédiens improvisent autour de leur matériel. L’un retient un panier de provisions pendant que l’autre cherche à l’ouvrir sans attirer son attention."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "Sur l’aire d’accueil du goûter, près des paniers préparés. Une élève agence des cartes illustrant les ustensiles du goûter sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "Sur l’aire d’accueil du goûter, près des paniers préparés. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient une cuillère en bois et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "À une table où les jeunes décident de l’organisation du goûter, près de la salle commune. Trois élèves comparent deux façons de répartir des pièces de carton en forme de fruits. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "À la table de service, deux élèves regardent les dernières portions et les assiettes restées vides. L’un s’apprête à proposer une manière de servir les enfants qui viennent d’arriver."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Sur l’espace dégagé du jardin derrière la cuisine communautaire. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger une cuillère en bois."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Sur l’aire de jeu extérieure voisine du goûter collectif. Une élève s’arrête avant de rencontrer une cuillère en bois laissé près du parcours. Elle fait signe au camarade qui arrive derrière."
+    },
+    "qc-pri-ma-025/situation": {
+      "scene": "Au poste froid du goûter, une enfant tient deux récipients de formes différentes. Son partenaire rapproche une petite tasse vide pour comparer combien chacun peut contenir."
+    },
+    "qc-pri-ma-027/concept": {
+      "scene": "Sur la table du goûter, deux élèves posent une corde le long du bord d’un plateau. Le dernier coin reste libre et un plateau plus étroit attend à côté."
+    },
+    "qc-pri-st-009/concept": {
+      "scene": "Près de l’accueil du goûter, une enfant tient une passoire entre la lampe et le mur. Son camarade observe les petits points lumineux qui traversent les trous."
+    },
+    "qc-pri-st-019/situation": {
+      "scene": "Sur la table d’observation de la cuisine, deux enfants rapprochent un fruit, ses graines et un petit pot contenant une pousse. L’un hésite sur la place d’une vignette montrant une fleur."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "Près du comptoir du goûter, deux enfants comparent une ancienne photo de préparation collective avec une cuillère en bois et un bol d’aujourd’hui. L’une montre un ustensile semblable sur l’image."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "À la table des préparatifs du goûter, deux élèves déplacent un fruit découpé en papier entre deux groupes de formes. Le panneau de présentation reste à plat, avec ses bords visibles."
+    },
+    "qc-pri-ad-004/situation": {
+      "scene": "Sur l’aire d’accueil du goûter, deux jeunes comédiens improvisent. L’un soulève le linge d’un panier, l’autre arrive au même moment avec un plateau vide et s’arrête."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "À une table de la salle du goûter, une élève tourne la manivelle d’un fouet manuel démontable. Son partenaire montre les engrenages qui entraînent les deux fouets."
+    }
+  },
+  "grenier": {
+    "qc-pri-fr-006/situation": {
+      "scene": "Sur le palier près du grenier, deux enfants découvrent une note pliée dans un album. L’un montre un emplacement vide entre deux photos et l’autre tient encore le mot face à lui."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "À la table du salon, deux élèves comparent une vieille photo sortie du grenier avec une photo récente de la même entrée de maison. L’un montre un objet disparu entre les deux images."
+    },
+    "qc-pri-eps-002/situation": {
+      "scene": "Dans la cour, près d’une caisse de jeux descendue du grenier, un enfant arrive devant deux trajets balisés. Une camarade l’attend à la ligne de départ."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "À une table de tri sous la lucarne du grenier. Un enfant compte des boutons de couture en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "Sur le palier du grenier, près de caisses à compartiments. Deux élèves trouvent des boutons de couture séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "Dans la remise familiale, avec du matériel descendu du grenier. Un enfant dispose des boutons de couture en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "À une table de tri sous la lucarne du grenier. Deux élèves préparent des boîtes de rangement. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "Sur le palier du grenier, près de caisses à compartiments. Des élèves distribuent des boutons de couture dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "Dans la remise familiale, avec du matériel descendu du grenier. Deux enfants ouvrent des boîtes de rangement pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "Sur le palier du grenier, près de caisses à compartiments. Des enfants répartissent des boutons de couture entre plusieurs contenants. Ils rapprochent les groupes déjà préparés pour les comparer."
+    },
+    "qc-pri-ma-020/situation": {
+      "scene": "Dans la remise familiale, avec du matériel descendu du grenier. Deux élèves préparent des boîtes de rangement et prennent tour à tour des pièces dans le même tas. Plusieurs places vides restent visibles."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "À un coin lecture près de la lucarne du grenier, un album de famille à portée de main. Un enfant nomme à voix haute un album de famille en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "Sur le palier devant le grenier, avec une boîte de souvenirs ouverte en arrière-plan. Une élève tient des cartes illustrant les objets retrouvés au grenier. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "Sur le palier devant le grenier, avec une boîte de souvenirs ouverte en arrière-plan. Deux élèves regardent des cartes illustrant les objets retrouvés au grenier. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "À une table du salon, avec des albums sortis du grenier. Une élève désigne un album de famille parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "À une table du salon, avec des albums sortis du grenier. Trois objets familiers sont réunis, dont un album de famille. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "À un coin lecture près de la lucarne du grenier, un album de famille à portée de main. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre un album de famille et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "À un coin lecture près de la lucarne du grenier, un album de famille à portée de main. Un enfant présente des cartes illustrant les objets retrouvés au grenier à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "Sur le palier devant le grenier, avec une boîte de souvenirs ouverte en arrière-plan. Une élève écoute les indications de son partenaire et désigne un album de famille avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Dans la cour de la maison, près des objets de famille amenés du grenier. Un jeune comédien attrape un album de famille et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "Au salon, dans un espace dégagé à côté de l’exposition des souvenirs de famille. Deux jeunes comédiens improvisent autour de leur matériel. L’un retient une malle de souvenirs pendant que l’autre cherche à l’ouvrir sans attirer son attention."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "À une grande table près du grenier, des boîtes entrouvertes en fond. Une élève agence des cartes illustrant les objets retrouvés au grenier sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "À une grande table près du grenier, des boîtes entrouvertes en fond. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient un album de famille et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "À la table d’archives du salon, près d’un album de famille ouvert sur des images. Trois élèves comparent deux façons de répartir des boutons de couture. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "Sur le palier du grenier, devant des boîtes à partager. Deux élèves hésitent sur la répartition de des boîtes de rangement. Ils regardent l’enfant arrivé sans matériel et gardent les contenants au milieu."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Sur une aire libre de la cour, au pied du perron de la maison. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger un album de famille."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Dans la cour de la maison, près d’une caisse de jeux sortie du grenier. Une élève s’arrête avant de rencontrer un album de famille laissé près du parcours. Elle fait signe au camarade qui arrive derrière."
+    },
+    "qc-pri-st-005/situation": {
+      "scene": "Sous l’auvent de la maison, une enfant observe de la glace fondre dans une coupelle sortie du grenier. Son partenaire compare cette coupelle avec un récipient qui tient encore un morceau solide."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "À une table du salon, deux enfants examinent un ancien moulin manuel retrouvé au grenier. L’un tourne sa poignée lentement tandis que sa partenaire regarde la pièce qu’elle entraîne."
+    },
+    "qc-pri-ma-024/situation": {
+      "scene": "Près des boîtes ouvertes du grenier, une enfant aligne deux silhouettes en papier de part et d’autre d’un pli. Son partenaire vérifie l’angle d’une pièce avec une équerre."
+    },
+    "qc-pri-ma-029/situation": {
+      "scene": "À la table de tri, deux élèves comparent des formes construites à partir de cubes retrouvés dans une malle. Une couche incomplète reste visible dans une boîte ouverte."
+    },
+    "qc-pri-us-015/situation": {
+      "scene": "Au salon, près des albums sortis du grenier, deux enfants rapprochent deux images de la même maison à des dates différentes. Une élève montre la lucarne conservée et son partenaire le chemin déplacé."
+    },
+    "qc-pri-ccq-003/situation": {
+      "scene": "Au pied du grenier, un enfant hésite à présenter une petite boîte qui lui appartient. Sa camarade garde les mains sur ses propres affaires et attend qu’il choisisse de l’ouvrir."
+    },
+    "qc-pri-ap-001/situation": {
+      "scene": "À une table près de la lucarne, deux élèves touchent une toile de vieille malle et un tissu plié. Ils rapprochent des morceaux de papier de même forme pour rendre visibles les deux textures."
+    },
+    "qc-pri-da-004/situation": {
+      "scene": "Dans la cour, loin des caisses descendues du grenier, un groupe passe d’une ligne près du perron à deux petits arcs. Les caisses gardent leurs objets sur le côté."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "À la table du grenier, deux élèves déplacent une silhouette de lucarne et une silhouette de malle sur leur feuille. Un morceau de papier libre souligne l’espace entre les deux formes."
+    }
+  },
+  "riviere": {
+    "qc-pri-st-013/concept": {
+      "scene": "Au pavillon riverain, deux enfants comparent des galets et des échantillons de sol dans des coupelles. Une loupe est posée près d’une petite maquette de la berge."
+    },
+    "qc-pri-us-002/situation": {
+      "scene": "À la table du pavillon, une élève trace du doigt un trajet sur un plan muet. Son camarade désigne la vraie passerelle visible à l’arrière-plan."
+    },
+    "qc-pri-fr-006/situation": {
+      "scene": "Sur le banc du sentier riverain, un enfant tient un mot face à lui. Sa camarade montre du doigt un carnet oublié près du panneau muet du sentier."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "À une table du pavillon riverain avec des coupelles d’observation rangées. Un enfant compte des galets d’observation en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "Au poste de collecte du parc riverain, sur une surface de travail en retrait de l’eau. Deux élèves trouvent des galets d’observation séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "À une table de préparation près du sentier qui longe les roseaux. Un enfant dispose des galets d’observation en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "À une table du pavillon riverain avec des coupelles d’observation rangées. Deux élèves préparent des coupelles de collecte. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "Au poste de collecte du parc riverain, sur une surface de travail en retrait de l’eau. Des élèves distribuent des galets d’observation dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "À une table de préparation près du sentier qui longe les roseaux. Deux enfants ouvrent des coupelles de collecte pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "Au poste de collecte du parc riverain, sur une surface de travail en retrait de l’eau. Des enfants répartissent des galets d’observation entre plusieurs contenants. Ils rapprochent les groupes déjà préparés pour les comparer."
+    },
+    "qc-pri-ma-020/situation": {
+      "scene": "À une table de préparation près du sentier qui longe les roseaux. Deux élèves préparent des coupelles de collecte et prennent tour à tour des pièces dans le même tas. Plusieurs places vides restent visibles."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "Sur un banc du sentier riverain, des roseaux visibles au-delà du chemin. Un enfant nomme à voix haute une loupe en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "Au pavillon d’observation de la rivière, face au paysage. Une élève tient des cartes illustrant les repères du sentier riverain. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "Au pavillon d’observation de la rivière, face au paysage. Deux élèves regardent des cartes illustrant les repères du sentier riverain. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "À une table de pique-nique du parc riverain, en retrait de l’eau. Une élève désigne une loupe parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "À une table de pique-nique du parc riverain, en retrait de l’eau. Trois objets familiers sont réunis, dont une loupe. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "Sur un banc du sentier riverain, des roseaux visibles au-delà du chemin. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre une loupe et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "Sur un banc du sentier riverain, des roseaux visibles au-delà du chemin. Un enfant présente des cartes illustrant les repères du sentier riverain à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "Au pavillon d’observation de la rivière, face au paysage. Une élève écoute les indications de son partenaire et désigne une loupe avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Sur l’aire de rencontre du parc riverain, la passerelle en arrière-plan. Un jeune comédien attrape une loupe et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "Sur l’esplanade qui surplombe la rivière, derrière la balustrade. Deux jeunes comédiens improvisent autour de leur matériel. L’un retient un carnet de terrain pendant que l’autre cherche à l’ouvrir sans attirer son attention."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "À une table d’activité près du pavillon de la rivière. Une élève agence des cartes illustrant les repères du sentier riverain sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "À une table d’activité près du pavillon de la rivière. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient une loupe et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "Au pavillon du parc riverain, près d’une carte muette des accès. Trois élèves comparent deux façons de répartir des galets d’observation. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "À une table de rencontre qui donne sur la passerelle de la rivière. Deux élèves hésitent sur la répartition de des coupelles de collecte. Ils regardent l’enfant arrivé sans matériel et gardent les contenants au milieu."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Sur l’esplanade du parc riverain, loin de la circulation. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger une loupe."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Sur l’esplanade du parc riverain, une enfant s’arrête avant un accessoire tombé sur le parcours. Elle le montre à son camarade, loin de la berge."
+    },
+    "qc-pri-st-001/concept": {
+      "scene": "Sur une table au pavillon riverain, deux enfants observent une goutte sur un galet et une autre absorbée par un échantillon de terre. Une loupe repose entre les coupelles."
+    },
+    "qc-pri-st-019/situation": {
+      "scene": "Au bord du sentier, deux élèves comparent des dessins d’un œuf, d’un têtard et d’une grenouille. Une enfant hésite sur la place d’une nouvelle vignette, la rivière derrière le pavillon."
+    },
+    "qc-pri-ma-027/situation": {
+      "scene": "À la table du parc riverain, une élève place une corde autour du bord d’une maquette de terrain. Son camarade approche une seconde forme et tient la corde restante."
+    },
+    "qc-pri-ccq-004/situation": {
+      "scene": "Deux enfants s’arrêtent sur le sentier riverain devant un emballage tombé près d’un bac. Une élève indique le bac, l’autre montre la zone de roseaux qu’ils veulent laisser tranquille."
+    },
+    "qc-pri-us-015/situation": {
+      "scene": "Au pavillon de la rivière, deux élèves comparent une photo ancienne de la rive et une vue récente. L’un montre le même rocher, l’autre une passerelle récente."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "Sur la terrasse du pavillon riverain, deux élèves déplacent des silhouettes de galets et de roseaux sur un grand papier. L’espace entre les formes et le bord de la feuille reste dégagé."
+    },
+    "qc-pri-mu-001/situation": {
+      "scene": "Assis à distance de l’eau, un enfant attend en levant la main pendant que son partenaire écoute le courant. Une petite percussion reste posée devant eux."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "Sur une table du pavillon riverain, un enfant tourne à la main une roue de moulin miniature. Sa camarade montre l’axe qui entraîne une seconde pièce dans la maquette."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "Au pavillon riverain, deux enfants comparent une photographie de la rive à une ancienne carte muette. L’un désigne le coude de la rivière et sa camarade rapproche les deux documents."
+    }
+  },
+  "espace": {
+    "qc-pri-st-016/concept": {
+      "scene": "Dans un laboratoire de simulation au sol, deux élèves orientent les modèles de la Terre et de la Lune devant une lampe. Une seule face de chaque sphère est éclairée."
+    },
+    "qc-pri-st-007/situation": {
+      "scene": "Au centre de préparation de mission, deux enfants comparent deux rampes destinées à un petit véhicule d’exploration. Une élève ajuste une pente pendant que son partenaire immobilise le véhicule au même repère."
+    },
+    "qc-pri-fr-006/situation": {
+      "scene": "Au poste de communication de la station fictive, un enfant tient une note tournée vers lui. Sa camarade montre un compartiment ouvert et le casque abandonné devant celui-ci."
+    },
+    "qc-pri-eps-002/situation": {
+      "scene": "Dans la salle d’entraînement au sol, deux trajets balisés contournent une maquette de sas spatial. Une élève choisit un passage pendant que son partenaire attend derrière la ligne."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "Au comptoir de préparation des caisses du module logistique. Un enfant compte des capsules de maquette en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "À un poste d’inventaire de la mission, des compartiments de rangement en fond. Deux élèves trouvent des capsules de maquette séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "Sur la table de travail d’une salle d’entraînement, près de la maquette de la station. Un enfant dispose des capsules de maquette en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "Au comptoir de préparation des caisses du module logistique. Deux élèves préparent des caisses de mission. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "À un poste d’inventaire de la mission, des compartiments de rangement en fond. Des élèves distribuent des capsules de maquette dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "Sur la table de travail d’une salle d’entraînement, près de la maquette de la station. Deux enfants ouvrent des caisses de mission pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "À un poste d’inventaire de la mission, des compartiments de rangement en fond. Des enfants répartissent des capsules de maquette entre plusieurs contenants. Ils rapprochent les groupes déjà préparés pour les comparer."
+    },
+    "qc-pri-ma-020/situation": {
+      "scene": "Sur la table de travail d’une salle d’entraînement, près de la maquette de la station. Deux élèves préparent des caisses de mission et prennent tour à tour des pièces dans le même tas. Plusieurs places vides restent visibles."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "Dans le coin lecture du module de vie de la station fictive. Un enfant nomme à voix haute un casque de simulation en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "Au poste de communication de la station, avec un hublot en arrière-plan. Une élève tient des cartes illustrant les équipements de la station. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "Au poste de communication de la station, avec un hublot en arrière-plan. Deux élèves regardent des cartes illustrant les équipements de la station. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "Dans une salle de préparation de la mission, avec une maquette de la station. Une élève désigne un casque de simulation parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "Dans une salle de préparation de la mission, avec une maquette de la station. Trois objets familiers sont réunis, dont un casque de simulation. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "Dans le coin lecture du module de vie de la station fictive. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre un casque de simulation et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "Dans le coin lecture du module de vie de la station fictive. Un enfant présente des cartes illustrant les équipements de la station à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "Au poste de communication de la station, avec un hublot en arrière-plan. Une élève écoute les indications de son partenaire et désigne un casque de simulation avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Dans le module commun de la station fictive, près d’une paroi arrondie. Un jeune comédien attrape un casque de simulation et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "Dans la salle du simulateur, deux enfants improvisent autour d’une caisse de mission. L’un retient le couvercle tandis que l’autre approche en cherchant le regard de son partenaire."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "Dans l’atelier de préparation de mission, une maquette orbitale en arrière-plan. Une élève agence des cartes illustrant les équipements de la station sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "Dans l’atelier de préparation de mission, une maquette orbitale en arrière-plan. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient un casque de simulation et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "Dans le module de réunion de la station fictive, près d’un hublot. Trois élèves comparent deux façons de répartir des capsules de maquette. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "Dans le module de réunion de la station fictive, trois enfants regardent des réserves dans des compartiments. L’un montre le poste qui en a le moins, un autre retient une boîte au centre."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Dans la cour du centre de préparation de mission, avec des modules d’entraînement en arrière-plan. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger un casque de simulation."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Dans une salle d’entraînement au sol, près d’une maquette de sas spatial. Une élève s’arrête avant de rencontrer un casque de simulation laissé près du parcours. Elle fait signe au camarade qui arrive derrière."
+    },
+    "qc-pri-st-008/concept": {
+      "scene": "Au centre de préparation de mission, deux élèves observent un petit ventilateur qui peut faire tourner un moulin de maquette. L’une tient le moulin près du repère de départ."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "Dans le laboratoire de simulation, deux enfants essaient la manivelle d’un petit bras de maquette. L’un tourne lentement, l’autre suit la roue dentée qui fait pivoter le bras."
+    },
+    "qc-pri-ma-027/situation": {
+      "scene": "Sur la table du module logistique, deux élèves posent un cordon autour de l’ouverture d’un compartiment de rangement. Une seconde ouverture de forme différente reste visible."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "Dans la salle de préparation au sol, deux enfants comparent une vieille photographie d’équipement spatial et un modèle actuel. L’un pointe la poignée conservée dans les deux versions."
+    },
+    "qc-pri-ap-003/concept": {
+      "scene": "Dans l’atelier de préparation de mission, une élève agence trois silhouettes de modules spatiaux découpées sur un support. Son partenaire tient un bord et montre l’espace encore libre."
+    },
+    "qc-pri-da-004/situation": {
+      "scene": "Dans une salle d’entraînement au sol, trois élèves passent d’une file à deux petits groupes. Une maquette du sas reste rangée près du mur et laisse dégager toute l’aire de danse."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "Dans l’atelier de préparation de mission, deux élèves changent la place de deux modules en carton sur un support. L’un laisse un espace autour d’un hublot découpé pour l’isoler visuellement."
+    }
+  },
+  "marche": {
+    "qc-pri-ma-020/situation": {
+      "scene": "Sous un auvent du marché, des élèves répartissent de petits objets fabriqués entre plusieurs paniers de présentation. Deux paniers sont encore vides et des créations restent à distribuer."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "À la table des jeunes exposants, trois élèves se demandent comment répartir les supports entre les stands. L’un montre un étal encore vide, les supports restent au centre."
+    },
+    "qc-pri-fr-006/situation": {
+      "scene": "À la table d’accueil du marché, un enfant tient une note pliée. Sa camarade remarque une boîte de créations laissée sous le banc et se tourne vers lui."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "À une table de rangement d’un étal, avec plusieurs paniers vides à portée. Un enfant compte des créations en carton en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "Au comptoir de préparation du marché, près de caisses compartimentées. Deux élèves trouvent des créations en carton séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "Sous un auvent du marché, à une table de répartition des créations. Un enfant dispose des créations en carton en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "À une table de rangement d’un étal, avec plusieurs paniers vides à portée. Deux élèves préparent des paniers de présentation. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "Au comptoir de préparation du marché, près de caisses compartimentées. Des élèves distribuent des créations en carton dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "Sous un auvent du marché, à une table de répartition des créations. Deux enfants ouvrent des paniers de présentation pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "Au comptoir de préparation du marché, près de caisses compartimentées. Des enfants répartissent des créations en carton entre plusieurs contenants. Ils rapprochent les groupes déjà préparés pour les comparer."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "Près d’un étal du marché, à côté de paniers de créations. Un enfant nomme à voix haute un panier d’exposition en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "À une table d’accueil du marché, les auvents visibles derrière. Une élève tient des cartes illustrant les objets du marché. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "À une table d’accueil du marché, les auvents visibles derrière. Deux élèves regardent des cartes illustrant les objets du marché. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "Sur un banc de la place du marché, un étal en arrière-plan. Une élève désigne un panier d’exposition parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "Sur un banc de la place du marché, un étal en arrière-plan. Trois objets familiers sont réunis, dont un panier d’exposition. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "Près d’un étal du marché, à côté de paniers de créations. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre un panier d’exposition et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "Près d’un étal du marché, à côté de paniers de créations. Un enfant présente des cartes illustrant les objets du marché à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "À une table d’accueil du marché, les auvents visibles derrière. Une élève écoute les indications de son partenaire et désigne un panier d’exposition avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Sur une aire d’animation au milieu du marché, devant un auvent. Un jeune comédien attrape un panier d’exposition et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "Sur un coin dégagé de la place, près des créations exposées sur un étal. Deux jeunes comédiens improvisent autour de leur matériel. L’un retient une caisse de créations pendant que l’autre cherche à l’ouvrir sans attirer son attention."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "À une table de fabrication en retrait des étals. Une élève agence des cartes illustrant les objets du marché sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "À une table de fabrication en retrait des étals. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient un panier d’exposition et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "Près du point d’accueil du marché, au croisement des allées. Trois élèves comparent deux façons de répartir des créations en carton. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Sur une aire d’animation du village, à distance des étals. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger un panier d’exposition."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Dans la cour à côté du marché, une élève s’arrête devant une caisse déplacée sur le bord du parcours de jeu. Elle avertit son partenaire d’un geste à distance."
+    },
+    "qc-pri-ma-025/situation": {
+      "scene": "À une table du marché, deux enfants comparent des paniers de profondeurs différentes. Une élève apporte un petit récipient pour estimer ce que chaque panier peut contenir."
+    },
+    "qc-pri-ma-027/situation": {
+      "scene": "Sous l’auvent d’un étal, un élève place une corde autour du bord d’un présentoir. Sa camarade rapproche un second présentoir de forme différente pour le prochain essai."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "Au poste de démonstration du marché, une enfant tourne la manivelle d’un présentoir miniature. Son partenaire observe le plateau pivoter et montre la pièce qui se déplace en dessous."
+    },
+    "qc-pri-ccq-005/situation": {
+      "scene": "Devant un étal, deux enfants tiennent un appareil à hauteur du panier de créations. Ils attendent le signe de l’élève qui expose avant de prendre une photo."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "À la table d’accueil du marché, deux élèves comparent une ancienne vue de la place avec une photo actuelle. Une enfant montre la fontaine visible sur les deux images."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "Sous un auvent, deux élèves changent la position de deux silhouettes découpées dans leur panneau d’exposition. Leurs camarades observent le panneau depuis l’allée."
+    },
+    "qc-pri-ad-004/situation": {
+      "scene": "Sur l’aire d’animation du marché, deux jeunes comédiens improvisent un échange. L’un entrouvre un panier de créations, l’autre arrive en tenant un petit objet emballé."
+    }
+  },
+  "neige": {
+    "qc-pri-st-005/situation": {
+      "scene": "Au chalet du village, deux enfants observent un morceau de neige fondre dans un bol. Un second récipient près de la fenêtre donne un point de comparaison."
+    },
+    "qc-pri-fr-006/situation": {
+      "scene": "Sur le banc abrité de la place enneigée, deux enfants découvrent un mot dont on voit le verso. Une paire de mitaines et des traces qui partent vers le chalet restent visibles."
+    },
+    "qc-pri-eps-002/situation": {
+      "scene": "Sur une aire déneigée près du chalet, une élève arrive à une bifurcation entre deux rangées de plots. Les traîneaux sont rangés à distance du parcours."
+    },
+    "qc-pri-ma-001/concept": {
+      "scene": "Sur une table de préparation des jeux d’hiver, près des paniers de mitaines. Un enfant compte des jetons de prêt de matériel en les déplaçant un à un sur un plateau. Sa partenaire regarde ce qui reste sur la table."
+    },
+    "qc-pri-ma-001/situation": {
+      "scene": "Au comptoir du pavillon de prêt, avec les traîneaux rangés en fond. Deux élèves trouvent des jetons de prêt de matériel séparés en deux groupes. Un enfant commence à déplacer les pièces une à une pendant que l’autre garde l’autre groupe en place."
+    },
+    "qc-pri-ma-008/concept": {
+      "scene": "Dans l’abri du village enneigé, à un poste qui donne sur l’aire de jeux. Un enfant dispose des jetons de prêt de matériel en rangées régulières et prépare une place pour une autre rangée."
+    },
+    "qc-pri-ma-008/situation": {
+      "scene": "Sur une table de préparation des jeux d’hiver, près des paniers de mitaines. Deux élèves préparent des paniers de mitaines. Ils placent la même quantité d’éléments dans chaque contenant, et le dernier attend encore à côté."
+    },
+    "qc-pri-ma-009/concept": {
+      "scene": "Au comptoir du pavillon de prêt, avec les traîneaux rangés en fond. Des élèves distribuent des jetons de prêt de matériel dans des contenants identiques, avec une partie du matériel encore au milieu."
+    },
+    "qc-pri-ma-009/situation": {
+      "scene": "Dans l’abri du village enneigé, à un poste qui donne sur l’aire de jeux. Deux enfants ouvrent des paniers de mitaines pour répartir le matériel. Ils rapprochent les contenants et gardent quelques pièces au centre."
+    },
+    "qc-pri-ma-020/concept": {
+      "scene": "Au comptoir du pavillon de prêt, avec les traîneaux rangés en fond. Des enfants répartissent des jetons de prêt de matériel entre plusieurs contenants. Ils rapprochent les groupes déjà préparés pour les comparer."
+    },
+    "qc-pri-ma-020/situation": {
+      "scene": "Dans l’abri du village enneigé, à un poste qui donne sur l’aire de jeux. Deux élèves préparent des paniers de mitaines et prennent tour à tour des pièces dans le même tas. Plusieurs places vides restent visibles."
+    },
+    "qc-pri-ale-001/concept": {
+      "scene": "Dans le coin lecture du chalet, près d’une fenêtre donnant sur la neige. Un enfant nomme à voix haute une mitaine en anglais et marque le rythme avec ses doigts. Son partenaire écoute."
+    },
+    "qc-pri-ale-001/situation": {
+      "scene": "À une table de l’abri des jeux d’hiver, des mitaines dans un panier. Une élève tient des cartes illustrant les accessoires des jeux d’hiver. Elle pointe une image et en prononce le nom anglais pendant que son camarade se prépare à frapper le rythme."
+    },
+    "qc-pri-fls-002/concept": {
+      "scene": "À une table de l’abri des jeux d’hiver, des mitaines dans un panier. Deux élèves regardent des cartes illustrant les accessoires des jeux d’hiver. L’un pointe une image et l’autre s’exerce à la nommer en français."
+    },
+    "qc-pri-fls-002/situation": {
+      "scene": "Sur un banc abrité de la place enneigée, près du rangement des traîneaux. Une élève désigne une mitaine parmi plusieurs objets et attend que son partenaire confirme oralement sa demande."
+    },
+    "qc-pri-als-002/concept": {
+      "scene": "Sur un banc abrité de la place enneigée, près du rangement des traîneaux. Trois objets familiers sont réunis, dont une mitaine. Une enfant les pointe l’un après l’autre pour pratiquer leur nom à voix haute."
+    },
+    "qc-pri-als-002/situation": {
+      "scene": "Dans le coin lecture du chalet, près d’une fenêtre donnant sur la neige. Sa camarade lui décrit un objet à voix haute. Un enfant hésite entre une mitaine et deux autres objets posés à côté."
+    },
+    "qc-pri-ilss-003/concept": {
+      "scene": "Dans le coin lecture du chalet, près d’une fenêtre donnant sur la neige. Un enfant présente des cartes illustrant les accessoires des jeux d’hiver à sa partenaire. Elle rapproche une des cartes de l’objet correspondant."
+    },
+    "qc-pri-ilss-003/situation": {
+      "scene": "À une table de l’abri des jeux d’hiver, des mitaines dans un panier. Une élève écoute les indications de son partenaire et désigne une mitaine avant de choisir l’objet."
+    },
+    "qc-pri-ad-006/concept": {
+      "scene": "Sur l’aire dégagée de la fête d’hiver, avec des bancs de neige au bord. Un jeune comédien attrape une mitaine et regarde par-dessus son épaule. Sa partenaire reste debout près de l’aire de jeu et observe son geste."
+    },
+    "qc-pri-ad-006/situation": {
+      "scene": "À une table près du porche, sur la place où se prépare la fête hivernale. Deux jeunes comédiens improvisent autour de leur matériel. L’un retient un sac de vêtements d’hiver pendant que l’autre cherche à l’ouvrir sans attirer son attention."
+    },
+    "qc-pri-ap-006/concept": {
+      "scene": "Dans la salle d’activité du chalet, les traîneaux visibles par la fenêtre. Une élève agence des cartes illustrant les accessoires des jeux d’hiver sur un panneau vierge pour faire comprendre un geste à un autre groupe."
+    },
+    "qc-pri-ap-006/situation": {
+      "scene": "Dans la salle d’activité du chalet, les traîneaux visibles par la fenêtre. Un élève observe deux panneaux illustrés à distance. Sa partenaire tient une mitaine et attend de savoir quel pictogramme il reconnaît."
+    },
+    "qc-pri-ccq-009/concept": {
+      "scene": "Dans le chalet d’accueil des jeux d’hiver, près de la grande fenêtre. Trois élèves comparent deux façons de répartir des jetons de prêt de matériel. L’une montre un contenant vide en bout de table."
+    },
+    "qc-pri-ccq-009/situation": {
+      "scene": "Au pavillon de prêt, trois enfants comparent les mitaines disponibles et les paniers vides. Un élève montre sa main sans mitaine pendant que les autres discutent du partage."
+    },
+    "qc-pri-eps-008/concept": {
+      "scene": "Dans la cour dégagée de la fête hivernale, avec des traîneaux rangés au bord. Des enfants dégagent une zone de passage avant de commencer un jeu. Un adulte indique où ranger une mitaine."
+    },
+    "qc-pri-eps-008/situation": {
+      "scene": "Sur une aire plate et déneigée de la place du village. Une élève s’arrête avant de rencontrer une mitaine laissé près du parcours. Elle fait signe au camarade qui arrive derrière."
+    },
+    "qc-pri-st-014/situation": {
+      "scene": "Au poste du chalet, une élève montre les gouttes sous un couvercle transparent. Son partenaire observe l’eau obtenue en laissant fondre un peu de neige dans le bol."
+    },
+    "qc-pri-st-015/situation": {
+      "scene": "Sur la place enneigée, deux enfants comparent deux rubans, l’un protégé par le porche et l’autre exposé près d’un poteau. Les deux rubans restent visibles."
+    },
+    "qc-pri-ma-027/situation": {
+      "scene": "Dans le chalet, deux élèves essaient d’entourer deux tapis de tailles différentes avec une même corde. Les traîneaux rangés apparaissent au-delà de la fenêtre."
+    },
+    "qc-pri-us-005/situation": {
+      "scene": "Dans le chalet, deux élèves comparent une photographie d’une ancienne fête du village et une image récente de la même place enneigée. L’un pointe un bâtiment qu’ils reconnaissent sur les deux."
+    },
+    "qc-pri-ap-001/concept": {
+      "scene": "À la table du chalet, des enfants comparent un morceau de feutre, un tissu de mitaine et du papier plissé. Une élève montre du doigt la texture qu’elle veut faire ressortir."
+    },
+    "qc-pri-ad-005/situation": {
+      "scene": "Sur une aire déneigée de la fête d’hiver, un enfant essaie de traverser l’espace de jeu. Deux camarades déplacent un traîneau vide vers le bord pour dégager le passage."
+    },
+    "qc-pri-da-002/situation": {
+      "scene": "Dans la salle d’activité du chalet, deux jeunes danseurs reprennent un geste de patinage à pied, avec deux vitesses différentes. Les patins restent rangés près de la fenêtre."
+    },
+    "qc-pri-st-011/situation": {
+      "scene": "À l’entrée du chalet, une élève relève la poignée d’un petit portillon d’exercice. Son partenaire observe le loquet se déplacer dans une ouverture visible."
+    },
+    "qc-pri-ap-003/situation": {
+      "scene": "À une table du chalet, deux enfants déplacent des silhouettes de traîneaux et de chalets en papier. Ils laissent une grande forme libre au milieu et comparent l’espace sur les bords."
+    }
+  }
+}

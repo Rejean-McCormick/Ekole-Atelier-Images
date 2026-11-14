@@ -1,0 +1,432 @@
+{
+  "jardinage": {
+    "univers": "Cultiver ensemble et suivre la vie d’un jardin de quartier",
+    "lieux": {
+      "langues": [
+        "Au bout d’une allée entre les bacs du jardin collectif.",
+        "À une table de lecture près de la serre du jardin.",
+        "Sous l’auvent du local des jardiniers, les bacs visibles au loin."
+      ],
+      "arts": [
+        "Sur l’aire de rencontre du jardin, entre les treillis.",
+        "À une table commune du jardin, près des pots de semis.",
+        "Dans la cour des jardiniers, face à la petite serre."
+      ],
+      "ma": [
+        "À une table de préparation en bordure du potager.",
+        "Sous l’abri du jardin collectif, à côté des tiroirs à graines.",
+        "Près des bacs de culture, à un poste de travail dégagé."
+      ],
+      "st": [
+        "Au bord d’un bac d’essai du jardin collectif.",
+        "Sur une table d’observation à l’entrée de la serre.",
+        "Dans la cour du jardin, près du récupérateur d’eau."
+      ],
+      "societe": [
+        "Dans l’espace de rencontre du jardin, les parcelles derrière.",
+        "À une table de réunion sous l’auvent du jardin.",
+        "À l’entrée du jardin partagé, près du portail."
+      ],
+      "eps": [
+        "Sur une aire dégagée à l’extérieur des parcelles du jardin.",
+        "Sur un large chemin à côté du verger collectif.",
+        "Dans la cour attenante au jardin, loin des bacs et des outils."
+      ],
+      "ap": [
+        "À une table de création sous l’abri du jardin, près de quelques feuilles et chutes de papier.",
+        "Sur une table près de la serre, avec les bacs en arrière-plan."
+      ],
+      "mu": [
+        "Sur l’aire de rencontre du jardin, entre les treillis et un banc.",
+        "Sous l’auvent des jardiniers, des petits instruments rangés loin des bacs."
+      ]
+    }
+  },
+  "jazz": {
+    "univers": "Un quartier crée, répète et partage un festival de musique",
+    "lieux": {
+      "langues": [
+        "À un banc de la place du festival, à distance de la scène de jazz.",
+        "Dans la loge des jeunes musiciens, près des étuis fermés.",
+        "À une table du pavillon d’accueil, la scène du festival à l’arrière-plan."
+      ],
+      "arts": [
+        "Sur une aire de répétition à côté des instruments du festival.",
+        "Dans le local des musiciens, avec des étuis et des pupitres vides en arrière-plan.",
+        "Sur une petite estrade du festival de jazz, devant un espace réservé aux spectateurs."
+      ],
+      "ma": [
+        "À une table de préparation du festival, près des caisses rigides d’instruments.",
+        "Au point de prêt de matériel du festival, avec la scène en arrière-plan.",
+        "À une table de montage près des chaises empilées de la place du festival."
+      ],
+      "st": [
+        "À un poste d’essai près de la scène, un étui d’instrument fermé en fond.",
+        "Sur une table dans le local de répétition du festival de jazz.",
+        "Dans la cour technique du festival, derrière un panneau acoustique."
+      ],
+      "societe": [
+        "À une table de bénévoles sur la place où se prépare le festival de jazz.",
+        "Dans l’espace d’accueil du festival, près de la file des chaises.",
+        "Sur le côté de la scène de quartier, des étuis d’instruments en arrière-plan."
+      ],
+      "eps": [
+        "Sur la partie dégagée du parvis à l’écart de l’estrade de jazz.",
+        "Dans la cour voisine du festival, des guirlandes visibles au loin.",
+        "Sur un espace libre derrière la scène de jazz, hors des câbles et du matériel."
+      ],
+      "ap": [
+        "À une table de création dans la loge du festival, près des silhouettes d’instruments.",
+        "Au pavillon d’accueil du festival, sur une table dégagée devant l’estrade."
+      ],
+      "mu": [
+        "Sur une petite estrade du festival, devant des sièges réservés aux spectateurs.",
+        "Dans le local de répétition du festival, avec des instruments et des étuis sur le côté."
+      ]
+    }
+  },
+  "camping": {
+    "univers": "Préparer une sortie, monter le camp et explorer les environs ensemble",
+    "lieux": {
+      "langues": [
+        "Sur un banc près de l’entrée d’une tente au campement.",
+        "Sous l’abri du camp, avec une toile de tente en arrière-plan.",
+        "À une table de pique-nique du campement, au bord du sentier vers le lac."
+      ],
+      "arts": [
+        "Sur une petite clairière attenante au campement, devant les tentes.",
+        "À une table de camp à l’abri de l’auvent d’une tente.",
+        "Sur l’aire de rencontre au camp, avec des bûches pour s’asseoir."
+      ],
+      "ma": [
+        "À une table de préparation du camp, près des caisses de matériel.",
+        "Sous l’abri collectif du campement, une tente visible au-delà de l’ouverture.",
+        "Près du rangement du camp, avec des sacs de couchage roulés en fond."
+      ],
+      "st": [
+        "À une table d’observation du camping, à quelques pas des tentes.",
+        "Sur une zone plate au bord du campement, avec la lisière en arrière-plan.",
+        "Sous l’auvent d’une tente, sur une surface stable réservée aux essais."
+      ],
+      "societe": [
+        "Sur l’aire commune du camping, une tente derrière le groupe.",
+        "À une table d’accueil du camp, près du plan muet des sentiers.",
+        "Sur le bord d’une clairière du camp, avec le lac au loin."
+      ],
+      "eps": [
+        "Sur une aire sèche et dégagée entre le sentier et le campement.",
+        "Sur le départ d’un large sentier du camping, les tentes au loin.",
+        "Dans la clairière du campement, hors des cordes et des piquets."
+      ],
+      "ap": [
+        "À une table de pique-nique dégagée, devant la toile d’une tente.",
+        "Sous l’auvent du campement, à une table réservée aux créations."
+      ],
+      "mu": [
+        "Sur l’aire commune du campement, avec des bûches pour s’asseoir.",
+        "Dans une petite clairière près des tentes, des instruments portatifs à portée de main."
+      ]
+    }
+  },
+  "velo": {
+    "univers": "Remettre le vélo de Mathilde en état, apprendre à circuler et explorer le quartier",
+    "lieux": {
+      "langues": [
+        "Sur un banc du parc, un vélo contre le support à proximité.",
+        "À une table du local communautaire, des casques rangés en arrière-plan.",
+        "Près du départ de la piste du quartier, sur le côté du passage avec les vélos à l’arrêt."
+      ],
+      "arts": [
+        "Dans la cour de la fête du vélo, avec les vélos stationnés derrière l’espace d’activité.",
+        "À une table de création du local vélo, près d’un support à casques.",
+        "Sur une petite aire dégagée du parc, près du point de rendez-vous des cyclistes."
+      ],
+      "ma": [
+        "À une table de préparation de la sortie cycliste, avec les casques empilés à côté.",
+        "Dans le local de prêt du quartier, à un poste de travail près des vélos rangés.",
+        "Sur une table du parc, juste à côté du support où stationnent les vélos."
+      ],
+      "st": [
+        "Dans la cour de l’atelier, sur un sol plat, un vélo appuyé à la clôture.",
+        "À un établi de réparation du quartier, près d’un vélo immobilisé sur un pied.",
+        "À un poste d’essai hors de la piste cyclable, un casque et une pompe à proximité."
+      ],
+      "societe": [
+        "Autour d’une table du local des bénévoles, des vélos rangés derrière le groupe.",
+        "À un point de rencontre près du parc à vélos du quartier.",
+        "À une halte du parcours cyclable, avec les vélos posés contre un support."
+      ],
+      "eps": [
+        "Sur une piste d’entraînement séparée de la circulation, un vélo stationné au bord de l’aire.",
+        "Sur une aire plate du parc, près de la piste cyclable et hors des passages.",
+        "Dans la cour du local vélo, sur un parcours d’exercice délimité loin des vélos stationnés."
+      ],
+      "ap": [
+        "À une table de création du local vélo, près d’un support à casques.",
+        "Dans le coin bricolage de la fête du vélo, avec des vélos rangés à l’arrière."
+      ],
+      "mu": [
+        "Sur l’aire d’animation de la fête du vélo, les vélos stationnés sur le côté.",
+        "Sous l’abri du parc près du parcours cycliste, un banc et des instruments portatifs à proximité."
+      ]
+    }
+  },
+  "cuisine": {
+    "univers": "Organiser un goûter, préparer le matériel et accueillir le voisinage",
+    "lieux": {
+      "langues": [
+        "Sur une table du coin accueil du goûter collectif, près du panier de fruits.",
+        "Sur un banc du jardin derrière la salle du goûter.",
+        "À une table de préparation à distance de la zone de cuisson, avec des bols empilés en fond."
+      ],
+      "arts": [
+        "Dans la salle du goûter collectif, face au comptoir de service.",
+        "Sur l’aire d’accueil du goûter, près des paniers préparés.",
+        "Sur la terrasse de la cuisine communautaire, à une table d’activité."
+      ],
+      "ma": [
+        "Sur une table de répartition des portions, des bols vides près du bord.",
+        "Au comptoir froid de préparation, avec des paniers de provisions.",
+        "À un poste de rangement du goûter, près des plateaux encore vides."
+      ],
+      "st": [
+        "À un poste d’observation de la cuisine communautaire, loin des plaques de cuisson.",
+        "Dans la cour de service du goûter, sur une surface de travail stable.",
+        "Sur une table d’essai de la salle commune, avec quelques bols rangés en fond."
+      ],
+      "societe": [
+        "À une table où les jeunes décident de l’organisation du goûter, près de la salle commune.",
+        "Dans l’espace d’accueil du goûter du quartier, avec des tables prêtes en fond.",
+        "Sur la terrasse du goûter collectif, près des paniers de service."
+      ],
+      "eps": [
+        "Sur l’aire de jeu extérieure voisine du goûter collectif.",
+        "Dans la cour du centre communautaire, loin des tables de service.",
+        "Sur l’espace dégagé du jardin derrière la cuisine communautaire."
+      ],
+      "ap": [
+        "Sur une table d’activité du goûter collectif, à distance des surfaces de préparation des aliments.",
+        "À la terrasse de la cuisine communautaire, sur une table de création dégagée."
+      ],
+      "mu": [
+        "Sur une aire d’animation à l’écart du comptoir du goûter.",
+        "Dans la salle commune, sur le côté des tables de service du goûter."
+      ]
+    }
+  },
+  "grenier": {
+    "univers": "Retrouver des objets de famille et faire circuler leurs souvenirs",
+    "lieux": {
+      "langues": [
+        "À un coin lecture près de la lucarne du grenier, un album de famille à portée de main.",
+        "Sur le palier devant le grenier, avec une boîte de souvenirs ouverte en arrière-plan.",
+        "À une table du salon, avec des albums sortis du grenier."
+      ],
+      "arts": [
+        "Dans la cour de la maison, près des objets de famille amenés du grenier.",
+        "À une grande table près du grenier, des boîtes entrouvertes en fond.",
+        "Au salon, dans un espace dégagé à côté de l’exposition des souvenirs de famille."
+      ],
+      "ma": [
+        "À une table de tri sous la lucarne du grenier.",
+        "Sur le palier du grenier, près de caisses à compartiments.",
+        "Dans la remise familiale, avec du matériel descendu du grenier."
+      ],
+      "st": [
+        "Sur une table d’essai de la cour, près d’une caisse d’objets à examiner.",
+        "À une table d’observation du salon, plusieurs matériaux du grenier rangés sur le côté.",
+        "Sous l’auvent de la maison, avec des objets sortis du grenier à proximité."
+      ],
+      "societe": [
+        "À la table d’archives du salon, près d’un album de famille ouvert sur des images.",
+        "Sur le palier du grenier, devant des boîtes à partager.",
+        "Dans la salle commune de la maison, avec une petite exposition de souvenirs."
+      ],
+      "eps": [
+        "Dans la cour de la maison, près d’une caisse de jeux sortie du grenier.",
+        "Sur le jardin plat derrière la maison, avec d’anciens jeux de plein air rangés au bord.",
+        "Sur une aire libre de la cour, au pied du perron de la maison."
+      ],
+      "ap": [
+        "À une grande table du salon, près de tissus et de papiers sortis du grenier.",
+        "À la table de tri près de la lucarne du grenier, sur une surface dégagée."
+      ],
+      "mu": [
+        "Dans le salon près de l’exposition familiale, avec une caisse d’objets sonores sortis du grenier.",
+        "Dans la cour de la maison, près de quelques instruments rangés à côté du perron."
+      ]
+    }
+  },
+  "riviere": {
+    "univers": "Découvrir la rivière du quartier, ses usages et les milieux qui l’entourent",
+    "lieux": {
+      "langues": [
+        "Sur un banc du sentier riverain, des roseaux visibles au-delà du chemin.",
+        "Au pavillon d’observation de la rivière, face au paysage.",
+        "À une table de pique-nique du parc riverain, en retrait de l’eau."
+      ],
+      "arts": [
+        "Sur l’aire de rencontre du parc riverain, la passerelle en arrière-plan.",
+        "À une table d’activité près du pavillon de la rivière.",
+        "Sur l’esplanade qui surplombe la rivière, derrière la balustrade."
+      ],
+      "ma": [
+        "À une table du pavillon riverain avec des coupelles d’observation rangées.",
+        "Au poste de collecte du parc riverain, sur une surface de travail en retrait de l’eau.",
+        "À une table de préparation près du sentier qui longe les roseaux."
+      ],
+      "st": [
+        "Au poste d’observation de la rive, sur la terrasse stable au-dessus de l’eau.",
+        "Sur une table sous l’abri du parc riverain, quelques galets dans un bac.",
+        "À une table de terrain au bord du sentier, le cours d’eau visible derrière."
+      ],
+      "societe": [
+        "Au pavillon du parc riverain, près d’une carte muette des accès.",
+        "À une table de rencontre qui donne sur la passerelle de la rivière.",
+        "À l’entrée du sentier riverain, des silhouettes de roseaux en arrière-plan."
+      ],
+      "eps": [
+        "Sur une aire dégagée du parc, à l’écart de la berge.",
+        "Sur un chemin large et plat qui longe la rivière à distance de l’eau.",
+        "Sur l’esplanade du parc riverain, loin de la circulation."
+      ],
+      "ap": [
+        "À une table du pavillon riverain, avec la passerelle visible au fond.",
+        "Sur la terrasse du parc riverain, à une table d’activité en retrait de la berge."
+      ],
+      "mu": [
+        "Sous l’abri du parc riverain, quelques instruments portatifs à côté des bancs.",
+        "Sur l’aire de rencontre du parc, avec la rivière visible à distance."
+      ]
+    }
+  },
+  "espace": {
+    "univers": "Préparer une mission fictive et explorer la vie à bord de la station",
+    "lieux": {
+      "langues": [
+        "Dans le coin lecture du module de vie de la station fictive.",
+        "Au poste de communication de la station, avec un hublot en arrière-plan.",
+        "Dans une salle de préparation de la mission, avec une maquette de la station."
+      ],
+      "arts": [
+        "Dans le module commun de la station fictive, près d’une paroi arrondie.",
+        "Dans l’atelier de préparation de mission, une maquette orbitale en arrière-plan.",
+        "Sur l’aire dégagée d’un simulateur d’habitat spatial."
+      ],
+      "ma": [
+        "Au comptoir de préparation des caisses du module logistique.",
+        "À un poste d’inventaire de la mission, des compartiments de rangement en fond.",
+        "Sur la table de travail d’une salle d’entraînement, près de la maquette de la station."
+      ],
+      "st": [
+        "Dans un laboratoire de simulation au sol, avec un modèle réduit de la station en arrière-plan.",
+        "Sur une table d’essai du centre de préparation de mission.",
+        "Dans le module expérimental fictif, à une surface de travail stable."
+      ],
+      "societe": [
+        "Dans le module de réunion de la station fictive, près d’un hublot.",
+        "À la table de préparation de l’équipage, avec des casiers de mission en fond.",
+        "Dans la salle de formation, autour d’une maquette muette de l’habitat."
+      ],
+      "eps": [
+        "Dans une salle d’entraînement au sol, près d’une maquette de sas spatial.",
+        "Sur l’aire libre du simulateur de mission, un panneau rembourré en fond.",
+        "Dans la cour du centre de préparation de mission, avec des modules d’entraînement en arrière-plan."
+      ],
+      "ap": [
+        "À une table de l’atelier de préparation de mission, près d’une maquette orbitale.",
+        "Sur une table de création du module commun de la station fictive."
+      ],
+      "mu": [
+        "Dans l’aire de détente du module commun, quelques instruments portatifs rangés sur le côté.",
+        "Dans la salle d’entraînement au sol, près d’un hublot de simulateur et de petits instruments."
+      ]
+    }
+  },
+  "marche": {
+    "univers": "Fabriquer, présenter et échanger des créations lors d’un marché de village",
+    "lieux": {
+      "langues": [
+        "Près d’un étal du marché, à côté de paniers de créations.",
+        "À une table d’accueil du marché, les auvents visibles derrière.",
+        "Sur un banc de la place du marché, un étal en arrière-plan."
+      ],
+      "arts": [
+        "Sur une aire d’animation au milieu du marché, devant un auvent.",
+        "À une table de fabrication en retrait des étals.",
+        "Sur un coin dégagé de la place, près des créations exposées sur un étal."
+      ],
+      "ma": [
+        "À une table de rangement d’un étal, avec plusieurs paniers vides à portée.",
+        "Au comptoir de préparation du marché, près de caisses compartimentées.",
+        "Sous un auvent du marché, à une table de répartition des créations."
+      ],
+      "st": [
+        "À un poste de démonstration du marché, sur une table stable.",
+        "Dans la cour de préparation des étals, près de caisses de matériaux.",
+        "Sous l’auvent des artisans, à une surface dégagée pour les essais."
+      ],
+      "societe": [
+        "Près du point d’accueil du marché, au croisement des allées.",
+        "À la table commune des exposants, avec des étals en arrière-plan.",
+        "Devant un étal du marché où les enfants présentent leurs créations."
+      ],
+      "eps": [
+        "Sur la partie dégagée de la place, hors des allées du marché.",
+        "Dans la cour attenante à la place du marché, les auvents visibles en fond.",
+        "Sur une aire d’animation du village, à distance des étals."
+      ],
+      "ap": [
+        "À la table de fabrication des jeunes exposants, en retrait des étals.",
+        "Sous un auvent du marché, à une table de création dégagée près des présentoirs."
+      ],
+      "mu": [
+        "Sur l’aire d’animation du marché, à distance du passage entre les étals.",
+        "Sous l’abri de la place du village, près d’un espace réservé aux musiciens."
+      ]
+    }
+  },
+  "neige": {
+    "univers": "Préparer des jeux d’hiver et observer la vie d’un village enneigé",
+    "lieux": {
+      "langues": [
+        "Dans le coin lecture du chalet, près d’une fenêtre donnant sur la neige.",
+        "À une table de l’abri des jeux d’hiver, des mitaines dans un panier.",
+        "Sur un banc abrité de la place enneigée, près du rangement des traîneaux."
+      ],
+      "arts": [
+        "Sur l’aire dégagée de la fête d’hiver, avec des bancs de neige au bord.",
+        "Dans la salle d’activité du chalet, les traîneaux visibles par la fenêtre.",
+        "À une table près du porche, sur la place où se prépare la fête hivernale."
+      ],
+      "ma": [
+        "Sur une table de préparation des jeux d’hiver, près des paniers de mitaines.",
+        "Au comptoir du pavillon de prêt, avec les traîneaux rangés en fond.",
+        "Dans l’abri du village enneigé, à un poste qui donne sur l’aire de jeux."
+      ],
+      "st": [
+        "À une table d’essai à l’entrée du chalet, près d’un bac de neige.",
+        "Au poste d’observation hivernale, à côté d’une fenêtre givrée.",
+        "Sous le porche du chalet, sur une surface stable avec la neige à proximité."
+      ],
+      "societe": [
+        "Dans le chalet d’accueil des jeux d’hiver, près de la grande fenêtre.",
+        "Sur la place enneigée, près du point de prêt des traîneaux.",
+        "Dans la salle de réunion de la fête d’hiver, des mitaines posées au fond."
+      ],
+      "eps": [
+        "Sur une aire plate et déneigée de la place du village.",
+        "Sur un chemin d’exercice damé près du chalet, loin des pentes.",
+        "Dans la cour dégagée de la fête hivernale, avec des traîneaux rangés au bord."
+      ],
+      "ap": [
+        "À une table du chalet, la place enneigée visible dans l’embrasure de la fenêtre.",
+        "Dans la salle d’activité de la fête hivernale, à une table réservée aux créations."
+      ],
+      "mu": [
+        "Dans la salle d’activité du chalet, près de quelques instruments portatifs.",
+        "Sous l’abri de la fête du village, avec la place enneigée en arrière-plan."
+      ]
+    }
+  }
+}

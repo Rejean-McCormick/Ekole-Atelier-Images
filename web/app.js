@@ -32,8 +32,9 @@ function selection() {
 }
 
 function generationSelection() {
-  if (!$('all-themes').checked) return selection();
-  return {profile: $('profile').value, root: $('root').value, allThemes: true};
+  const refresh = !$('comparison').checked && $('refresh-images').checked;
+  if (!$('all-themes').checked) return {...selection(), refresh};
+  return {profile: $('profile').value, root: $('root').value, allThemes: true, refresh};
 }
 
 function options(select, entries) {
@@ -210,9 +211,10 @@ function showThemeStats(themes) {
 }
 
 function setBusy(busy) {
-  for (const id of ['profile','root','load','theme','branch','palette-choice', ...colorFields, 'upload','engine','workflow','all-themes','comparison','generate','plan','view-images','approve-images','publish-images','reject-images','delete-images','select-images']) $(id).disabled = busy;
+  for (const id of ['profile','root','load','theme','branch','palette-choice', ...colorFields, 'upload','engine','workflow','all-themes','comparison','refresh-images','generate','plan','view-images','approve-images','publish-images','reject-images','delete-images','select-images']) $(id).disabled = busy;
   if (!busy) {
     $('comparison').disabled = $('all-themes').checked;
+    $('refresh-images').disabled = $('comparison').checked;
     updateImageSelection();
   }
 }
@@ -312,7 +314,8 @@ action('upload', async () => {
 action('plan', async () => {
   const data = await api('plan', generationSelection());
   showLinks(data);
-  $('progress').textContent = data.pending + ' images restent à générer dans la sélection.';
+  $('progress').textContent = data.pending + ' images manquantes'
+    + (data.refreshable ? ' · ' + data.refreshable + ' images à refaire.' : '.');
 });
 
 action('stop', async () => {
@@ -455,11 +458,13 @@ $('all-themes').addEventListener('change', () => {
   $('comparison').disabled = allThemes;
   if (allThemes) {
     $('comparison').checked = false;
+    $('refresh-images').disabled = false;
     $('limit').value = '0';
   }
   clearBranch();
 });
 $('comparison').addEventListener('change', () => {
+  $('refresh-images').disabled = $('comparison').checked;
   if ($('comparison').checked) $('limit').value = '6';
 });
 
@@ -471,7 +476,7 @@ action('generation', async () => {
   const comparison = $('comparison').checked;
   if (comparison && !(limit >= 1 && limit <= 24)) throw Error('Choisis entre 1 et 24 images pour comparer.');
   const data = await api('plan', selected);
-  const available = comparison ? data.total : data.pending;
+  const available = comparison ? data.total : data.pending + data.refreshable;
   const count = limit ? Math.min(limit, available) : available;
   if (!count) { showLinks(data); $('progress').textContent = 'Les images de ce lot sont déjà présentes.'; return; }
   const cost = mode === 'cloud'

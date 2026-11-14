@@ -75,9 +75,11 @@
       </label>
       <label class="check"><input id="comparison" type="checkbox"> Mode comparaison
         <small>Génère les mêmes premières scènes avec chaque moteur dans des galeries d’essai distinctes.</small></label>
+      <label class="check"><input id="refresh-images" type="checkbox"> Refaire aussi les images non validées dont le prompt a changé
+        <small>Chaque image est remplacée quand sa nouvelle version est prête.</small></label>
       <div class="row">
         <label>Nombre maximal d’images <input id="limit" type="number" min="0" max="4800" value="12" required>
-          <small>0 traite toutes les images manquantes de la sélection.</small></label>
+          <small>0 traite toutes les images à générer selon les options choisies.</small></label>
         <label id="account-field">Identifiant du compte Cloudflare <input id="account" autocomplete="off" required></label>
         <label id="token-field">Jeton Cloudflare <input id="token" type="password" autocomplete="off" required></label>
       </div>
