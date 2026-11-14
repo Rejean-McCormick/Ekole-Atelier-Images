@@ -15,6 +15,32 @@ button:disabled{opacity:.55;cursor:default}
 a{color:#184a35;margin-right:1rem}
 small{display:block;font-weight:400}
 #error{background:#fae8df;color:#792a14;padding:.8rem}
+.catalogue-counts{display:grid;grid-template-columns:repeat(auto-fit,minmax(8rem,1fr));gap:.65rem;margin:0 0 .75rem}
+.catalogue-counts div{background:#edf2eb;border-radius:.45rem;padding:.7rem .85rem}
+.catalogue-counts dt{font-size:.9rem}
+.catalogue-counts dd{font-size:1.55rem;font-weight:750;margin:.15rem 0 0;font-variant-numeric:tabular-nums}
+#catalogue-stats progress{display:block;width:100%;height:.65rem;appearance:none;border:0;border-radius:1rem;background:#e4eae1;color:#57826c;overflow:hidden}
+#catalogue-stats progress::-webkit-progress-bar{background:#e4eae1}
+#catalogue-stats progress::-webkit-progress-value{background:currentColor}
+#catalogue-stats progress::-moz-progress-bar{background:currentColor}
+#catalogue-stats progress[data-complete=true]{color:#245841}
+#catalogue-stats h3{font-size:1rem;margin:1rem 0 .5rem}
+#theme-stats details{border-top:1px solid #d8ddd4;padding:.6rem .15rem}
+#theme-stats summary{cursor:pointer}
+#theme-stats summary span{color:#385548;font-size:.85rem}
+#theme-stats summary .theme-percent{float:right;font-weight:750;font-variant-numeric:tabular-nums}
+#theme-stats summary progress{margin:.4rem 0 .15rem}
+#theme-stats table{width:100%;border-collapse:collapse;margin-top:.5rem;font-size:.9rem;font-variant-numeric:tabular-nums}
+#theme-stats :is(th,td){text-align:right;padding:.35rem .25rem;border-bottom:1px solid #edf2eb}
+#theme-stats th:first-child{text-align:left;overflow-wrap:anywhere}
+#theme-stats tbody th{font-weight:500}
+#theme-stats .branch-progress{width:24%;min-width:4.2rem}
+#theme-stats .branch-progress progress{height:.38rem}
+#theme-stats .branch-progress span{font-size:.75rem;color:#385548}
+@media (max-width:34rem){
+  #theme-stats table{font-size:.78rem}
+  #theme-stats :is(th,td){padding-inline:.15rem}
+}
 
 .review-actions{display:flex;flex-wrap:wrap;gap:.5rem}
 #image-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr));gap:.7rem}

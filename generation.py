@@ -239,7 +239,7 @@ def prepare_reference(state, theme, image_module):
 
 
 def generate(db, state, jobs, account, token, reference, image_module, progress=print, local_generator=None,
-             stop_requested=lambda: False):
+             stop_requested=lambda: False, on_saved=None):
     for i, job in enumerate(jobs, 1):
         if stop_requested():
             return False
@@ -265,6 +265,8 @@ def generate(db, state, jobs, account, token, reference, image_module, progress=
             path = output_path(state, job)
             atomic_write(path, webp.getvalue())
             atomic_write(path.with_suffix('.prompt-sha256'), hashlib.sha256(job.prompt.encode()).hexdigest().encode('ascii'))
+            if on_saved:
+                on_saved(job)
         except HTTPError as error:
             error.close()
             if error.code == 429:

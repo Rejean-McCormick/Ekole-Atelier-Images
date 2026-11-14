@@ -19,7 +19,17 @@
       <input id="root" placeholder="C:\mycode\Ekole\ekole-quebec">
     </label>
     <button id="load">Charger le catalogue</button>
-    <p id="catalogue-status"></p>
+  </section>
+  <section id="catalogue-stats" aria-labelledby="stats-title" hidden>
+    <h2 id="stats-title">Progression du catalogue</h2>
+    <dl class="catalogue-counts">
+      <div><dt>Total</dt><dd id="stats-total"></dd></div>
+      <div><dt>Déjà générées</dt><dd id="stats-done"></dd></div>
+      <div><dt>Restent à générer</dt><dd id="stats-pending"></dd></div>
+    </dl>
+    <progress id="stats-progress" aria-label="Images générées dans le catalogue"></progress>
+    <h3>Détail par thème et par branche</h3>
+    <div id="theme-stats"></div>
   </section>
   <section id="reference" hidden>
     <h2>2. Choisir le thème et le style</h2>

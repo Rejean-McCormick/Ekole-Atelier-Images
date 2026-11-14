@@ -9,6 +9,10 @@ let polling = false;
 let review = null;
 let reviewBusy = false;
 const colorFields = ['palette-color-1', 'palette-color-2', 'palette-color-3'];
+const formatCount = new Intl.NumberFormat('fr-CA');
+const statsColumns = [['total', 'Total'], ['done', 'Générées'], ['pending', 'Restantes']];
+let themeStatsRows = new Map();
+let themeStatsLayout = '';
 
 async function api(route, body) {
   const options = body === undefined ? {} : {
@@ -120,6 +124,91 @@ function showLinks(data) {
   $('links').hidden = false;
 }
 
+function showCatalogueStats(stats) {
+  for (const [key] of statsColumns) {
+    $('stats-' + key).textContent = formatCount.format(stats[key]);
+  }
+  updateProgress($('stats-progress'), stats);
+  showThemeStats(stats.themes);
+  $('catalogue-stats').hidden = false;
+}
+
+function createProgress(label) {
+  const bar = document.createElement('progress');
+  bar.setAttribute('aria-label', label);
+  return bar;
+}
+
+function updateProgress(bar, counts) {
+  bar.max = counts.total || 1;
+  bar.value = counts.done;
+  const percent = counts.total ? Math.floor(100 * counts.done / counts.total) : 0;
+  bar.dataset.complete = String(counts.total > 0 && counts.done === counts.total);
+  return formatCount.format(percent) + '\u00a0%';
+}
+
+function showThemeStats(themes) {
+  const layout = JSON.stringify(Object.entries(themes).map(([id, theme]) =>
+    [id, theme.name, Object.keys(theme.branches)]));
+  if (layout !== themeStatsLayout) {
+    themeStatsRows = new Map();
+    const sections = Object.entries(themes).map(([id, theme]) => {
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      const name = document.createElement('strong');
+      const counts = document.createElement('span');
+      const percent = document.createElement('span');
+      percent.className = 'theme-percent';
+      const bar = createProgress('Progression · ' + theme.name);
+      name.textContent = theme.name;
+      summary.append(name, percent, bar, counts);
+      const table = document.createElement('table');
+      table.setAttribute('aria-label', 'Branches · ' + theme.name);
+      const heading = table.createTHead().insertRow();
+      for (const label of ['Branche', ...statsColumns.map(([, title]) => title), 'Progression']) {
+        const cell = document.createElement('th');
+        cell.scope = 'col';
+        cell.textContent = label;
+        heading.append(cell);
+      }
+      const body = table.createTBody();
+      const rows = new Map();
+      for (const branch of Object.keys(theme.branches)) {
+        const row = body.insertRow();
+        const name = document.createElement('th');
+        name.scope = 'row';
+        name.textContent = branch;
+        row.append(name);
+        const cells = statsColumns.map(() => row.insertCell());
+        const progressCell = row.insertCell();
+        progressCell.className = 'branch-progress';
+        const branchBar = createProgress('Progression · ' + theme.name + ' · ' + branch);
+        const branchPercent = document.createElement('span');
+        progressCell.append(branchBar, branchPercent);
+        rows.set(branch, {cells, bar: branchBar, percent: branchPercent});
+      }
+      themeStatsRows.set(id, {counts, rows, bar, percent});
+      details.append(summary, table);
+      return details;
+    });
+    $('theme-stats').replaceChildren(...sections);
+    themeStatsLayout = layout;
+  }
+  for (const [id, theme] of Object.entries(themes)) {
+    const {counts, rows, bar, percent} = themeStatsRows.get(id);
+    percent.textContent = updateProgress(bar, theme);
+    counts.textContent = statsColumns.map(([key, label]) =>
+      label + ' ' + formatCount.format(theme[key])).join(' · ');
+    for (const [branch, values] of Object.entries(theme.branches)) {
+      const row = rows.get(branch);
+      statsColumns.forEach(([key], index) => {
+        row.cells[index].textContent = formatCount.format(values[key]);
+      });
+      row.percent.textContent = updateProgress(row.bar, values);
+    }
+  }
+}
+
 function setBusy(busy) {
   for (const id of ['profile','root','load','theme','branch','palette-choice', ...colorFields, 'upload','engine','workflow','all-themes','comparison','generate','plan','view-images','approve-images','publish-images','reject-images','delete-images','select-images']) $(id).disabled = busy;
   if (!busy) {
@@ -136,6 +225,7 @@ async function monitor() {
   try {
     while (true) {
       const status = await api('etat');
+      if (status.stats) showCatalogueStats(status.stats);
       $('progress').textContent = status.stopping
         ? 'Arrêt demandé. L’image en cours peut se terminer.'
         : status.message;
@@ -157,12 +247,12 @@ async function monitor() {
 $('profile').addEventListener('change', () => {
   $('root-label').hidden = profiles[$('profile').value].adapter !== 'kristals-quebec';
   $('reference').hidden = $('lot').hidden = true;
-  $('catalogue-status').textContent = '';
+  $('catalogue-stats').hidden = true;
   clearBranch();
 });
 $('root').addEventListener('input', () => {
   $('reference').hidden = $('lot').hidden = true;
-  $('catalogue-status').textContent = '';
+  $('catalogue-stats').hidden = true;
   clearBranch();
 });
 $('theme').addEventListener('change', showTheme);
@@ -192,7 +282,7 @@ action('load', async () => {
     ]);
     colorFields.forEach(id => { $(id).value = ''; });
     options($('theme'), Object.entries(catalogue.themes).map(([id, item]) => [id, item.name]));
-    $('catalogue-status').textContent = catalogue.total + ' visuels dans ce catalogue.';
+    showCatalogueStats(catalogue.stats);
     showTheme();
     $('reference').hidden = $('lot').hidden = false;
   } finally { setBusy(false); }
@@ -317,7 +407,11 @@ async function changeImages(action, explicitKeys) {
   reviewBusy = true;
   setBusy(true);
   try {
-    const data = await api('revision', {...selection(), action, keys});
+    const selected = selection();
+    const data = await api('revision', {...selected, action, keys});
+    if (action === 'supprimer' || action === 'ecarter') {
+      showCatalogueStats(await api('statistiques', {profile: selected.profile, root: selected.root}));
+    }
     if (action !== 'supprimer') $('image-filter').value = ({valider: 'validee', integrer: 'integree', ecarter: 'nouvelle'})[action];
     await refreshImages();
     $('review-status').textContent = data.done + ({valider: ' images validées.', integrer: ' images intégrées.', ecarter: ' images écartées.', supprimer: ' images supprimées.'})[action];

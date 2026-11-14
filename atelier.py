@@ -3,6 +3,7 @@ import base64
 import hashlib
 from collections import Counter
 from contextlib import closing, nullcontext
+from copy import deepcopy
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from io import BytesIO
 import json
@@ -38,18 +39,51 @@ def link(path):
     return '/f/' + path.relative_to(DATA).as_posix()
 
 
-def branch(body):
-    all_themes = body.get('allThemes') is True
-    palette = None if all_themes else body.get('palette')
-    state, _, _, _, jobs = catalogues.load(body['profile'], body.get('root', ''), palette)
-    if all_themes:
-        return state, ALL_THEMES, '', jobs
+def select_jobs(body, jobs):
+    if body.get('allThemes') is True:
+        return ALL_THEMES, '', jobs
     theme = body['theme']
     discipline = body.get('branch', '')
     selected = [j for j in jobs if j.theme == theme and (not discipline or j.discipline == discipline)]
     if not selected:
         raise ValueError('Cette branche ne contient aucun visuel.')
-    return state, theme, discipline, selected
+    return theme, discipline, selected
+
+
+def load_jobs(body):
+    palette = None if body.get('allThemes') is True else body.get('palette')
+    state, themes, _, _, jobs = catalogues.load(body['profile'], body.get('root', ''), palette)
+    return state, themes, jobs
+
+
+def branch(body):
+    state, _, jobs = load_jobs(body)
+    return state, *select_jobs(body, jobs)
+
+
+def empty_counts():
+    return {'total': 0, 'done': 0, 'pending': 0}
+
+
+def image_stats(state, themes, jobs):
+    stats = {**empty_counts(), 'themes': {}}
+    for job in jobs:
+        theme = stats['themes'].get(job.theme)
+        if theme is None:
+            theme = {**empty_counts(), 'name': themes[job.theme]['name'], 'branches': {}}
+            stats['themes'][job.theme] = theme
+        branch_counts = theme['branches'].get(job.discipline)
+        if branch_counts is None:
+            branch_counts = theme['branches'][job.discipline] = empty_counts()
+        status = 'done' if gen.output_path(state, job).is_file() else 'pending'
+        for counts in (stats, theme, branch_counts):
+            counts['total'] += 1
+            counts[status] += 1
+    return stats
+
+
+def catalogue_stats(body):
+    return image_stats(*load_jobs(body))
 
 
 def info(body):
@@ -72,7 +106,8 @@ def info(body):
         }, 'name': theme['name'],
             'ready': any((state / 'references' / (tid + ext)).is_file()
                          for ext in ('.png', '.jpg', '.jpeg', '.webp'))}
-    return {'themes': references, 'total': len(jobs), 'textOnly': text_only, 'palettes': PALETTES}
+    return {'themes': references, 'total': len(jobs), 'textOnly': text_only,
+            'palettes': PALETTES, 'stats': image_stats(state, themes, jobs)}
 
 
 def save_reference(body):
@@ -139,10 +174,20 @@ def review_images(body):
 
 
 def generation_worker(state, theme, discipline, jobs, limit, account, token, reference,
-                      image_module, local_generator, comparison, engine):
+                      image_module, local_generator, comparison, engine, catalogue_jobs, catalogue_themes):
     output = state / 'comparaisons' / engine if comparison else state
     candidates = jobs[:limit] if comparison else jobs
     message = 'Lot terminé.'
+
+    def count_saved(job):
+        with RUN_LOCK:
+            stats = RUN['stats']
+            theme_counts = stats['themes'][job.theme]
+            branch_counts = theme_counts['branches'][job.discipline]
+            for counts in (stats, theme_counts, branch_counts):
+                counts['done'] += 1
+                counts['pending'] -= 1
+
     try:
         with gen.exclusive_run(BUDGET / 'generation.lock'), gen.keep_awake(theme == ALL_THEMES):
             ledger = nullcontext(None) if local_generator else closing(gen.open_ledger(BUDGET / 'budget.sqlite3'))
@@ -163,7 +208,8 @@ def generation_worker(state, theme, discipline, jobs, limit, account, token, ref
                     local_generator.check_assets()
                 completed = gen.generate(db, output, selected, account, token, reference, image_module,
                              progress=lambda msg: RUN.update(message=msg),
-                             local_generator=local_generator, stop_requested=STOP_REQUESTED.is_set)
+                             local_generator=local_generator, stop_requested=STOP_REQUESTED.is_set,
+                             on_saved=None if comparison else count_saved)
                 if not completed:
                     message = 'Lot arrêté. Les images terminées sont disponibles dans la galerie.'
                 elif not left:
@@ -180,12 +226,14 @@ def generation_worker(state, theme, discipline, jobs, limit, account, token, ref
         try:
             RUN.update(write_review(state, theme, discipline, jobs))
         finally:
+            stats = image_stats(state, catalogue_themes, catalogue_jobs)
             with RUN_LOCK:
-                RUN.update(active=False, message=message)
+                RUN.update(active=False, message=message, stats=stats)
 
 
 def start(body):
-    state, theme, discipline, jobs = branch(body)
+    state, catalogue_themes, catalogue_jobs = load_jobs(body)
+    theme, discipline, jobs = select_jobs(body, catalogue_jobs)
     limit = body['limit']
     comparison = body.get('comparison', False)
     engine = body.get('engine', 'cloudflare')
@@ -220,9 +268,11 @@ def start(body):
         text_only = catalogues.profiles()[body['profile']]['adapter'] == 'kristals-quebec'
         reference = None if local_generator or text_only or body.get('withoutReference') else gen.prepare_reference(state, theme, Image)
         STOP_REQUESTED.clear()
-        RUN.update(active=True, message='Préparation du lot…', gallery='', plan='', comparisons={})
+        RUN.update(active=True, message='Préparation du lot…', gallery='', plan='', comparisons={},
+                   stats=image_stats(state, catalogue_themes, catalogue_jobs))
         Thread(target=generation_worker,
-               args=(state, theme, discipline, jobs, limit, account, token, reference, Image, local_generator, comparison, engine),
+               args=(state, theme, discipline, jobs, limit, account, token, reference, Image,
+                     local_generator, comparison, engine, catalogue_jobs, catalogue_themes),
                daemon=True).start()
     return {'started': True}
 
@@ -271,7 +321,7 @@ class Handler(BaseHTTPRequestHandler):
             return self.json(200, moteurs_images.public_catalogue(ENGINES))
         if route == '/api/etat':
             with RUN_LOCK:
-                status = RUN.copy()
+                status = deepcopy(RUN)
                 status['stopping'] = status['active'] and STOP_REQUESTED.is_set()
             return self.json(200, status)
         if route in ('/app.js', '/style.css'):
@@ -306,7 +356,8 @@ class Handler(BaseHTTPRequestHandler):
             body = json.loads(self.rfile.read(size))
             operations = {'/api/charger': info, '/api/reference': save_reference,
                           '/api/plan': lambda data: write_review(*branch(data)), '/api/generer': start,
-                          '/api/revision': review_images, '/api/arreter': stop_generation}
+                          '/api/revision': review_images, '/api/arreter': stop_generation,
+                          '/api/statistiques': catalogue_stats}
             operation = operations.get(self.path)
             if not operation:
                 return self.json(404, {'error': 'Action inconnue.'})
