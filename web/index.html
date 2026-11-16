@@ -15,8 +15,9 @@
   <section aria-labelledby="catalogue-title">
     <h2 id="catalogue-title">1. Choisir un catalogue</h2>
     <label>Profil <select id="profile"></select></label>
-    <label id="root-label" hidden>Chemin de la copie locale Québec
+    <label id="root-label" hidden><span id="root-title">Chemin du pack local</span>
       <input id="root" placeholder="C:\mycode\Ekole\ekole-quebec">
+      <small id="root-hint">Vide : dossier voisin d’Atelier Images.</small>
     </label>
     <button id="load">Charger le catalogue</button>
   </section>
@@ -24,8 +25,8 @@
     <h2 id="stats-title">Progression du catalogue</h2>
     <dl class="catalogue-counts">
       <div><dt>Total</dt><dd id="stats-total"></dd></div>
-      <div><dt>Déjà générées</dt><dd id="stats-done"></dd></div>
-      <div><dt>Restent à générer</dt><dd id="stats-pending"></dd></div>
+      <div><dt>Scènes avec ≥1 variante</dt><dd id="stats-done"></dd></div>
+      <div><dt>Sans image (aucun moteur)</dt><dd id="stats-pending"></dd></div>
     </dl>
     <progress id="stats-progress" aria-label="Images générées dans le catalogue"></progress>
     <h3>Détail par thème et par branche</h3>
@@ -64,24 +65,28 @@
       <label>Moteur
         <select id="engine"></select>
         <small id="engine-description"></small>
+        <small id="price-estimate" class="estimate" aria-live="polite"></small>
+        <small id="engine-status" aria-live="polite"></small>
       </label>
       <label id="workflow-field" hidden>Workflow de style ComfyUI (JSON au format API)
         <input id="workflow" type="file" accept=".json,application/json">
         <small>Place {{PROMPT}} dans le texte positif et utilise une sortie SaveImage.</small>
       </label>
-      <label id="all-themes-field" class="check" hidden>
+      <label id="all-themes-field" class="check">
         <input id="all-themes" type="checkbox"> Générer tous les thèmes
         <small>Chaque thème utilise sa propre palette. Les images manquantes s’enchaînent.</small>
       </label>
-      <label class="check"><input id="comparison" type="checkbox"> Mode comparaison
-        <small>Génère les mêmes premières scènes avec chaque moteur dans des galeries d’essai distinctes.</small></label>
-      <label class="check"><input id="refresh-images" type="checkbox"> Refaire aussi les images non validées dont le prompt a changé
-        <small>Chaque image est remplacée quand sa nouvelle version est prête.</small></label>
+      <label class="check"><input id="comparison" type="checkbox"> Petit essai (24 images au maximum)
+        <small>Pour comparer, chaque moteur possède désormais sa propre collection, même en dehors du mode essai.</small></label>
+      <label class="check"><input id="refresh-images" type="checkbox"> Remplacer les images non validées de CE moteur si le prompt a changé
+        <small>Attention : peut remplacer des images de la collection sélectionnée. Les autres moteurs ne sont jamais touchés.</small></label>
       <div class="row">
         <label>Nombre maximal d’images <input id="limit" type="number" min="0" max="4800" value="12" required>
           <small>0 traite toutes les images à générer selon les options choisies.</small></label>
         <label id="account-field">Identifiant du compte Cloudflare <input id="account" autocomplete="off" required></label>
-        <label id="token-field">Jeton Cloudflare <input id="token" type="password" autocomplete="off" required></label>
+        <label id="token-field"><span id="token-label">Jeton API du fournisseur</span>
+          <input id="token" type="password" autocomplete="new-password" required>
+          <small>Clé transmise uniquement au serveur local pour ce lot, non enregistrée.</small></label>
       </div>
       <label id="reference-mode" class="check"><input id="without-reference" type="checkbox"> Utiliser uniquement le prompt de style</label>
       <button id="generate" type="submit">Générer</button>
@@ -91,12 +96,18 @@
   <p id="progress" aria-live="polite"></p>
   <section id="review" hidden>
     <h2>4. Réviser et intégrer</h2>
+    <fieldset id="collection-filters">
+      <legend>Collections affichées · sélectionner les modèles à comparer</legend>
+      <div id="collection-checkboxes" class="engine-groups" aria-label="Filtres par modèle"></div>
+    </fieldset>
     <label>Afficher <select id="image-filter">
       <option value="">Toutes les images</option>
       <option value="nouvelle">Nouvelles</option>
       <option value="validee">Validées, à intégrer</option>
-      <option value="integree">Intégrées</option>
+      <option value="integree">Intégrées (modèle effectivement publié)</option>
+      <option value="publiee">Scènes déjà couvertes dans Ékole</option>
     </select></label>
+    <p id="collection-help" class="helper">Les modèles cochés apparaissent côte à côte pour une même scène. Les images d'origine ne sont jamais remplacées par un autre moteur.</p>
     <div class="review-actions">
       <button id="select-images">Tout sélectionner dans cette vue</button>
       <button id="reject-images">Écarter la sélection pour la refaire</button>

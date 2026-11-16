@@ -195,7 +195,7 @@ class NoRedirect(HTTPRedirectHandler):
         return None
 
 
-def cloudflare_image(account, token, prompt, reference):
+def cloudflare_image(account, token, prompt, reference, model=MODEL):
     boundary = 'ekole-' + secrets.token_hex(16)
     parts = []
     for name, value in (('prompt', prompt), ('width', str(WIDTH)), ('height', str(HEIGHT))):
@@ -206,7 +206,7 @@ def cloudflare_image(account, token, prompt, reference):
                      f'filename="reference.jpg"\r\nContent-Type: image/jpeg\r\n\r\n'.encode('ascii'))
         parts.extend((reference, b'\r\n'))
     parts.append(f'--{boundary}--\r\n'.encode('ascii'))
-    request = Request(f'https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{MODEL}',
+    request = Request(f'https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{model}',
                       data=b''.join(parts), headers={'Authorization': 'Bearer ' + token,
                       'Content-Type': 'multipart/form-data; boundary=' + boundary}, method='POST')
     with build_opener(NoRedirect()).open(request, timeout=120) as response:
@@ -239,7 +239,7 @@ def prepare_reference(state, theme, image_module):
 
 
 def generate(db, state, jobs, account, token, reference, image_module, progress=print, local_generator=None,
-             stop_requested=lambda: False, on_saved=None):
+             stop_requested=lambda: False, on_saved=None, remote_generator=None):
     for i, job in enumerate(jobs, 1):
         if stop_requested():
             return False
@@ -256,12 +256,18 @@ def generate(db, state, jobs, account, token, reference, image_module, progress=
                                       'reserve')).lastrowid
         try:
             data = (local_generator(prompt) if local_generator else
+                    remote_generator(prompt, reference) if remote_generator else
                     cloudflare_image(account, token, prompt, reference))
             with image_module.open(BytesIO(data)) as image:
-                if image.size != (WIDTH, HEIGHT):
-                    raise ValueError(f'Format image reçu inattendu : {image.width} × {image.height}.')
+                if not 256 <= image.width <= 4096 or not 256 <= image.height <= 4096:
+                    raise ValueError(f'Dimensions de sortie invalides : {image.width} × {image.height}.')
+                if abs(image.width / image.height - WIDTH / HEIGHT) > 0.10:
+                    raise ValueError('Le modèle n’a pas produit le format horizontal 4:3 demandé.')
+                converted = image.convert('RGB')
+                if converted.size != (WIDTH, HEIGHT):
+                    converted = converted.resize((WIDTH, HEIGHT), image_module.Resampling.LANCZOS)
                 webp = BytesIO()
-                image.convert('RGB').save(webp, format='WEBP', quality=89)
+                converted.save(webp, format='WEBP', quality=89)
             path = output_path(state, job)
             atomic_write(path, webp.getvalue())
             atomic_write(path.with_suffix('.prompt-sha256'), hashlib.sha256(job.prompt.encode()).hexdigest().encode('ascii'))
@@ -269,10 +275,7 @@ def generate(db, state, jobs, account, token, reference, image_module, progress=
                 on_saved(job)
         except HTTPError as error:
             error.close()
-            if error.code == 429:
-                raise ValueError('Quota ou limite de cadence Cloudflare atteint. Relance le même lot plus tard.') from None
-            raise ValueError(f'Cloudflare a répondu HTTP {error.code}. Vérifie le compte et les droits du jeton, '
-                             'puis relance le lot.') from None
+            raise ValueError(f'Fournisseur : erreur HTTP {error.code}. Vérifie la clé, le quota et le modèle.') from None
         if db is not None:
             with db:
                 db.execute("UPDATE attempts SET status = 'sauve' WHERE id = ?", (attempt,))

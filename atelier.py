@@ -21,6 +21,9 @@ from comfy import ComfyGenerator
 import generation as gen
 import revision
 import moteurs_images
+import fournisseurs
+import variantes
+from collections_images import state_for
 
 BASE = Path(__file__).resolve().parent
 DATA = BASE / 'donnees'
@@ -66,7 +69,7 @@ def empty_counts():
 
 
 def image_stats(state, themes, jobs):
-    stats = {**empty_counts(), 'themes': {}}
+    stats = {**empty_counts(), 'themes': {}, 'engines': {name: empty_counts() for name in ENGINES}}
     for job in jobs:
         theme = stats['themes'].get(job.theme)
         if theme is None:
@@ -75,7 +78,14 @@ def image_stats(state, themes, jobs):
         branch_counts = theme['branches'].get(job.discipline)
         if branch_counts is None:
             branch_counts = theme['branches'][job.discipline] = empty_counts()
-        status = 'done' if gen.output_path(state, job).is_file() else 'pending'
+        any_done = False
+        for name in ENGINES:
+            has_image = gen.output_path(state_for(state, name), job).is_file()
+            any_done |= has_image
+            counts = stats['engines'][name]
+            counts['total'] += 1
+            counts['done' if has_image else 'pending'] += 1
+        status = 'done' if any_done else 'pending'
         for counts in (stats, theme, branch_counts):
             counts['total'] += 1
             counts[status] += 1
@@ -155,18 +165,20 @@ def generation_candidates(state, jobs, comparison=False, refresh=False):
     return pending, missing
 
 
-def write_review(state, theme, discipline, jobs, refresh=False):
+def write_review(state, theme, discipline, jobs, refresh=False, engine='cloudflare'):
+    if engine not in ENGINES:
+        raise ValueError('Moteur inconnu.')
     comparisons = {}
-    if theme != ALL_THEMES:
-        for engine in ENGINES:
-            sandbox = state / 'comparaisons' / engine
-            if any(gen.output_path(sandbox, j).is_file() for j in jobs):
-                comparisons[engine] = link(gen.write_gallery(sandbox, theme, discipline, jobs))
-    pending, missing = generation_candidates(state, jobs, refresh=refresh)
+    for name in ENGINES:
+        group = state_for(state, name)
+        if any(gen.output_path(group, job).is_file() for job in jobs):
+            comparisons[name] = link(gen.write_gallery(group, theme, discipline, jobs))
+    group = state_for(state, engine)
+    pending, missing = generation_candidates(group, jobs, refresh=refresh)
     return {
         'comparisons': comparisons,
-        'plan': link(gen.write_plan(state, theme, discipline, jobs)),
-        'gallery': link(gen.write_gallery(state, theme, discipline, jobs)),
+        'plan': link(gen.write_plan(group, theme, discipline, jobs)),
+        'gallery': link(gen.write_gallery(group, theme, discipline, jobs)),
         'total': len(jobs),
         'pending': len(missing),
         'refreshable': len(pending) - len(missing)
@@ -174,7 +186,7 @@ def write_review(state, theme, discipline, jobs, refresh=False):
 
 
 def plan(body):
-    return write_review(*branch(body), refresh=body.get('refresh') is True)
+    return write_review(*branch(body), refresh=body.get('refresh') is True, engine=body.get('engine','cloudflare'))
 
 
 def review_images(body):
@@ -194,8 +206,8 @@ def review_images(body):
             if RUN['active']:
                 raise ValueError('Attends la fin du lot en cours.')
             with gen.exclusive_run(BUDGET / 'generation.lock'):
-                return revision.apply(state, jobs, body.get('keys'), action, root)
-    rows = revision.list_images(state, jobs, root)
+                return variantes.apply(state, jobs, body.get('keys'), action, root, ENGINES)
+    rows = variantes.list_variants(state, jobs, root, ENGINES)
     for row in rows:
         row['url'] = link(row.pop('path'))
     return {'images': rows, 'integration': root is not None}
@@ -204,34 +216,28 @@ def review_images(body):
 def generation_worker(state, theme, discipline, jobs, limit, account, token, reference,
                       image_module, local_generator, comparison, engine, catalogue_jobs, catalogue_themes,
                       refresh=False):
-    output = state / 'comparaisons' / engine if comparison else state
-    candidates = jobs[:limit] if comparison else jobs
+    output = state_for(state, engine)
+    candidates = jobs
     message = 'Lot terminé.'
 
     def count_saved(job):
-        if job.key not in missing:
-            return
         with RUN_LOCK:
-            stats = RUN['stats']
-            theme_counts = stats['themes'][job.theme]
-            branch_counts = theme_counts['branches'][job.discipline]
-            for counts in (stats, theme_counts, branch_counts):
-                counts['done'] += 1
-                counts['pending'] -= 1
+            RUN['message'] = 'Image sauvegardée : ' + job.key
 
     try:
         with gen.exclusive_run(BUDGET / 'generation.lock'), gen.keep_awake(theme == ALL_THEMES):
             ledger = nullcontext(None) if local_generator else closing(gen.open_ledger(BUDGET / 'budget.sqlite3'))
             with ledger as db:
                 left = len(jobs) if db is None else max(0, gen.LIMIT - db.execute('SELECT count(*) FROM attempts').fetchone()[0])
-                pending, missing = generation_candidates(output, candidates, comparison, refresh)
+                pending, missing = generation_candidates(output, candidates, False, refresh)
                 selected = pending[:min(limit or len(pending), left)]
                 if selected and ENGINES[engine]['mode'] == 'preset':
                     local_generator.check_assets()
+                remote = None if local_generator else (lambda prompt, ref: fournisseurs.generate_cloud(engine, account, token, prompt, ref))
                 completed = gen.generate(db, output, selected, account, token, reference, image_module,
                              progress=lambda msg: RUN.update(message=msg),
-                             local_generator=local_generator, stop_requested=STOP_REQUESTED.is_set,
-                             on_saved=None if comparison else count_saved)
+                             local_generator=local_generator, remote_generator=remote,
+                             stop_requested=STOP_REQUESTED.is_set, on_saved=count_saved)
                 if not completed:
                     message = 'Lot arrêté. Les images terminées sont disponibles dans la galerie.'
                 elif not left:
@@ -246,7 +252,7 @@ def generation_worker(state, theme, discipline, jobs, limit, account, token, ref
         message = 'La génération a été interrompue (' + type(error).__name__ + ').'
     finally:
         try:
-            RUN.update(write_review(state, theme, discipline, jobs, refresh))
+            RUN.update(write_review(state, theme, discipline, jobs, refresh, engine))
         finally:
             stats = image_stats(state, catalogue_themes, catalogue_jobs)
             with RUN_LOCK:
@@ -266,21 +272,22 @@ def start(body):
     local_generator = None
     if type(limit) is not int or not 0 <= limit <= gen.LIMIT:
         raise ValueError('Limite du lot invalide.')
-    if comparison and not 1 <= limit <= 24:
-        raise ValueError('Choisis entre 1 et 24 images en mode comparaison.')
+    if comparison and limit > 24:
+        raise ValueError('Mode essai limité à 24 images. Pour la nuit, décoche Mode essai et mets 0.')
     mode = ENGINES[engine]['mode']
-    if theme == ALL_THEMES and (mode == 'cloud' or comparison):
-        raise ValueError('Le lot de tous les thèmes utilise un moteur local hors mode comparaison.')
+    if theme == ALL_THEMES and comparison:
+        raise ValueError('Pour générer tous les thèmes, décoche Mode essai.')
     if mode == 'preset':
-        local_generator = ComfyGenerator(moteurs_images.load_workflow(ENGINES[engine]))
+        local_generator = ComfyGenerator(moteurs_images.load_workflow(ENGINES[engine]),
+                                         require_lora=ENGINES[engine].get('require_lora', True))
     elif mode == 'upload':
         local_generator = ComfyGenerator(body.get('workflow'))
     else:
-        account, token = body['account'].strip(), body['token'].strip()
-        if not re.fullmatch(r'[a-fA-F0-9]{32}', account):
+        account, token = body.get('account', '').strip(), body.get('token', '').strip()
+        if mode == 'cloudflare' and not re.fullmatch(r'[a-fA-F0-9]{32}', account):
             raise ValueError('L’identifiant Cloudflare doit avoir 32 caractères hexadécimaux.')
         if not token or len(token) > 512 or '\n' in token or '\r' in token:
-            raise ValueError('Jeton Cloudflare invalide.')
+            raise ValueError('Jeton API invalide.')
     try:
         from PIL import Image
     except ImportError:
@@ -289,7 +296,7 @@ def start(body):
         if RUN['active']:
             raise ValueError('Un lot est déjà en cours.')
         text_only = catalogues.profiles()[body['profile']]['adapter'] == 'kristals-quebec'
-        reference = None if local_generator or text_only or body.get('withoutReference') else gen.prepare_reference(state, theme, Image)
+        reference = None if local_generator or text_only or theme == ALL_THEMES or body.get('withoutReference') else gen.prepare_reference(state, theme, Image)
         STOP_REQUESTED.clear()
         RUN.update(active=True, message='Préparation du lot…', gallery='', plan='', comparisons={},
                    stats=image_stats(state, catalogue_themes, catalogue_jobs))
@@ -357,7 +364,9 @@ class Handler(BaseHTTPRequestHandler):
             production = len(parts) >= 4 and parts[1] == 'lots'
             comparison = (len(parts) >= 6 and parts[1] == 'comparaisons'
                           and parts[2] in ENGINES and parts[3] == 'lots')
-            if path.suffix.lower() not in ('.webp', '.csv', '.html') or not (production or comparison):
+            collection = (len(parts) >= 6 and parts[1] == 'collections'
+                          and parts[2] in ENGINES and parts[3] == 'lots')
+            if path.suffix.lower() not in ('.webp', '.csv', '.html') or not (production or comparison or collection):
                 return self.json(404, {'error': 'Fichier absent.'})
         else:
             return self.json(404, {'error': 'Page absente.'})

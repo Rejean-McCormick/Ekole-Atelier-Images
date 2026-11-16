@@ -47,3 +47,30 @@ small{display:block;font-weight:400}
 #image-grid article{border:1px solid #d8ddd4;border-radius:.5rem;padding:.55rem}
 #image-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#f5f3ea}
 #image-grid label{margin:.4rem 0}
+
+.estimate{margin-top:.5rem;padding:.55rem .7rem;background:#eef5ee;border-left:3px solid #458167;border-radius:.2rem;font-size:.95rem}
+#collection-filters{display:flex;gap:.45rem 1.1rem;flex-wrap:wrap;padding:.7rem;margin:0 0 1rem;border:1px solid #cddcd0;border-radius:.55rem}
+#collection-filters legend{font-weight:700}
+#collection-filters .check{margin:0;font-weight:550;font-size:.94rem}
+#image-grid .variant-flag{font-size:.85rem;color:#496b58}
+
+/* Collections comparatives par modèle : regroupement des variantes d'une scène. */
+#collection-filters{display:block}
+#collection-checkboxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(16rem,100%),1fr));gap:.7rem}
+.engine-filter-group{min-width:0;padding:.7rem;background:#f6f8f5;border:1px solid #d8ddd4;border-radius:.55rem}
+.engine-provider-heading{display:flex;align-items:center;gap:.45rem;margin:0 0 .55rem}
+.engine-choices{display:grid;gap:.4rem}
+.engine-choices .check{display:flex;align-items:flex-start;gap:.4rem;font-size:.86rem;font-weight:500;margin:0}
+.engine-choices input,.engine-provider-heading input{flex:0 0 auto;margin-top:.18rem}
+#image-grid{display:block}
+#image-grid .scene-group{margin:0 0 1rem;padding:.85rem;border:1px solid #d8ddd4;border-radius:.6rem;background:#fffefb}
+#image-grid .scene-group h3{margin:0;font-size:1.05rem}
+#image-grid .scene-group>small{display:block;margin:.2rem 0 .7rem;color:#5a6d62;overflow-wrap:anywhere}
+#image-grid .scene-variants{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(15rem,100%),1fr));gap:.65rem}
+#image-grid .scene-variants article{min-width:0;display:flex;flex-direction:column;gap:.35rem;border:1px solid #d5dfd6;border-radius:.5rem;padding:.65rem}
+#image-grid .scene-variants a{display:block;margin:0}
+#image-grid .scene-variants .variant-status{font-weight:700;color:#245841}
+#image-grid .scene-variants .variant-flags{min-height:0}
+#image-grid .scene-variants .variant-flag{margin:.25rem 0;background:#fff4dd;border-radius:.25rem;padding:.45rem;font-size:.83rem;color:#684813}
+#image-grid .scene-variants button{margin-top:auto}
+.helper{color:#496b58;font-size:.9rem}

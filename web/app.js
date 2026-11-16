@@ -8,6 +8,9 @@ let catalogue = null;
 let polling = false;
 let review = null;
 let reviewBusy = false;
+let lastStats = null;
+const selectedModels = new Map();
+let modelFilterControls = [];
 const colorFields = ['palette-color-1', 'palette-color-2', 'palette-color-3'];
 const formatCount = new Intl.NumberFormat('fr-CA');
 const statsColumns = [['total', 'Total'], ['done', 'Générées'], ['pending', 'Restantes']];
@@ -33,8 +36,8 @@ function selection() {
 
 function generationSelection() {
   const refresh = !$('comparison').checked && $('refresh-images').checked;
-  if (!$('all-themes').checked) return {...selection(), refresh};
-  return {profile: $('profile').value, root: $('root').value, allThemes: true, refresh};
+  if (!$('all-themes').checked) return {...selection(), refresh, engine: $('engine').value};
+  return {profile: $('profile').value, root: $('root').value, allThemes: true, refresh, engine: $('engine').value};
 }
 
 function options(select, entries) {
@@ -116,7 +119,7 @@ function showLinks(data) {
   $('comparison-links').replaceChildren(...Object.entries(data.comparisons || {}).map(([engine, path]) => {
     const link = document.createElement('a');
     link.id = 'compare-' + engine;
-    link.textContent = 'Essai ' + engines[engine].name;
+    link.textContent = 'Collection ' + engines[engine].name;
     link.href = path;
     link.target = '_blank';
     link.rel = 'noopener';
@@ -131,6 +134,8 @@ function showCatalogueStats(stats) {
   }
   updateProgress($('stats-progress'), stats);
   showThemeStats(stats.themes);
+  lastStats = stats;
+  showEngineStatus();
   $('catalogue-stats').hidden = false;
 }
 
@@ -212,6 +217,7 @@ function showThemeStats(themes) {
 
 function setBusy(busy) {
   for (const id of ['profile','root','load','theme','branch','palette-choice', ...colorFields, 'upload','engine','workflow','all-themes','comparison','refresh-images','generate','plan','view-images','approve-images','publish-images','reject-images','delete-images','select-images']) $(id).disabled = busy;
+  for (const control of modelFilterControls) control.disabled = busy;
   if (!busy) {
     $('comparison').disabled = $('all-themes').checked;
     $('refresh-images').disabled = $('comparison').checked;
@@ -247,7 +253,13 @@ async function monitor() {
 }
 
 $('profile').addEventListener('change', () => {
-  $('root-label').hidden = profiles[$('profile').value].adapter !== 'kristals-quebec';
+  const adapter = profiles[$('profile').value].adapter;
+  const pastorale = adapter === 'kristals-pastorale';
+  $('root-label').hidden = adapter !== 'kristals-quebec' && !pastorale;
+  $('root-title').textContent = pastorale ? 'Chemin du pack local École Pastorale' : 'Chemin de la copie locale Québec';
+  $('root').placeholder = pastorale ? 'C:\\mycode\\Ekole\\ecole-pastorale' : 'C:\\mycode\\Ekole\\ekole-quebec';
+  $('root-hint').textContent = pastorale ? 'Contient pack.json et cours/. Vide : ../ecole-pastorale.' : 'Contient pack.json et data/univers.json. Vide : ../ekole-quebec.';
+  $('root').value = '';
   $('reference').hidden = $('lot').hidden = true;
   $('catalogue-stats').hidden = true;
   clearBranch();
@@ -341,50 +353,153 @@ function updateImageSelection() {
     : 'Supprimer la sélection';
 }
 
-const statusLabels = {nouvelle: 'Nouvelle', validee: 'Validée', integree: 'Intégrée'};
+const statusLabels = {
+  nouvelle: 'Nouvelle',
+  validee: 'Validée',
+  integree: 'Intégrée dans Ékole',
+  'identique-publiee': 'Identique à l’image publiée'
+};
+
+const providerLabels = {cloudflare: 'Cloudflare', local: 'FLUX local / ComfyUI',
+  replicate: 'Replicate', bfl: 'Black Forest Labs (direct)'};
+
+function buildCollectionFilters() {
+  const groups = new Map();
+  for (const [id, model] of Object.entries(engines)) {
+    if (!groups.has(model.provider)) groups.set(model.provider, []);
+    groups.get(model.provider).push([id, model]);
+    if (!selectedModels.has(id)) selectedModels.set(id, true);
+  }
+  modelFilterControls = [];
+  const holder = $('collection-checkboxes');
+  holder.replaceChildren(...Array.from(groups, ([provider, entries]) => {
+    const group = document.createElement('div');
+    group.className = 'engine-filter-group';
+    const heading = document.createElement('label');
+    heading.className = 'engine-provider-heading';
+    const all = document.createElement('input');
+    all.type = 'checkbox';
+    all.checked = entries.every(([id]) => selectedModels.get(id));
+    const title = document.createElement('strong');
+    title.textContent = ' ' + (providerLabels[provider] || provider);
+    heading.append(all, title);
+    const choices = document.createElement('div');
+    choices.className = 'engine-choices';
+    const modelBoxes = entries.map(([id, engine]) => {
+      const label = document.createElement('label');
+      label.className = 'check';
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.value = id;
+      checkbox.checked = selectedModels.get(id);
+      checkbox.addEventListener('change', () => {
+        selectedModels.set(id, checkbox.checked);
+        all.checked = modelBoxes.every(box => box.checked);
+        all.indeterminate = !all.checked && modelBoxes.some(box => box.checked);
+        if (review) renderImages();
+      });
+      const name = document.createElement('span');
+      name.textContent = engine.name;
+      label.append(checkbox, name);
+      choices.append(label);
+      modelFilterControls.push(checkbox);
+      return checkbox;
+    });
+    all.indeterminate = !all.checked && modelBoxes.some(box => box.checked);
+    all.addEventListener('change', () => {
+      for (const box of modelBoxes) {
+        box.checked = all.checked;
+        selectedModels.set(box.value, box.checked);
+      }
+      all.indeterminate = false;
+      if (review) renderImages();
+    });
+    modelFilterControls.push(all);
+    group.append(heading, choices);
+    return group;
+  }));
+}
 
 function renderImages() {
   const filter = $('image-filter').value;
-  const rows = review.images.filter(row => !filter || row.status === filter);
+  const rows = review.images.filter(row => selectedModels.get(row.engine) && (
+    !filter || row.status === filter || (filter === 'publiee' && row.published)));
   $('publish-images').hidden = !review.integration;
   $('reject-images').hidden = !rows.some(row => row.status === 'nouvelle');
   $('delete-images').hidden = !rows.length;
-  $('review-status').textContent = rows.length + ' images dans cette vue.';
-  $('image-grid').replaceChildren(...rows.map(row => {
-    const card = document.createElement('article');
-    const preview = document.createElement('a');
-    preview.href = row.url;
-    preview.target = '_blank';
-    preview.rel = 'noopener';
-    const image = new Image();
-    image.src = row.url;
-    image.alt = row.titre;
-    image.loading = 'lazy';
-    preview.append(image);
-    const label = document.createElement('label');
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.value = row.key;
-    checkbox.addEventListener('change', updateImageSelection);
-    label.append(checkbox, ' ' + row.titre + ' · ' + row.slot);
-    const state = document.createElement('small');
-    state.textContent = row.cours + ' · ' + statusLabels[row.status];
-    const details = document.createElement('details');
-    const summary = document.createElement('summary');
-    summary.textContent = 'Prompt pour une prochaine génération';
-    const prompt = document.createElement('p');
-    prompt.style.whiteSpace = 'pre-wrap';
-    prompt.textContent = row.prompt;
-    details.append(summary, prompt);
-    const remove = document.createElement('button');
-    remove.type = 'button';
-    remove.textContent = 'Supprimer cette image';
-    remove.addEventListener('click', async () => {
-      report();
-      try { await changeImages('supprimer', [row.key]); } catch (error) { report(error); }
-    });
-    card.append(preview, label, state, details, remove);
-    return card;
+  const groups = new Map();
+  for (const row of rows) {
+    if (!groups.has(row.scene_key)) groups.set(row.scene_key, []);
+    groups.get(row.scene_key).push(row);
+  }
+  $('review-status').textContent = rows.length + ' variante(s) dans ' + groups.size + ' scène(s).';
+  $('image-grid').replaceChildren(...Array.from(groups, ([scene, variants]) => {
+    const section = document.createElement('section');
+    section.className = 'scene-group';
+    const header = document.createElement('h3');
+    header.textContent = variants[0].titre + ' · ' + variants[0].slot;
+    const meta = document.createElement('small');
+    meta.textContent = scene;
+    const rowContainer = document.createElement('div');
+    rowContainer.className = 'scene-variants';
+    rowContainer.replaceChildren(...variants.map(row => {
+      const card = document.createElement('article');
+      const preview = document.createElement('a');
+      preview.href = row.url;
+      preview.target = '_blank';
+      preview.rel = 'noopener';
+      const image = new Image();
+      image.src = row.url;
+      image.alt = row.titre + ' · ' + row.engine_name;
+      image.loading = 'lazy';
+      preview.append(image);
+      const label = document.createElement('label');
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.value = row.key;
+      checkbox.addEventListener('change', updateImageSelection);
+      const name = document.createElement('span');
+      name.textContent = ' ' + row.engine_name;
+      label.append(checkbox, name);
+      const status = document.createElement('small');
+      status.className = 'variant-status';
+      status.textContent = statusLabels[row.status] || row.status;
+      const flags = document.createElement('div');
+      flags.className = 'variant-flags';
+      if (row.covered_elsewhere) {
+        const note = document.createElement('p');
+        note.className = 'variant-flag';
+        note.textContent = row.published_engine_name
+          ? 'Déjà intégrée via : ' + row.published_engine_name
+          : 'Une image de cette scène est déjà publiée dans Ékole (modèle non identifié).';
+        flags.append(note);
+      } else if (row.status === 'identique-publiee') {
+        const note = document.createElement('p');
+        note.className = 'variant-flag';
+        note.textContent = row.published_engine_name
+          ? 'Même fichier que la version publiée via ' + row.published_engine_name
+          : 'Même fichier que celui publié dans Ékole (origine inconnue).';
+        flags.append(note);
+      }
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      summary.textContent = 'Prompt pour une prochaine génération';
+      const prompt = document.createElement('p');
+      prompt.style.whiteSpace = 'pre-wrap';
+      prompt.textContent = row.prompt;
+      details.append(summary, prompt);
+      const remove = document.createElement('button');
+      remove.type = 'button';
+      remove.textContent = 'Supprimer cette variante';
+      remove.addEventListener('click', async () => {
+        report();
+        try { await changeImages('supprimer', [row.key]); } catch (error) { report(error); }
+      });
+      card.append(preview, label, status, flags, details, remove);
+      return card;
+    }));
+    section.append(header, meta, rowContainer);
+    return section;
   }));
   updateImageSelection();
 }
@@ -406,7 +521,7 @@ async function changeImages(action, explicitKeys) {
     'Supprimer définitivement ' + keys.length + ' image(s) de l’atelier ? Les copies publiées dans Ekole restent disponibles.'
   )) return;
   if (action === 'ecarter' && !confirm('Écarter les nouvelles images sélectionnées ? Elles pourront être régénérées.')) return;
-  if (action === 'integrer' && !confirm('Publier les images validées sélectionnées dans Ekole pour ce thème ?')) return;
+  if (action === 'integrer' && !confirm('Intégrer les variantes sélectionnées dans Ékole ? Pour une même scène, cette opération remplacera la version actuellement publiée.')) return;
   reviewBusy = true;
   setBusy(true);
   try {
@@ -435,21 +550,47 @@ action('delete-images', () => changeImages('supprimer'));
 action('approve-images', () => changeImages('valider'));
 action('publish-images', () => changeImages('integrer'));
 
+function showEngineStatus() {
+  const engine = $('engine').value;
+  const stats = lastStats?.engines?.[engine];
+  $('engine-status').textContent = stats
+    ? `Dans cette collection : ${stats.done} / ${stats.total} images générées · ${stats.pending} manquantes.`
+    : '';
+}
+
+function batchEstimate() {
+  const engine = engines[$('engine').value];
+  if (!engine) return;
+  const n = Number($('limit').value) || (catalogue ? ($('all-themes').checked
+    ? catalogue.total : (catalogue.themes[$('theme').value]?.branches[$('branch').value] ||
+       Object.values(catalogue.themes[$('theme').value]?.branches || {}).reduce((a,b)=>a+b,0))) : 4000);
+  const price = engine.unit_usd;
+  const desc = price === undefined
+    ? 'Calcul local sur ton ordinateur : pas de frais API estimés (électricité et matériel exclus).'
+    : `Estimation à ~1 MP sans image de référence : ${((price || 0)*n).toFixed(2)} $ US pour ${n} image(s). `
+      + `4 000 images : ${(4000*price).toFixed(2)} $ US. ${engine.pricing_note} Prix indicatif, hors taxes et références.`;
+  $('price-estimate').textContent = desc;
+}
+
 function showEngine() {
   const engine = engines[$('engine').value];
-  const local = engine.mode !== 'cloud';
+  if (!engine) return;
+  const local = engine.mode === 'preset' || engine.mode === 'upload';
   const upload = engine.mode === 'upload';
-  $('all-themes-field').hidden = !local;
-  if (!local) {
-    $('all-themes').checked = false;
-    $('comparison').disabled = false;
-  }
+  $('all-themes-field').hidden = false;
   $('engine-description').textContent = engine.description || '';
   $('workflow-field').hidden = !upload;
   $('workflow').required = upload;
-  $('account-field').hidden = $('token-field').hidden = local;
-  $('account').required = $('token').required = !local;
+  const needsCloudflare = engine.mode === 'cloudflare';
+  $('account-field').hidden = !needsCloudflare;
+  $('token-field').hidden = local;
+  $('account').required = needsCloudflare;
+  $('token').required = !local;
+  $('token-label').textContent = needsCloudflare ? 'Jeton Cloudflare Workers AI'
+    : engine.mode === 'replicate' ? 'Jeton API Replicate' : 'Clé API Black Forest Labs';
   $('reference-controls').hidden = $('reference-mode').hidden = local || !!catalogue?.textOnly;
+  batchEstimate();
+  showEngineStatus();
 }
 
 $('engine').addEventListener('change', showEngine);
@@ -461,12 +602,17 @@ $('all-themes').addEventListener('change', () => {
     $('refresh-images').disabled = false;
     $('limit').value = '0';
   }
+  batchEstimate();
   clearBranch();
 });
 $('comparison').addEventListener('change', () => {
   $('refresh-images').disabled = $('comparison').checked;
   if ($('comparison').checked) $('limit').value = '6';
+  batchEstimate();
 });
+
+$('limit').addEventListener('input', batchEstimate);
+$('branch').addEventListener('change', batchEstimate);
 
 action('generation', async () => {
   const selected = generationSelection();
@@ -476,12 +622,12 @@ action('generation', async () => {
   const comparison = $('comparison').checked;
   if (comparison && !(limit >= 1 && limit <= 24)) throw Error('Choisis entre 1 et 24 images pour comparer.');
   const data = await api('plan', selected);
-  const available = comparison ? data.total : data.pending + data.refreshable;
+  const available = data.pending + data.refreshable;
   const count = limit ? Math.min(limit, available) : available;
   if (!count) { showLinks(data); $('progress').textContent = 'Les images de ce lot sont déjà présentes.'; return; }
-  const cost = mode === 'cloud'
-    ? ' Estimation Cloudflare : ' + (count * 0.001207).toFixed(3) + ' $ US hors forfait et taxes.'
-    : ' Calcul sur ton ordinateur via ComfyUI.';
+  const cost = (engines[engine].unit_usd === undefined)
+    ? ' Calcul local sur ton ordinateur.'
+    : ' Coût API estimé : ' + (count * engines[engine].unit_usd).toFixed(2) + ' $ US (1 MP, hors taxes et références).';
   const target = selected.allThemes ? ' pour tous les thèmes' : '';
   if (!window.confirm('Générer au plus ' + count + ' images' + target + ' ?' + cost)) return;
   const body = {...selected, limit, engine, comparison};
@@ -489,10 +635,10 @@ action('generation', async () => {
     const file = $('workflow').files[0];
     if (!file || file.size > 1024 * 1024) throw Error('Choisis un workflow JSON de 1 Mo maximum.');
     body.workflow = JSON.parse(await file.text());
-  } else if (mode === 'cloud') {
+  } else if (['cloudflare','replicate','bfl'].includes(mode)) {
     body.account = $('account').value;
     body.token = $('token').value;
-    body.withoutReference = catalogue.textOnly || $('without-reference').checked;
+    body.withoutReference = selected.allThemes || catalogue.textOnly || $('without-reference').checked;
     $('token').value = '';
   }
   await api('generer', body);
@@ -504,6 +650,7 @@ action('generation', async () => {
   try {
     [profiles, engines] = await Promise.all([api('profils'), api('moteurs')]);
     options($('engine'), Object.entries(engines).map(([id, engine]) => [id, engine.name]));
+    buildCollectionFilters();
     options($('profile'), Object.entries(profiles).map(([id, config]) => [id, config.name]));
     if ('ecole-quebec' in profiles) $('profile').value = 'ecole-quebec';
     $('profile').dispatchEvent(new Event('change'));

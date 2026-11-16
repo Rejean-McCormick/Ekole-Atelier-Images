@@ -1,0 +1,6 @@
+{
+  "nom": "FLUX.1 Dev · Artistique haute qualité (28 étapes, sans LoRA)",
+  "workflow": "artistique-haute-qualite.workflow.json",
+  "description": "Modèle FLUX.1 Dev existant, sans le LoRA Flat Cartoon. Aucun téléchargement de modèle supplémentaire nécessaire.",
+  "require_lora": false
+}

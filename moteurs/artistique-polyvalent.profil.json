@@ -1,0 +1,6 @@
+{
+  "nom": "FLUX.1 Dev · Artistique polyvalent (20 étapes, sans LoRA)",
+  "workflow": "artistique-polyvalent.workflow.json",
+  "description": "Modèle FLUX.1 Dev existant, sans le LoRA Flat Cartoon. Aucun téléchargement de modèle supplémentaire nécessaire.",
+  "require_lora": false
+}

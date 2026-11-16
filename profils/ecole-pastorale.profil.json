@@ -1,22 +1,93 @@
 {
-  "nom": "École pastorale · exemple",
-  "adapter": "csv",
+  "nom": "École Pastorale · 12 styles (pack local)",
+  "adapter": "kristals-pastorale",
   "source": "ecole-pastorale.csv",
-  "style": "Illustration éditoriale pour des ateliers d’adultes. Papier mat, lumière naturelle, formes sobres et chaleureuses.",
+  "style": "Illustration éditoriale pédagogique en français canadien, destinée à un public adulte. Respecter la dignité de chaque personne, la sensibilité catholique et la différence entre récit biblique, histoire, doctrine et situation pastorale contemporaine. Les représentations historiques et scripturaires sont des évocations artistiques, non des reconstitutions attestées. Les situations sont fictives; ne pas montrer de violence graphique, de pression spirituelle ni de guérison garantie. Dessin clair, expressions lisibles, espace suffisant autour du sujet.",
   "themes": [
     {
-      "id": "accueil",
-      "name": "L’accueil et l’écoute",
-      "intro": "Des équipes préparent des rencontres dans un lieu communautaire.",
-      "palette": "terre cuite #B8705A, crème #F4E8D7, bleu ardoise #536878",
-      "scene": "Une salle communautaire, des chaises en cercle, un carnet posé sur une table et une lumière de fin d’après-midi."
+      "id": "aquarelle",
+      "name": "Aquarelle sur papier coton",
+      "intro": "Style visuel : Aquarelle traditionnelle sur papier coton texturé, lavis translucides, pigments diffus et auréoles de séchage naturelles, réserves lumineuses du papier, bords spontanés et contours au pinceau très fins. Sensation délicate et contemplative, sans rendu photographique ni effet plastique.",
+      "palette": "bleu fumé #668DA1, terre rosée #C78E79, papier ivoire #F4E8D8",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. Les volumes du mobilier sont suggérés par des lavis transparents, avec pigments déposés et blanc du papier apparent."
     },
     {
-      "id": "entraide",
-      "name": "L’entraide de proximité",
-      "intro": "Des bénévoles préparent une activité collective.",
-      "palette": "vert mousse #72815D, miel #C59A52, lin #F1E7D5",
-      "scene": "Un local de quartier, une grande table en bois, quelques paniers et des manteaux accrochés."
+      "id": "vitrail",
+      "name": "Vitrail lumineux",
+      "intro": "Style visuel : Art du vitrail assemblé, pièces de verre translucide, contours au plomb nets et continus, formes simplifiées, reflets et lumière traversante, composition lisible avec une géométrie rayonnante. Préserver les visages et les gestes avec bienveillance, sans lettres ni inscriptions dans les panneaux.",
+      "palette": "bleu profond #294B80, carmin #B45455, ambre #E9BB67",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. La fenêtre et les objets sont composés de fragments de verre coloré joints au plomb, traversés par une lumière douce."
+    },
+    {
+      "id": "fusain",
+      "name": "Fusain et graphite",
+      "intro": "Style visuel : Dessin au fusain naturel et graphite sur papier à grain, lignes sèches, hachures, estompes poudreuses et frottages. Fort modelé de lumière par réserves du papier, gamme restreinte de valeurs, contours expressifs et contrastes maîtrisés. Aucune couleur artificielle et aucune esthétique de photo monochrome.",
+      "palette": "anthracite #29292C, pierre #8A8580, papier #EDE7DF",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. Le banc, le livre fermé et la lumière sont traduits par des noirs veloutés, des estompes et la texture du papier."
+    },
+    {
+      "id": "neon-futuriste",
+      "name": "Néon futuriste",
+      "intro": "Style visuel : Illustration néon futuriste poétique, silhouettes simples, architecture prospective crédible, lueurs électroluminescentes, halos délicats dans une atmosphère légèrement brumeuse et contrastes nets. Préserver un caractère humain, recueilli et respectueux; éviter les armes, l’agressivité et les clichés de science-fiction.",
+      "palette": "indigo nocturne #21264D, cyan lumineux #39C8C1, magenta doux #E87CA9",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. Le lieu est réimaginé avec des arêtes lumineuses et des reflets néon discrets, sans écrans portant du texte."
+    },
+    {
+      "id": "enluminure",
+      "name": "Enluminure médiévale",
+      "intro": "Style visuel : Enluminure artisanale inspirée des manuscrits médiévaux, pigments mats sur parchemin, aplats délicats, motifs végétaux discrets, filets d’or, contours à la plume et perspective volontairement stylisée. Richesse décorative contenue, hiérarchie visuelle claire. Aucun lettrage, aucune lettrine, aucune imitation de texte manuscrit.",
+      "palette": "lapis #334C7C, or patiné #C9A04F, parchemin #F2E4C8",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. La chapelle et ses objets sont figurés comme une miniature de manuscrit, avec bordure végétale discrète sans écriture."
+    },
+    {
+      "id": "mosaique-byzantine",
+      "name": "Mosaïque byzantine",
+      "intro": "Style visuel : Mosaïque murale d’inspiration byzantine, tesselles de verre et de pierre légèrement irrégulières, joints visibles, éclats d’or et plans frontaux monumentaux. Lueurs diffuses, silhouettes sereines, rythme géométrique des petits fragments. Respecter le sens religieux de la scène sans multiplier les symboles non demandés.",
+      "palette": "or vieilli #C29B4C, bleu minéral #3F6484, pierre claire #D8CFB7",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. Le mobilier et l’architecture sont constitués de petites tesselles irrégulières avec joints nets et éclats dorés."
+    },
+    {
+      "id": "gravure-bois",
+      "name": "Gravure sur bois",
+      "intro": "Style visuel : Xylographie et linogravure artisanales, marques de gouge visibles, traits francs, hachures parallèles, encres mates en deux ou trois passages, aplats solides et papier fibreux. Graphisme expressif, peu de détails parasites, profondeur créée par la densité des traits. Aucun rendu numérique lisse.",
+      "palette": "vert encre #34473D, brique #B96F5A, papier crème #F3E5CE",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. La petite chapelle est gravée en aplats nets et longues hachures, avec relief du bois et marques de gouge."
+    },
+    {
+      "id": "papier-decoupe",
+      "name": "Papier découpé en relief",
+      "intro": "Style visuel : Illustration entièrement construite en papiers découpés superposés, fibres et tranches de papier visibles, formes souples, profondeur créée par des ombres portées légères et des couches physiques. Silhouettes immédiatement reconnaissables, composition tactile et contemporaine. Aucun aspect plastique ni 3D numérique photoréaliste.",
+      "palette": "sauge #74988C, abricot #E6AC86, lin #F1E7D7",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. Fenêtre, banc et table forment de fines couches de papier découpé, espacées par de petites ombres tangibles."
+    },
+    {
+      "id": "pastel-sec",
+      "name": "Pastel sec poudré",
+      "intro": "Style visuel : Pastel sec sur papier velouté, matière crayeuse apparente, dégradés frottés à la main, traits de craie et contours partiellement fondus. Lumière intime et douce, textures poudreuses subtiles, gestes enveloppants mais lisibles. Éviter les surfaces luisantes et les détails photographiques.",
+      "palette": "lilas grisé #A99BB7, vert d’eau #8BB1A5, pêche pâle #F3D7C3",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. Une lumière diffuse effleure le mobilier traité en poudre de pastel, avec superpositions et fondus visibles."
+    },
+    {
+      "id": "huile-toile",
+      "name": "Peinture à l’huile sur toile",
+      "intro": "Style visuel : Peinture à l’huile expressive sur toile de lin, traces de pinceau et léger empâtement visibles, glacis profonds, clair-obscur chaleureux et volumes peints avec dignité. Composition narrative équilibrée, visages humains naturels, texture de toile authentique. Éviter photoréalisme et théâtralisation excessive.",
+      "palette": "bleu ardoise #495D75, ocre #BC8A57, lin doré #E9D8B7",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. Le bois, les murs et la lumière de la fenêtre sont construits en couches d’huile avec coups de pinceau perceptibles."
+    },
+    {
+      "id": "ceramique-emaillee",
+      "name": "Céramique émaillée",
+      "intro": "Style visuel : Peinture figurative sur carreaux de céramique émaillée assemblés, surfaces légèrement craquelées, joints réguliers, bordures artisanales sobres et reflets discrets du glacis. Dessin net, palette minérale, scènes traduites en panneaux de faïence, sans lettres ni motifs d’écriture.",
+      "palette": "bleu cobalt #355F86, sable doré #C6A36D, émail clair #EFECE3",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. La chapelle forme une fresque sur grands carreaux émaillés, avec craquelures fines et joints de faïence réguliers."
+    },
+    {
+      "id": "diorama-isometrique",
+      "name": "Diorama isométrique",
+      "intro": "Style visuel : Diorama miniature isométrique fabriqué à la main, objets stylisés en bois peint et argile mate, géométrie claire, ombres douces, plan en trois quarts surélevé et détails simplifiés. Personnages adultes proportionnés et chaleureux, atmosphère paisible, sans interfaces, sans photoréalisme ni esthétique de jeu vidéo.",
+      "palette": "bleu grisé #567984, miel #C1A06E, blanc cassé #EBE8DD",
+      "scene": "Une petite chapelle de quartier vide et paisible, un banc en bois, une fenêtre cintrée, un livre fermé sur une table simple et une bougie éteinte, lumière du jour. Une maquette artisanale présente la fenêtre, le banc et la table comme des volumes miniatures vus en isométrie."
     }
-  ]
+  ],
+  "pack_dir": "ecole-pastorale"
 }

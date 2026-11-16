@@ -1,6 +1,7 @@
 """Profils CSV génériques et adaptateur en lecture seule pour Ekole Québec."""
 import csv
 from pathlib import Path
+from dataclasses import replace
 import re
 
 from generation import KEY, STYLE, Job, make_prompt, read_json, read_overrides
@@ -104,28 +105,29 @@ def quebec_location(universe, discipline, course, slot, style):
     return places[(course_number - 1 + (slot == 'situation')) % len(places)]
 
 
-def compose_quebec_prompt(direction, colors, scene, priority=''):
+def compose_quebec_prompt(direction, colors, scene, priority='', focus=''):
     if priority:
         scene += ' ' + priority
     scene = without_color_instructions(scene)
+    framing = f'\n{without_color_instructions(focus)}' if focus else ''
     age = (
         'Élèves du primaire de 6 à 12 ans, avec des proportions enfantines. '
         'Les adultes mentionnés restent adultes.'
     )
     return (
-        f'Scène à illustrer : {scene}\n\n{direction}\n\n'
+        f'Scène à illustrer : {scene}{framing}\n\n{direction}\n\n'
         f'Personnages : {age}\n\n'
         f'Palette dominante : {", ".join(colors)}. '
         'Grands aplats et accents principaux dans cette palette. Teintes secondaires discrètes. '
         f'{QUEBEC_STYLE}\n\n'
-        'Une seule illustration horizontale, sans texte visible, chiffres, logos, filigranes, '
-        'bulles ni nuancier. Tourner les documents écrits hors du regard. '
-        'Les pages et cartes peuvent montrer des dessins ou des pictogrammes.'
+        'Une seule illustration horizontale. Aucun texte visible, chiffre, logo, '
+        'filigrane, bulle ni nuancier.'
     )
 
 
 def build_jobs(root, themes, styles, overrides, palette=None):
     authored = read_json(Path(__file__).with_name('mise-en-scene-quebec.json'))
+    framing = read_json(Path(__file__).with_name('cadrages-pedagogiques-quebec.json'))
     universes = read_json(Path(__file__).with_name('univers-visuels-quebec.json'))
     contextual = read_json(Path(__file__).with_name('scenes-par-univers-quebec.json'))
     pack = {c['id']: c for c in read_json(root / 'pack.json')['cours']}
@@ -169,7 +171,8 @@ def build_jobs(root, themes, styles, overrides, palette=None):
                 location = quebec_location(universe, discipline, course, slot, styles[tid])
                 scene = f'{location.rstrip(".")}. {action}'
                 priority = treatment.get('priorite', '')
-            prompt = compose_quebec_prompt(direction, colors, scene, priority)
+            focus = '' if key in overrides else framing.get(course, '')
+            prompt = compose_quebec_prompt(direction, colors, scene, priority, focus)
             jobs.append(Job(tid, discipline, course, pack[course]['titre'], slot,
                             entry.get('texte_alternatif', ''), prompt, existing))
     unknown = overrides.keys() - used_overrides
@@ -211,6 +214,42 @@ def csv_jobs(path, themes, styles, art_direction, palette=None):
     return jobs
 
 
+PASTORALE_ID = re.compile(r'epc-(msg|foi)-[0-9]{3}', re.I)
+
+
+def pastoral_pack_jobs(root, config, themes, styles, art_direction, palette=None):
+    """Pack.json fournit titres/ID, CSV fournit uniquement des scènes proposées."""
+    if not (root / 'pack.json').is_file() or not (root / 'cours').is_dir():
+        raise ValueError('Le dossier École Pastorale doit contenir pack.json et cours/.')
+    pack = read_json(root / 'pack.json')
+    records = {}
+    for course in pack.get('cours', []):
+        ident = course.get('id', '')
+        title = course.get('titre', '')
+        if not isinstance(ident, str) or not PASTORALE_ID.fullmatch(ident) or not isinstance(title, str) or not title.strip():
+            raise ValueError('Le pack pastoral contient un cours sans identifiant EPC-MSG/EPC-FOI ou sans titre.')
+        cid = ident.lower()
+        if cid in records:
+            raise ValueError('Cours en double : ' + cid)
+        records[cid] = ('message' if '-msg-' in cid else 'foi', title.strip())
+    if not records:
+        raise ValueError('Le pack pastoral ne contient pas de cours.')
+    templates = csv_jobs(PROFILES / config['source'], themes, styles, art_direction, palette)
+    jobs, seen = [], set()
+    for job in templates:
+        item = records.get(job.course)
+        if item:
+            if job.discipline != item[0]:
+                raise ValueError('Branche incohérente pour ' + job.course)
+            jobs.append(replace(job, title=item[1]))
+            seen.add((job.theme, job.course, job.slot))
+    missing = [(course, theme, slot) for course in records for theme in themes for slot in ('concept','situation')
+               if (theme, course, slot) not in seen]
+    if missing:
+        raise ValueError('Scènes à compléter dans le CSV : ' + ', '.join('/'.join(x) for x in missing[:5]))
+    return jobs
+
+
 def load(profile, root_override='', palette=None):
     palette = validate_palette(palette)
     if not KEY.fullmatch(profile):
@@ -226,11 +265,16 @@ def load(profile, root_override='', palette=None):
         raw_themes = read_json(root / 'data' / 'univers.json')['themes']
         jobs = build_jobs(root, raw_themes, styles, read_overrides(state / 'prompts-excel.csv'), palette)
         art_direction = QUEBEC_STYLE
-    elif adapter == 'csv':
+    elif adapter in ('csv', 'kristals-pastorale'):
         raw_themes = config['themes']
         styles = {t['id']: t for t in raw_themes}
         art_direction = config.get('style', STYLE)
-        jobs = csv_jobs(PROFILES / config['source'], {t['id']: t for t in raw_themes}, styles, art_direction, palette)
+        index = {t['id']: t for t in raw_themes}
+        if adapter == 'kristals-pastorale':
+            root = Path(root_override.strip()) if root_override.strip() else BASE.parent / config.get('pack_dir', 'ecole-pastorale')
+            jobs = pastoral_pack_jobs(root, config, index, styles, art_direction, palette)
+        else:
+            jobs = csv_jobs(PROFILES / config['source'], index, styles, art_direction, palette)
     else:
         raise ValueError(f'Adaptateur inconnu : {adapter}')
     themes = {t['id']: t for t in raw_themes}

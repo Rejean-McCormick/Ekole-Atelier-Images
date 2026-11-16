@@ -15,7 +15,7 @@ MAX_IMAGE = 16 * 1024 * 1024
 
 
 class ComfyGenerator:
-    def __init__(self, workflow):
+    def __init__(self, workflow, require_lora=True):
         if not isinstance(workflow, dict) or not workflow or not all(
             isinstance(node, dict) and isinstance(node.get('inputs'), dict)
             for node in workflow.values()
@@ -40,7 +40,7 @@ class ComfyGenerator:
                  if isinstance(value, str) and MARKER in value]
         if len(slots) != 1:
             raise ValueError('Inscris {{PROMPT}} dans un seul champ de texte relié à SaveImage.')
-        if not any('lora' in workflow[key].get('class_type', '').lower()
+        if require_lora and not any('lora' in workflow[key].get('class_type', '').lower()
                    and workflow[key]['inputs'].get('lora_name')
                    and any(workflow[key]['inputs'].get(field, 0) for field in ('strength_model', 'strength_clip'))
                    for key in connected):
